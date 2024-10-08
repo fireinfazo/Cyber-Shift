@@ -84,7 +84,6 @@ public class PlayerMovementDualSwinging : MonoBehaviour
         else
             rb.drag = 0;
 
-        TextStuff();
     }
 
     private void FixedUpdate()
@@ -281,29 +280,4 @@ public class PlayerMovementDualSwinging : MonoBehaviour
 
         return velocityXZ + velocityY;
     }
-
-    #region Text & Debugging
-
-    public TextMeshProUGUI text_speed;
-    public TextMeshProUGUI text_mode;
-    private void TextStuff()
-    {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-
-        if (OnSlope())
-            text_speed.SetText("Speed: " + Round(rb.velocity.magnitude, 1) + " / " + Round(moveSpeed, 1));
-
-        else
-            text_speed.SetText("Speed: " + Round(flatVel.magnitude, 1) + " / " + Round(moveSpeed, 1));
-
-        text_mode.SetText(state.ToString());
-    }
-
-    public static float Round(float value, int digits)
-    {
-        float mult = Mathf.Pow(10.0f, (float)digits);
-        return Mathf.Round(value * mult) / mult;
-    }
-
-    #endregion
 }

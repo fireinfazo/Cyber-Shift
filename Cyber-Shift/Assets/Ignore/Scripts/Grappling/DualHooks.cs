@@ -96,7 +96,6 @@ public class DualHooks : MonoBehaviour
 
     private void MyInput()
     {
-        // starting swings or grapples depends on whether or not shift is pressed
         if (Input.GetKey(KeyCode.LeftShift))
         {
             if (Input.GetKeyDown(swingKey1)) StartGrapple(0);
@@ -108,9 +107,6 @@ public class DualHooks : MonoBehaviour
             if (Input.GetKeyDown(swingKey2)) StartSwing(1);
         }
 
-        // stopping is always possible
-        //if (Input.GetKeyUp(swingKey1)) StopGrapple(0);
-        //if (Input.GetKeyUp(swingKey2)) StopGrapple(1);
         if (Input.GetKeyUp(swingKey1)) StopSwing(0);
         if (Input.GetKeyUp(swingKey2)) StopSwing(1);
     }
@@ -132,25 +128,21 @@ public class DualHooks : MonoBehaviour
 
                 Vector3 realHitPoint;
 
-                // Option 1 - Direct Hit
                 if (raycastHit.point != Vector3.zero)
                     realHitPoint = raycastHit.point;
 
-                // Option 2 - Indirect (predicted) Hit
                 else if (sphereCastHit.point != Vector3.zero)
                     realHitPoint = sphereCastHit.point;
 
-                // Option 3 - Miss
                 else
                     realHitPoint = Vector3.zero;
 
-                // realHitPoint found
                 if (realHitPoint != Vector3.zero)
                 {
                     predictionPoints[i].gameObject.SetActive(true);
                     predictionPoints[i].position = realHitPoint;
                 }
-                // realHitPoint not found
+
                 else
                 {
                     predictionPoints[i].gameObject.SetActive(false);
@@ -165,10 +157,8 @@ public class DualHooks : MonoBehaviour
 
     private void StartSwing(int swingIndex)
     {
-        // return if predictionHit not found
         if (predictionHits[swingIndex].point == Vector3.zero) return;
 
-        // deactivate active grapple
         CancelActiveGrapples();
         pm.ResetRestrictions();
 
@@ -182,11 +172,9 @@ public class DualHooks : MonoBehaviour
 
         float distanceFromPoint = Vector3.Distance(player.position, swingPoints[swingIndex]);
 
-        // the distance grapple will try to keep from grapple point. 
         joints[swingIndex].maxDistance = distanceFromPoint * 0.8f;
         joints[swingIndex].minDistance = distanceFromPoint * 0.25f;
 
-        // customize values as you like
         joints[swingIndex].spring = 15f;
         joints[swingIndex].damper = 7f;
         joints[swingIndex].massScale = 4.5f;
@@ -215,7 +203,6 @@ public class DualHooks : MonoBehaviour
         CancelActiveSwings();
         CancelAllGrapplesExcept(grappleIndex);
 
-        // Case 1 - target point found
         if (predictionHits[grappleIndex].point != Vector3.zero)
         {
             Invoke(nameof(DelayedFreeze), 0.05f);
@@ -227,7 +214,6 @@ public class DualHooks : MonoBehaviour
             StartCoroutine(ExecuteGrapple(grappleIndex));
         }
 
-        // Case 2 - target point not found
         else
         {
             swingPoints[grappleIndex] = cam.position + cam.forward * maxGrappleDistance;
@@ -282,45 +268,34 @@ public class DualHooks : MonoBehaviour
     {
         if (swingsActive[0] && !swingsActive[1]) pullPoint = swingPoints[0];
         if (swingsActive[1] && !swingsActive[0]) pullPoint = swingPoints[1];
-        // get midpoint if both swing points are active
         if (swingsActive[0] && swingsActive[1])
         {
             Vector3 dirToGrapplePoint1 = swingPoints[1] - swingPoints[0];
             pullPoint = swingPoints[0] + dirToGrapplePoint1 * 0.5f;
         }
 
-        // right
         if (Input.GetKey(KeyCode.D)) rb.AddForce(orientation.right * horizontalThrustForce * Time.deltaTime);
-        // left
+
         if (Input.GetKey(KeyCode.A)) rb.AddForce(-orientation.right * horizontalThrustForce * Time.deltaTime);
-        // forward
+
         if (Input.GetKey(KeyCode.W)) rb.AddForce(orientation.forward * forwardThrustForce * Time.deltaTime);
-        // backward
-        /// if (Input.GetKey(KeyCode.S)) rb.AddForce(-orientation.forward * forwardThrustForce * Time.deltaTime);
-        // shorten cable
+
         if (Input.GetKey(KeyCode.Space))
         {
             Vector3 directionToPoint = pullPoint - transform.position;
             rb.AddForce(directionToPoint.normalized * forwardThrustForce * Time.deltaTime);
 
-            // calculate the distance to the grapplePoint
             float distanceFromPoint = Vector3.Distance(transform.position, pullPoint);
 
-            // the distance grapple will try to keep from grapple point.
             UpdateJoints(distanceFromPoint);
 
-            print("shorten " + Time.time);
         }
-        // extend cable
         if (Input.GetKey(KeyCode.S))
         {
-            // calculate the distance to the grapplePoint
             float extendedDistanceFromPoint = Vector3.Distance(transform.position, pullPoint) + extendCableSpeed;
 
-            // the distance grapple will try to keep from grapple point.
             UpdateJoints(extendedDistanceFromPoint);
 
-            print("extend " + Time.time);
         }
     }
 
@@ -368,7 +343,6 @@ public class DualHooks : MonoBehaviour
     {
         for (int i = 0; i < amountOfSwingPoints; i++)
         {
-            // if not grappling, don't draw rope
             if (!grapplesActive[i] && !swingsActive[i]) 
             {
                 lineRenderers[i].positionCount = 0;

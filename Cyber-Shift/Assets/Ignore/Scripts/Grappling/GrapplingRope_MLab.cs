@@ -3,19 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-// Dave MovementLab - GrapplingRope
-///
-// Content:
-/// - drawing and animating the grappling rope
-/// 
-// Note:
-/// This script is assigned to the grappling gun
-///
-// I learned how to create this script by following along with a YouTube tutorial
-// Credits: https://youtu.be/8nENcDnxeVE
-///
-/// -> if you don't understand the code, just watch the tutorial
-
 
 public class GrapplingRope_MLab : MonoBehaviour
 {
@@ -51,15 +38,12 @@ public class GrapplingRope_MLab : MonoBehaviour
 
     void DrawRope()
     {
-        // if not grappling, don't draw rope
         if (!grappling.IsGrappling())
         {
             currentGrapplePosition = grappling.gunTip.position;
 
-            // reset the simulation
             spring.Reset();
 
-            // reset the positionCount of the lineRenderer
             if (lr.positionCount > 0)
                 lr.positionCount = 0;
 
@@ -68,36 +52,27 @@ public class GrapplingRope_MLab : MonoBehaviour
 
         if(lr.positionCount == 0)
         {
-            // set the start velocity of the simulation
             spring.SetVelocity(velocity);
 
-            // set the positionCount of the lineRenderer depending on the quality of the rope
             lr.positionCount = quality + 1;
         }
 
-        // set the spring simulation
         spring.SetDamper(damper);
         spring.SetStrength(strength);
         spring.Update(Time.deltaTime);
 
-        Vector3 grapplePoint = grappling.GetGrapplePoint();
-        Vector3 gunTipPosition = grappling.gunTip.position;
+       Vector3 grapplePoint = grappling.GetGrapplePoint();
+       Vector3 gunTipPosition = grappling.gunTip.position;
 
-        // find the upwards direction relative to the rope
         Vector3 up = Quaternion.LookRotation((grapplePoint - gunTipPosition).normalized) * Vector3.up;
 
-        // lerp the currentGrapplePositin towards the grapplePoint
         currentGrapplePosition = Vector3.Lerp(currentGrapplePosition, grapplePoint, Time.deltaTime * 8f);
 
-        // loop through all segments of the rope and animate them
         for (int i = 0; i < quality + 1; i++)
         {
             float delta = i / (float)quality;
-            // calculate the offset of the current rope segment
             Vector3 offset = up * waveHeight * Mathf.Sin(delta * waveCount * Mathf.PI) * spring.Value * affectCurve.Evaluate(delta);
-
-            // lerp the lineRenderer position towards the currentGrapplePosition + the offset you just calculated
-            lr.SetPosition(i, Vector3.Lerp(gunTipPosition, currentGrapplePosition, delta) + offset);
+             lr.SetPosition(i, Vector3.Lerp(gunTipPosition, currentGrapplePosition, delta) + offset);
         }
     }
 }
