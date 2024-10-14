@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -238,6 +238,18 @@ PrefabInstance:
       propertyPath: orientation
       value: 
       objectReference: {fileID: 301466384}
+    - target: {fileID: 5769804623595378941, guid: bc73bfb0bbd49fd4081bb5039ac229b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769804623595378941, guid: bc73bfb0bbd49fd4081bb5039ac229b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769804623595378941, guid: bc73bfb0bbd49fd4081bb5039ac229b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.99
+      objectReference: {fileID: 0}
     - target: {fileID: 5769804623782319301, guid: bc73bfb0bbd49fd4081bb5039ac229b3, type: 3}
       propertyPath: grappling
       value: 
@@ -750,11 +762,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6728318850545114908, guid: 77ee14d34226cce4ba36b20b2ed5887e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.186
+      value: -10.56
       objectReference: {fileID: 0}
     - target: {fileID: 6728318850545114908, guid: 77ee14d34226cce4ba36b20b2ed5887e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.37
+      value: -0.86
       objectReference: {fileID: 0}
     - target: {fileID: 6728318850545114908, guid: 77ee14d34226cce4ba36b20b2ed5887e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -803,11 +815,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5343402778445171623, guid: c9546c4221d05f846a21f6f23a9f5f6a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.246
+      value: -11.24
       objectReference: {fileID: 0}
     - target: {fileID: 5343402778445171623, guid: c9546c4221d05f846a21f6f23a9f5f6a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.37
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 5343402778445171623, guid: c9546c4221d05f846a21f6f23a9f5f6a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1463,8 +1475,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 72
   lr: {fileID: 1833056619}
-  maxGrappleDistance: 0
-  grappleDelayTime: 0
-  overshootYAxis: 0
-  grapplingCd: 0
+  maxGrappleDistance: 20
+  grappleDelayTime: 1
+  overshootYAxis: 10
+  grapplingCd: 1
   grappleKey: 324
