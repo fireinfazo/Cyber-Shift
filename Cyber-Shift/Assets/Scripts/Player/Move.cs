@@ -5,23 +5,23 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    [SerializeField] private float walkSpeed = 6f; 
-    [SerializeField] private float runSpeed = 10f; 
+    [SerializeField] private float walkSpeed = 6f;
+    [SerializeField] private float runSpeed = 10f;
     [SerializeField] private float backWalkSpeed = 5f;
-    [SerializeField] private float maxSpeed = 11f; 
+    [SerializeField] private float maxSpeed = 11f;
     [SerializeField] private float jumpForce = 5f;
+    private float crouchSpeed;
 
     [SerializeField] private GameObject player;
-//    public Animator animator;
+    //    public Animator animator;
 
     [SerializeField] private float mouseSensitivity = 1000f;
     private float yRotation = 0f;
 
-//    private static bool isAnimation = true;
-//    private bool isAnimationRun = true;
+    //    private static bool isAnimation = true;
+    //    private bool isAnimationRun = true;
 
     private bool isRun;
-    private static bool Mooving;
 
     private static bool isMovementBlocked;
 
@@ -29,50 +29,42 @@ public class Move : MonoBehaviour
 
     [SerializeField] protected Rigidbody rb;
 
-    protected bool IsSliding { get; set; }
-    protected bool isCrouching;
+    protected bool IsSliding;
+    protected bool IsCrouch;
 
-    private float walkSpeed_;
+    private float baseWalkSpeed;
+
 
     private void Start()
     {
-        walkSpeed_ = walkSpeed;
+        baseWalkSpeed = walkSpeed;
+        crouchSpeed = walkSpeed*0.5f;
     }
-
 
     private void Update()
     {
         if (isMovementBlocked)
         {
-            StopMovementAnimations(); 
+            StopMovementAnimations();
             return;
         }
 
         HandleMovement();
         HandleMouseLook();
-
-        if (isCrouching)
-        {
-            walkSpeed = walkSpeed_ * 0.5f;
-        }
-        else
-        {
-            walkSpeed = walkSpeed_;
-        }
-
     }
 
     protected void HandleMovement()
     {
         bool isMoving = false;
         Vector3 moveDirection = Vector3.zero;
+        IsSliding = SlideCrouch.IsSliding();
 
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift) && !isMovementBlocked && !IsSliding)
         {
             isRun = true;
             moveDirection = transform.forward * runSpeed;
             isMoving = true;
-//            RunAnimation();
+            //            RunAnimation();
         }
 
         else if (Input.GetKey(KeyCode.W) && !isMovementBlocked && !IsSliding)
@@ -80,27 +72,41 @@ public class Move : MonoBehaviour
             isRun = false;
             moveDirection = transform.forward * walkSpeed;
             isMoving = true;
-//            WalkAnimation();
+            //            WalkAnimation();
+        }
+
+        if (Input.GetKey(KeyCode.LeftControl) && !isMovementBlocked && !IsSliding)
+        {
+            IsCrouch = true;
+            Debug.Log("Crouch");
+            walkSpeed = crouchSpeed;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftControl) && IsCrouch && !IsSliding)
+        {
+            IsCrouch = false;
+            Debug.Log("Stand Up");
+            walkSpeed = baseWalkSpeed;
         }
 
         if (Input.GetKey(KeyCode.S) && !isRun && !isMovementBlocked)
         {
             moveDirection += -transform.forward * backWalkSpeed;
-//            WalkAnimation();
+            //            WalkAnimation();
             isMoving = true;
         }
 
         if (Input.GetKey(KeyCode.D) && !isRun && !isMovementBlocked)
         {
             moveDirection += transform.right * backWalkSpeed;
-//            WalkAnimation();
+            //            WalkAnimation();
             isMoving = true;
         }
 
         if (Input.GetKey(KeyCode.A) && !isRun && !isMovementBlocked)
         {
             moveDirection += -transform.right * backWalkSpeed;
-//            WalkAnimation();
+            //            WalkAnimation();
             isMoving = true;
         }
 
@@ -113,12 +119,14 @@ public class Move : MonoBehaviour
 
         if (!isMoving)
         {
-//            StopMovementAnimations();
+            //            StopMovementAnimations();
         }
 
-        Mooving = isMoving;
-
-//        MoveSound(isMoving);
+        //        MoveSound(isMoving);
+        if (IsSliding)
+        {
+            walkSpeed = baseWalkSpeed;
+        }
     }
 
     private void MovePlayer(Vector3 moveDirection)
