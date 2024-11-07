@@ -40,18 +40,17 @@ public class healthBar : MonoBehaviour
 
     public void DrainHP(float hpdrain)
     {
-        if(Time.deltaTime < lasttimedrain + 10f)
+        if(Time.time > lasttimedrain + 1f)
         {
             // StartCoroutine(DrainHpCoroutine(hpdrain));
             health -= hpdrain;
-            //health = Mathf.Max(health, 0);
-            lasttimedrain = Time.deltaTime;
+            health = Mathf.Max(health, 0);
+            lasttimedrain = Time.time;
         }
        
     }
-    IEnumerator DrainHpCoroutine(float hpdrain)
-    {
-        
-        yield return new WaitForSeconds(1f);
-    }
+    //IEnumerator DrainHpCoroutine(float hpdrain)
+    //{  
+    //    yield return new WaitForSeconds(1f);
+    //}
 }
