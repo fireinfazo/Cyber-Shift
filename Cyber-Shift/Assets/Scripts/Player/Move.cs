@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Move : MonoBehaviour
@@ -34,11 +33,10 @@ public class Move : MonoBehaviour
 
     private float baseWalkSpeed;
 
-
     private void Start()
     {
         baseWalkSpeed = walkSpeed;
-        crouchSpeed = walkSpeed*0.5f;
+        crouchSpeed = walkSpeed * 0.5f;
     }
 
     private void Update()
@@ -49,8 +47,13 @@ public class Move : MonoBehaviour
             return;
         }
 
-        HandleMovement();
         HandleMouseLook();
+    }
+
+    private void FixedUpdate()
+    {
+        if (isMovementBlocked) return;
+        HandleMovement();
     }
 
     protected void HandleMovement()
@@ -66,7 +69,6 @@ public class Move : MonoBehaviour
             isMoving = true;
             //            RunAnimation();
         }
-
         else if (Input.GetKey(KeyCode.W) && !isMovementBlocked && !IsSliding)
         {
             isRun = false;
@@ -152,58 +154,6 @@ public class Move : MonoBehaviour
         isRun = false;
     }
 
-    /*
-        #region Animation
-        private void WalkAnimation()
-        {
-            if (isAnimation)
-            {
-                animator.SetBool("WalkTrigger", true);
-                isAnimationRun = true;
-            }
-        }
-
-        private void RunAnimation()
-        {
-            if (isAnimationRun)
-            {
-                animator.SetBool("Run", true);
-                isAnimation = true;
-            }
-        }
-
-        public void WalkAnimationFinish()
-        {
-            isAnimation = true;
-        }
-
-        public void WalkAnimationStart()
-        {
-            animator.SetBool("WalkTrigger", false);
-            animator.SetBool("Run", false);
-            isAnimation = false;
-        }
-
-        public void RunAnimationFinish()
-        {
-            isAnimationRun = true;
-        }
-
-        public void RunAnimationStart()
-        {
-            animator.SetBool("Run", false);
-            animator.SetBool("WalkTrigger", false);
-            isAnimationRun = false;
-        }
-
-        public static void TrueAnimation()
-        {
-            isAnimation = true;
-        }
-        #endregion
-
-        */
-
     #region BlockMovement
     public static void BlockMovement(float seconds)
     {
@@ -222,7 +172,6 @@ public class Move : MonoBehaviour
     {
         isMovementBlocked = block;
     }
-
     #endregion
 
     #region Jump

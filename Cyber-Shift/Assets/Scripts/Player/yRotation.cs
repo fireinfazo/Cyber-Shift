@@ -5,7 +5,7 @@ using UnityEngine;
 public class yRotation : MonoBehaviour
 {
 
-    private float mouseSensitivity = 1000f;
+    [SerializeField] private float mouseSensitivity = 100f;
     float xRotation = 180f;
 
     void Start()
