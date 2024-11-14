@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Sliding : MonoBehaviour
+public class SlideCrouch : MonoBehaviour
 {
     [SerializeField] private float slideSpeed = 8f;
     [SerializeField] private float slideDuration = 0.5f;

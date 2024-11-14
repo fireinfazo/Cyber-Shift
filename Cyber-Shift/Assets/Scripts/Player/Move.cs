@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -12,25 +11,19 @@ public class Move : MonoBehaviour
     private float crouchSpeed;
 
     [SerializeField] private GameObject player;
-    //    public Animator animator;
-
+    public Transform playerCam;
+    public Transform orientation;
     [SerializeField] private float mouseSensitivity = 1000f;
-    private float yRotation = 0f;
-
-    //    private static bool isAnimation = true;
-    //    private bool isAnimationRun = true;
+    private float xRotation;
 
     private bool isRun;
-
     private static bool isMovementBlocked;
-
     private bool isGrounded;
 
-    [SerializeField] protected Rigidbody rb;
+    [SerializeField] private Rigidbody rb;
 
-    protected bool IsSliding;
-    protected bool IsCrouch;
-
+    private bool isSliding;
+    private bool isCrouching;
     private float baseWalkSpeed;
 
     private void Start()
@@ -41,104 +34,60 @@ public class Move : MonoBehaviour
 
     private void Update()
     {
-        if (isMovementBlocked)
-        {
-            StopMovementAnimations();
-            return;
-        }
-
-        HandleMouseLook();
-    }
-
-    private void FixedUpdate()
-    {
         if (isMovementBlocked) return;
+
+        SlideAndJump();
+        HandleMouseLook();
         HandleMovement();
     }
 
-    protected void HandleMovement()
+
+    private void HandleMovement()
     {
         bool isMoving = false;
         Vector3 moveDirection = Vector3.zero;
-        IsSliding = SlideCrouch.IsSliding();
 
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift) && !isMovementBlocked && !IsSliding)
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift) && !isSliding)
         {
             isRun = true;
             moveDirection = transform.forward * runSpeed;
             isMoving = true;
-            //            RunAnimation();
         }
-        else if (Input.GetKey(KeyCode.W) && !isMovementBlocked && !IsSliding)
+        else if (Input.GetKey(KeyCode.W) && !isSliding)
         {
             isRun = false;
             moveDirection = transform.forward * walkSpeed;
             isMoving = true;
-            //            WalkAnimation();
         }
 
-        if (Input.GetKey(KeyCode.LeftControl) && !isMovementBlocked && !IsSliding)
-        {
-            IsCrouch = true;
-            Debug.Log("Crouch");
-            walkSpeed = crouchSpeed;
-        }
-
-        if (Input.GetKeyUp(KeyCode.LeftControl) && IsCrouch && !IsSliding)
-        {
-            IsCrouch = false;
-            Debug.Log("Stand Up");
-            walkSpeed = baseWalkSpeed;
-        }
-
-        if (Input.GetKey(KeyCode.S) && !isRun && !isMovementBlocked)
+        if (Input.GetKey(KeyCode.S) && !isRun)
         {
             moveDirection += -transform.forward * backWalkSpeed;
-            //            WalkAnimation();
             isMoving = true;
         }
 
-        if (Input.GetKey(KeyCode.D) && !isRun && !isMovementBlocked)
+        if (Input.GetKey(KeyCode.D) && !isRun)
         {
             moveDirection += transform.right * backWalkSpeed;
-            //            WalkAnimation();
             isMoving = true;
         }
 
-        if (Input.GetKey(KeyCode.A) && !isRun && !isMovementBlocked)
+        if (Input.GetKey(KeyCode.A) && !isRun)
         {
             moveDirection += -transform.right * backWalkSpeed;
-            //            WalkAnimation();
             isMoving = true;
         }
 
         MovePlayer(moveDirection);
-
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isMovementBlocked)
-        {
-            Jump();
-        }
-
-        if (!isMoving)
-        {
-            //            StopMovementAnimations();
-        }
-
-        //        MoveSound(isMoving);
-        if (IsSliding)
-        {
-            walkSpeed = baseWalkSpeed;
-        }
     }
 
     private void MovePlayer(Vector3 moveDirection)
     {
         Vector3 newVelocity = rb.velocity;
-
         newVelocity.x = moveDirection.x;
         newVelocity.z = moveDirection.z;
 
-        if (!IsSliding && newVelocity.magnitude > maxSpeed)
+        if (!isSliding && newVelocity.magnitude > maxSpeed)
         {
             newVelocity = newVelocity.normalized * maxSpeed;
         }
@@ -146,38 +95,54 @@ public class Move : MonoBehaviour
         rb.velocity = new Vector3(newVelocity.x, rb.velocity.y, newVelocity.z);
     }
 
+    private float desiredX;
+
     private void HandleMouseLook()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        yRotation += mouseX;
-        transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
-        isRun = false;
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.fixedDeltaTime * 1f;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.fixedDeltaTime * 1f;
+
+        //Find current look rotation
+        Vector3 rot = playerCam.transform.localRotation.eulerAngles;
+        desiredX = rot.y + mouseX;
+
+        //Rotate, and also make sure we dont over- or under-rotate.
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        //Perform the rotations
+        playerCam.transform.localRotation = Quaternion.Euler(xRotation, desiredX, 0);
+        orientation.transform.localRotation = Quaternion.Euler(0, desiredX, 0);
+
+        if (Input.GetMouseButtonDown(0))
+            Cursor.lockState = CursorLockMode.Locked;
     }
 
-    #region BlockMovement
-    public static void BlockMovement(float seconds)
+
+
+    private void SlideAndJump()
     {
-        Move instance = FindObjectOfType<Move>();
-        instance.StartCoroutine(instance.WaitBlockMovement(seconds));
+        if (Input.GetKey(KeyCode.LeftControl) && !isSliding)
+        {
+            isCrouching = true;
+            walkSpeed = crouchSpeed;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftControl) && isCrouching && !isSliding)
+        {
+            isCrouching = false;
+            walkSpeed = baseWalkSpeed;
+        }
+
+        isSliding = isCrouching && Input.GetKey(KeyCode.LeftShift);
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            Jump();
+        }
     }
 
-    private IEnumerator WaitBlockMovement(float seconds)
-    {
-        isMovementBlocked = true;
-        yield return new WaitForSeconds(seconds);
-        isMovementBlocked = false;
-    }
-
-    public static void BlockMovementBool(bool block)
-    {
-        isMovementBlocked = block;
-    }
-    #endregion
-
-    #region Jump
     private void Jump()
     {
-        //        animator.SetTrigger("Jump");
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         isGrounded = false;
     }
@@ -191,46 +156,4 @@ public class Move : MonoBehaviour
     {
         isGrounded = false;
     }
-    #endregion
-
-    private void StopMovementAnimations()
-    {
-        //animator.SetBool("WalkTrigger", false);
-        //animator.SetBool("Run", false);
-    }
-
-    /*
-    private void MoveSound(bool isMoving)
-    {
-        if (isMoving && isRun)
-        {
-            if (!audios[0].isPlaying)
-            {
-                audios[1].Stop();
-                audios[0].loop = true;
-                audios[0].Play();
-            }
-        }
-        else if (isMoving && !isRun)
-        {
-            if (!audios[1].isPlaying)
-            {
-                audios[0].Stop();  
-                audios[1].loop = true;
-                audios[1].Play();
-            }
-        }
-        else
-        {
-            if (audios[0].isPlaying)
-            {
-                audios[0].Stop();
-            }
-            if (audios[1].isPlaying)
-            {
-                audios[1].Stop();
-            }
-        }
-    }
-    */
 }
