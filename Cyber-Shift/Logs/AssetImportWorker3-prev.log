@@ -1,6 +1,10 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
+<<<<<<< Updated upstream
 OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'ru' Physical Memory: 32507 MB
+=======
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 32125 MB
+>>>>>>> Stashed changes
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,6 +15,7 @@ C:\Program Files\Unity\Hub\Editor\2021.3.24f1\Editor\Unity.exe
 -name
 AssetImportWorker3
 -projectPath
+<<<<<<< Updated upstream
 C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift
 -logFile
 Logs/AssetImportWorker3.log
@@ -18,6 +23,15 @@ Logs/AssetImportWorker3.log
 18616
 Successfully changed project path to: C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift
 C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift
+=======
+C:/Users/Max/Documents/GitHub/Cyber-Shift/Cyber-Shift
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+51892
+Successfully changed project path to: C:/Users/Max/Documents/GitHub/Cyber-Shift/Cyber-Shift
+C:/Users/Max/Documents/GitHub/Cyber-Shift/Cyber-Shift
+>>>>>>> Stashed changes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,6 +61,7 @@ C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< Updated upstream
 Player connection [18700] Host "[IP] 192.168.0.114 [Port] 0 [Flags] 2 [Guid] 706802530 [EditorId] 706802530 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [18700] Host "[IP] 192.168.0.114 [Port] 0 [Flags] 2 [Guid] 706802530 [EditorId] 706802530 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
@@ -63,15 +78,38 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     7957 MB
     Driver:   32.0.15.6603
+=======
+Player connection [30856] Host "[IP] 172.18.16.1 [Port] 0 [Flags] 2 [Guid] 317803717 [EditorId] 317803717 [Version] 1048832 [Id] WindowsEditor(7,nitro5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [30856] Host "[IP] 172.18.16.1 [Port] 0 [Flags] 2 [Guid] 317803717 [EditorId] 317803717 [Version] 1048832 [Id] WindowsEditor(7,nitro5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 107.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Max/Documents/GitHub/Cyber-Shift/Cyber-Shift/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3950 MB
+    Driver:   31.0.15.4617
+>>>>>>> Stashed changes
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56376
+>>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<< Updated upstream
 Registered in 0.001818 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
@@ -83,11 +121,25 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (734ms)
 		BeginReloadAssembly (54ms)
+=======
+Registered in 0.009068 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 297 ms
+Refreshing native plugins compatible for Editor in 102.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.008 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1009ms)
+		BeginReloadAssembly (90ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 		EndReloadAssembly (619ms)
 			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -101,6 +153,21 @@ Domain Reload Profiling:
 				RefreshPlugins (94ms)
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (81ms)
+=======
+		EndReloadAssembly (813ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (113ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (617ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (383ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (103ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (85ms)
+>>>>>>> Stashed changes
 				ProcessInitializeOnLoadMethodAttributes (44ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -108,6 +175,7 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005132 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Desktop\Projects Unity\Cyber-Shift\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -121,10 +189,26 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (937ms)
 		BeginReloadAssembly (102ms)
+=======
+Registered in 0.008681 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Max\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Max\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 102.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.334 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1335ms)
+		BeginReloadAssembly (123ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (17ms)
 		EndReloadAssembly (768ms)
 			LoadAssemblies (82ms)
@@ -154,13 +238,47 @@ Unloading 5546 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 52 unused Assets / (1.6 MB). Loaded Objects now: 6006.
 Memory consumption went from 228.3 MB to 226.7 MB.
 Total: 2.930800 ms (FindLiveObjects: 0.272200 ms CreateObjectMapping: 0.163100 ms MarkObjects: 2.284400 ms  DeleteObjects: 0.210400 ms)
+=======
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1099ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (307ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (567ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (102ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (232ms)
+				ProcessInitializeOnLoadMethodAttributes (92ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5044 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (1.6 MB). Loaded Objects now: 5496.
+Memory consumption went from 210.4 MB to 208.8 MB.
+Total: 4.772000 ms (FindLiveObjects: 0.537800 ms CreateObjectMapping: 0.454300 ms MarkObjects: 3.284300 ms  DeleteObjects: 0.494200 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+<<<<<<< Updated upstream
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+=======
+>>>>>>> Stashed changes
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -168,6 +286,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 453931.197874 seconds.
   path: Assets/Resources/rusty-steel-scrap-pile/source/steel-scrappile/steel-scrappile2.jpg
   artifactKey: Guid(98d6d2b14c27119498eec071cce8b0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -190,6 +309,90 @@ Received Import Request.
   path: Assets/Resources/scrap-metal-lowpoly/textures/DefaultMaterial_metallic.jpeg
   artifactKey: Guid(7120ddb41838fb5458b35a235b1a54aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Resources/scrap-metal-lowpoly/textures/DefaultMaterial_metallic.jpeg using Guid(7120ddb41838fb5458b35a235b1a54aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30787af23823437ad5b371135d355ab') in 0.010011 seconds 
+=======
+  Time since last request: 1118102.732647 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_1/Vector_4.png
+  artifactKey: Guid(da359f85c20fa664a986f4f001e2e9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_1/Vector_4.png using Guid(da359f85c20fa664a986f4f001e2e9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85cc2b0ca2fa45e3369e8ebb70704289') in 0.141513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.374651 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_2/Vector_4.png
+  artifactKey: Guid(6623404fc650f7f4d8f3f37035deabab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_2/Vector_4.png using Guid(6623404fc650f7f4d8f3f37035deabab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65a1288158929e88da62473a806f6a5a') in 0.034018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.604146 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_3/Vector_4.png
+  artifactKey: Guid(5d8aa96cb1161bc4baac7f4db8332bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_3/Vector_4.png using Guid(5d8aa96cb1161bc4baac7f4db8332bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aeab2531f2ed1d15e0983acc5013388') in 0.024624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_3/Vector_6.png
+  artifactKey: Guid(de9af02bddd69ed4397048bbc2b5f4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_3/Vector_6.png using Guid(de9af02bddd69ed4397048bbc2b5f4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67cdd4bdca81fd0748525283bdf81469') in 0.028161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_3/Vector_8.png
+  artifactKey: Guid(2519dcb2760bc3343b079e105bd4a6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_3/Vector_8.png using Guid(2519dcb2760bc3343b079e105bd4a6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83d6117693eba67986b470493e773143') in 0.021278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_3/Vector_13.png
+  artifactKey: Guid(0ec5bf15869e55d49a707374f9c5966c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_3/Vector_13.png using Guid(0ec5bf15869e55d49a707374f9c5966c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f517a6d082accf2d10ca133a8500c4b3') in 0.022299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.591913 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_4/Vector_4.png
+  artifactKey: Guid(b2030dc3670f66b42a98857bb46cf451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_4/Vector_4.png using Guid(b2030dc3670f66b42a98857bb46cf451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa166753ef2f9d8a980e18c835aed82') in 0.026662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_4/Vector_11.png
+  artifactKey: Guid(c69bb29d33341724faf5de48b7c6cd9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_4/Vector_11.png using Guid(c69bb29d33341724faf5de48b7c6cd9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dcc401231a365f16b6f3da18a99c18a') in 0.027093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_4/Vector_10.png
+  artifactKey: Guid(ca456457fba9f7a4caf70d0732fcba7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_4/Vector_10.png using Guid(ca456457fba9f7a4caf70d0732fcba7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b5027dda56a9579c0fa5ca219c9139') in 0.015161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_4/Vector_14.png
+  artifactKey: Guid(70b546af2915a7142b38a03518f14483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_4/Vector_14.png using Guid(70b546af2915a7142b38a03518f14483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9382231194e134b5310b174ff023ffa6') in 0.023773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.516834 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/Vector_4.png
+  artifactKey: Guid(6a0adb54a50609748af2d1460f3b8b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/Vector_4.png using Guid(6a0adb54a50609748af2d1460f3b8b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '438866684fa17efae97213b096de0b8e') in 0.027943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/Vector_5.png
+  artifactKey: Guid(1d707f25cbe4ef843ae6cf0cc720c527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/Vector_5.png using Guid(1d707f25cbe4ef843ae6cf0cc720c527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdf712fb04da788459c04ddfeced266f') in 0.016306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/Vector_6.png
+  artifactKey: Guid(928457b408384c6428f13f36004b0a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/Vector_6.png using Guid(928457b408384c6428f13f36004b0a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c1515179a6d7750fd5f0fd6e6aeb4c') in 0.012315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.644332 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_6/Vector_4.png
+  artifactKey: Guid(8ad58b6b08f08e1409d9fe12b1a56d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_6/Vector_4.png using Guid(8ad58b6b08f08e1409d9fe12b1a56d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847df635b917be5b64fce2acb020ec94') in 0.031272 seconds 
+>>>>>>> Stashed changes
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
