@@ -1,15 +1,20 @@
 using UnityEngine;
 
-public class GrapplingGun : MonoBehaviour {
+public class GrapplingGun : MonoBehaviour 
+{
 
     private LineRenderer lr;
     private Vector3 grapplePoint;
-    public LayerMask whatIsGrappleable;
-    public Transform gunTip, camera, player;
+    [SerializeField] private LayerMask whatIsGrappleable;
+    [SerializeField] private Transform gunTip, camera, player;
     private float maxDistance = 100f;
     private SpringJoint joint;
 
-    void Awake() {
+    [SerializeField] private AudioClip[] sound;
+    [SerializeField] private AudioSource audioSource;
+
+    void Awake() 
+    {
         lr = GetComponent<LineRenderer>();
     }
 
@@ -25,18 +30,17 @@ public class GrapplingGun : MonoBehaviour {
         }
     }
 
-
-    //Called after Update
-    void LateUpdate() {
+    void LateUpdate() 
+    {
         DrawRope();
     }
 
-    /// <summary>
-    /// Call whenever we want to start a grapple
-    /// </summary>
-    void StartGrapple() {
+    void StartGrapple()
+    {
+        PlaySound(0);
         RaycastHit hit;
-        if (Physics.Raycast(camera.position, camera.forward, out hit, maxDistance, whatIsGrappleable)) {
+        if (Physics.Raycast(camera.position, camera.forward, out hit, maxDistance, whatIsGrappleable)) 
+        {
             grapplePoint = hit.point;
             joint = player.gameObject.AddComponent<SpringJoint>();
             joint.autoConfigureConnectedAnchor = false;
@@ -44,33 +48,29 @@ public class GrapplingGun : MonoBehaviour {
 
             float distanceFromPoint = Vector3.Distance(player.position, grapplePoint);
 
-            //The distance grapple will try to keep from grapple point. 
             joint.maxDistance = distanceFromPoint * 0.8f;
             joint.minDistance = distanceFromPoint * 0.25f;
 
-            //Adjust these values to fit your game.
             joint.spring = 4.5f;
             joint.damper = 7f;
             joint.massScale = 4.5f;
 
             lr.positionCount = 2;
             currentGrapplePosition = gunTip.position;
+            PlaySound(1);
         }
     }
 
-
-    /// <summary>
-    /// Call whenever we want to stop a grapple
-    /// </summary>
-    void StopGrapple() {
+    void StopGrapple() 
+    {
         lr.positionCount = 0;
         Destroy(joint);
     }
 
     private Vector3 currentGrapplePosition;
     
-    void DrawRope() {
-        //If not grappling, don't draw rope
+    void DrawRope() 
+    {
         if (!joint) return;
 
         currentGrapplePosition = Vector3.Lerp(currentGrapplePosition, grapplePoint, Time.deltaTime * 8f);
@@ -79,11 +79,25 @@ public class GrapplingGun : MonoBehaviour {
         lr.SetPosition(1, currentGrapplePosition);
     }
 
-    public bool IsGrappling() {
+    public bool IsGrappling() 
+    {
         return joint != null;
     }
 
-    public Vector3 GetGrapplePoint() {
+    public Vector3 GetGrapplePoint() 
+    {
         return grapplePoint;
+    }
+
+    public void PlaySound(int index)
+    {
+        if (index < 0 || index >= sound.Length)
+        {
+            Debug.LogWarning("“–≈¬Œ√¿ “–≈¬Œ√¿ «¬”  «¡≈∆¿À");
+            return;
+        }
+
+        audioSource.clip = sound[index];
+        audioSource.Play();
     }
 }
