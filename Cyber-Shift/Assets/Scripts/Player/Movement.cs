@@ -34,6 +34,8 @@ public class Movement : MonoBehaviour
     
     float x, y;
     bool jumping, sprinting, crouching;
+
+ //   public Transform playerObject;
     
 
     void Awake() 
@@ -83,7 +85,7 @@ public class Movement : MonoBehaviour
 
     private void StopCrouch() 
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
+
     }
 
     private void Move() 
@@ -161,6 +163,7 @@ public class Movement : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         playerCam.transform.localRotation = Quaternion.Euler(xRotation, desiredX, 0);
+//        playerObject.transform.rotation = Quaternion.Euler(0, desiredX, 0);
         orientation.transform.localRotation = Quaternion.Euler(0, desiredX, 0);
     }
 
