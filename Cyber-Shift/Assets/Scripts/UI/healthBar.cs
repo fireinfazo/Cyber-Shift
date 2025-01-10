@@ -7,44 +7,63 @@ using UnityEngine.UI;
 public class healthBar : MonoBehaviour
 {
     public Slider healthSlider;
-    public Slider easeHealthSlider;
-    public Slider RenewableHealthSlider;
     public float maxHealth = 100f;
     public float health;
+    [SerializeField] private float defense = 10;
+    [SerializeField] private float hplimit = 400;
+    [SerializeField] private float testdamage = 10;
     private float LerpSpeed = 0.03f;
     private float lasttimedrain = 0f;
     private float lasttimegain = 0f;
     [SerializeField] private int countofheal = 3;
+
     void Start()
     {
         health = maxHealth;
     }
     void Update()
     {
+        if (maxHealth >= hplimit)
+        {
+            maxHealth = hplimit;
+        }
+
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
+
         if (healthSlider.value != health)
         {
             healthSlider.value = health;
         }
 
-        if (healthSlider.value != easeHealthSlider.value)
+        if (healthSlider.maxValue != maxHealth)
         {
-            easeHealthSlider.value = Mathf.Lerp(easeHealthSlider.value, health, LerpSpeed);
+            healthSlider.maxValue = maxHealth;
         }
 
         if (Input.GetKeyDown(KeyCode.T))
         {
-            DrainHP(90);
+            if (testdamage <= 4)
+            {
+                DrainHP(testdamage);
+            }
+            else
+            {
+                DrainHP(testdamage * (testdamage / (testdamage + defense)));
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            GainHP(25);
+            GainHP(10);
         }
     }
 
     void TakeDamage(float damage)
     {
-        health -= damage;
+        health -= damage - (defense / 2);
     }
 
     public void DrainHP(float hpdrain)
