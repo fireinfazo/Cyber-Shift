@@ -15,7 +15,7 @@ C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-S
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-2850
+18598
 Successfully changed project path to: C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-Shift
 C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-Shift
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-S
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7436] Host "[IP] 192.168.1.129 [Port] 0 [Flags] 2 [Guid] 753232417 [EditorId] 753232417 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [17620] Host "[IP] 192.168.0.114 [Port] 0 [Flags] 2 [Guid] 2707513085 [EditorId] 2707513085 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [7436] Host "[IP] 192.168.1.129 [Port] 0 [Flags] 2 [Guid] 753232417 [EditorId] 753232417 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17620] Host "[IP] 192.168.0.114 [Port] 0 [Flags] 2 [Guid] 2707513085 [EditorId] 2707513085 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 80.86 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 145.70 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -67,93 +67,93 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002237 seconds.
+Registered in 0.003932 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 221 ms
-Refreshing native plugins compatible for Editor in 79.34 ms, found 4 plugins.
+Android Extension - Scanning For ADB Devices 406 ms
+Refreshing native plugins compatible for Editor in 137.64 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.739 seconds
+- Completed reload, in  1.573 seconds
 Domain Reload Profiling:
-	ReloadAssembly (739ms)
-		BeginReloadAssembly (56ms)
+	ReloadAssembly (1577ms)
+		BeginReloadAssembly (178ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (623ms)
-			LoadAssemblies (55ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1224ms)
+			LoadAssemblies (180ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (114ms)
+			SetupTypeCache (192ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (451ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (882ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (278ms)
+				InitializePlatformSupportModulesInManaged (558ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (79ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (61ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (138ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (109ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005448 seconds.
+Registered in 0.009724 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Desktop\Projects Unity\Cyber-Shift\Cyber-Shift\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Desktop\Projects Unity\Cyber-Shift\Cyber-Shift\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 81.66 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 147.26 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.979 seconds
+- Completed reload, in  2.168 seconds
 Domain Reload Profiling:
-	ReloadAssembly (979ms)
-		BeginReloadAssembly (80ms)
+	ReloadAssembly (2169ms)
+		BeginReloadAssembly (155ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (828ms)
-			LoadAssemblies (74ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1870ms)
+			LoadAssemblies (140ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (216ms)
+			SetupTypeCache (644ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (429ms)
+			RebuildScriptCaches (111ms)
+			SetupLoadedEditorAssemblies (882ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (21ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (197ms)
-				ProcessInitializeOnLoadMethodAttributes (63ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				RefreshPlugins (147ms)
+				BeforeProcessingInitializeOnLoad (142ms)
+				ProcessInitializeOnLoadAttributes (384ms)
+				ProcessInitializeOnLoadMethodAttributes (183ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.05 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5545 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 55 unused Assets / (2.0 MB). Loaded Objects now: 5994.
 Memory consumption went from 229.8 MB to 227.9 MB.
-Total: 2.951100 ms (FindLiveObjects: 0.358500 ms CreateObjectMapping: 0.206800 ms MarkObjects: 2.054500 ms  DeleteObjects: 0.329800 ms)
+Total: 4.928900 ms (FindLiveObjects: 0.378100 ms CreateObjectMapping: 0.216400 ms MarkObjects: 3.866700 ms  DeleteObjects: 0.465100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -168,85 +168,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 16403.433531 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de01f939cd1c45ae71fdf9f4876e47cc') in 0.265713 seconds 
+  Time since last request: 398832.175567 seconds.
+  path: Assets/Scripts/Player
+  artifactKey: Guid(2591d56ce7433b34b944a50341398810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player using Guid(2591d56ce7433b34b944a50341398810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b144ba7ef4cbfdd190364ca9d27d50') in 0.011158 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.732846 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd38c12ac67c03b27cd6e84fbd2908ae') in 0.050986 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.367237 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a3bc2a94444d1587ca2e6c23528674') in 0.046315 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.346947 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6aa7ba1e116f086c1a4d6b48d5b9a0') in 0.048190 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.523844 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a21b8f6f187ce8000bfe97d8acb0716') in 0.042346 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.433578 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b487ff16c136a046c68dec24e7bd8f8') in 0.050673 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.367208 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43413877d2accc3eea7e85145bebaef9') in 0.049683 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.170388 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4942c85fef8511a08bc186f3aaab15b7') in 0.054184 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.974552 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57450d69f7a6389466e754b75a9ef228') in 0.044414 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1923.135961 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab
-  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf10685f09703a56b49975fb6bd1ac2b') in 0.040626 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Wall.prefab
-  artifactKey: Guid(a14ce7945256d3246bf1a633c5cdb643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Wall.prefab using Guid(a14ce7945256d3246bf1a633c5cdb643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8b12e3e3b1fb441b39b8843e342d6f') in 0.033388 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef12efed6d2e4ea6e2180ca1724b1448') in 0.041842 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1832.549158 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab
-  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec48a0ad58b283be0d27bda5e491f77d') in 0.054059 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.648974 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab
-  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b27be601545fd8c3822f412dd3916b42') in 0.050457 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(2d576fbc85be24549acefece5208e1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(2d576fbc85be24549acefece5208e1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c5495ec71c625539ae43888b733faa') in 0.002243 seconds 
