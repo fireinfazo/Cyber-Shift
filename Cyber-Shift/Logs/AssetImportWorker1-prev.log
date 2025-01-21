@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'ru' Physical Memory: 32507 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 32581 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.24f1\Editor\Unity.exe
+D:\Other\Unity\2021.3.24f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-Shift
+C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-2850
-Successfully changed project path to: C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-Shift
-C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-Shift
+50882
+Successfully changed project path to: C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
+C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,120 +47,119 @@ C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-S
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7436] Host "[IP] 192.168.1.129 [Port] 0 [Flags] 2 [Guid] 753232417 [EditorId] 753232417 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [21016] Host "[IP] 192.168.0.107 [Port] 0 [Flags] 2 [Guid] 502427106 [EditorId] 502427106 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [7436] Host "[IP] 192.168.1.129 [Port] 0 [Flags] 2 [Guid] 753232417 [EditorId] 753232417 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [21016] Host "[IP] 192.168.0.107 [Port] 0 [Flags] 2 [Guid] 502427106 [EditorId] 502427106 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 80.86 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 143.44 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-Shift/Assets
+[Subsystems] Discovering subsystems at path D:/Other/Unity/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
     Vendor:   NVIDIA
-    VRAM:     7957 MB
-    Driver:   32.0.15.6603
+    VRAM:     12115 MB
+    Driver:   32.0.15.6636
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
+Mono path[0] = 'D:/Other/Unity/2021.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Other/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Other/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56324
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002237 seconds.
+Register platform support module: D:/Other/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Other/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004296 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 221 ms
-Refreshing native plugins compatible for Editor in 79.34 ms, found 4 plugins.
+Android Extension - Scanning For ADB Devices 343 ms
+Refreshing native plugins compatible for Editor in 140.87 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.739 seconds
+- Completed reload, in  1.168 seconds
 Domain Reload Profiling:
-	ReloadAssembly (739ms)
-		BeginReloadAssembly (56ms)
+	ReloadAssembly (1169ms)
+		BeginReloadAssembly (112ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (623ms)
-			LoadAssemblies (55ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (951ms)
+			LoadAssemblies (113ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (114ms)
+			SetupTypeCache (118ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (451ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (738ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (278ms)
+				InitializePlatformSupportModulesInManaged (435ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (79ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (61ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (141ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (109ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005448 seconds.
+Registered in 0.012783 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\Desktop\Projects Unity\Cyber-Shift\Cyber-Shift\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\Desktop\Projects Unity\Cyber-Shift\Cyber-Shift\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 81.66 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 144.01 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.979 seconds
+- Completed reload, in  1.686 seconds
 Domain Reload Profiling:
-	ReloadAssembly (979ms)
-		BeginReloadAssembly (80ms)
+	ReloadAssembly (1687ms)
+		BeginReloadAssembly (149ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (828ms)
-			LoadAssemblies (74ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1416ms)
+			LoadAssemblies (146ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (216ms)
+			SetupTypeCache (363ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (429ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (764ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (19ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (197ms)
-				ProcessInitializeOnLoadMethodAttributes (63ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				RefreshPlugins (144ms)
+				BeforeProcessingInitializeOnLoad (163ms)
+				ProcessInitializeOnLoadAttributes (310ms)
+				ProcessInitializeOnLoadMethodAttributes (125ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.06 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5545 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 55 unused Assets / (2.0 MB). Loaded Objects now: 5994.
-Memory consumption went from 229.8 MB to 227.9 MB.
-Total: 2.951100 ms (FindLiveObjects: 0.358500 ms CreateObjectMapping: 0.206800 ms MarkObjects: 2.054500 ms  DeleteObjects: 0.329800 ms)
+Unloading 52 unused Assets / (1.6 MB). Loaded Objects now: 6021.
+Memory consumption went from 241.1 MB to 239.5 MB.
+Total: 4.323800 ms (FindLiveObjects: 0.828500 ms CreateObjectMapping: 0.248800 ms MarkObjects: 2.913700 ms  DeleteObjects: 0.331900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -168,85 +167,122 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 16403.433531 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de01f939cd1c45ae71fdf9f4876e47cc') in 0.265713 seconds 
+  Time since last request: 283132.256178 seconds.
+  path: Assets/Prefab/player/object.prefab
+  artifactKey: Guid(03fb8bf843568714fb7acf40e2e7a306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/player/object.prefab using Guid(03fb8bf843568714fb7acf40e2e7a306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975ac14652fd6ed0fe173fe6e57da06e') in 0.434862 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.732846 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd38c12ac67c03b27cd6e84fbd2908ae') in 0.050986 seconds 
+  Time since last request: 89.919844 seconds.
+  path: Assets/Resources/depositphotos_100267312-stock-photo-seamless-old-rusty-metal-texture.png
+  artifactKey: Guid(f5ed4534f5e435e46bb039f245835506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/depositphotos_100267312-stock-photo-seamless-old-rusty-metal-texture.png using Guid(f5ed4534f5e435e46bb039f245835506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a92e384684f2beb727942dd55465782f') in 0.075324 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.367237 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a3bc2a94444d1587ca2e6c23528674') in 0.046315 seconds 
+  Time since last request: 0.000038 seconds.
+  path: Assets/Resources/{485D0A90-2CDF-4C22-B758-5AB98F9E9AF9}.png
+  artifactKey: Guid(5d4e44d2d093e584e95263418bc5456d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/{485D0A90-2CDF-4C22-B758-5AB98F9E9AF9}.png using Guid(5d4e44d2d093e584e95263418bc5456d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47f95e2939e33032769a2130194c5bb') in 0.031863 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.346947 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6aa7ba1e116f086c1a4d6b48d5b9a0') in 0.048190 seconds 
+  Time since last request: 0.000040 seconds.
+  path: Assets/Resources/imgonline-com-ua-2to1-WFjoScy2bos2kuc.png
+  artifactKey: Guid(fed0602cefabd6a46a59a8e284054994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/imgonline-com-ua-2to1-WFjoScy2bos2kuc.png using Guid(fed0602cefabd6a46a59a8e284054994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfbf8fdf00bf543e3e3af4085ed52e28') in 0.024889 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.523844 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a21b8f6f187ce8000bfe97d8acb0716') in 0.042346 seconds 
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/NewLayer 2.terrainlayer
+  artifactKey: Guid(33184915b1fbcc541a793e4b40b1e0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/NewLayer 2.terrainlayer using Guid(33184915b1fbcc541a793e4b40b1e0f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8c5077fadc0346f6331d5365f1a5cc') in 0.028633 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.433578 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b487ff16c136a046c68dec24e7bd8f8') in 0.050673 seconds 
+  Time since last request: 0.000030 seconds.
+  path: Assets/Resources/model.prefab
+  artifactKey: Guid(e9fa95c1de3b4a14aa490288493f5ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/model.prefab using Guid(e9fa95c1de3b4a14aa490288493f5ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '623c5e262523f0e5c8da4e6f49868b57') in 0.130576 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.367208 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43413877d2accc3eea7e85145bebaef9') in 0.049683 seconds 
+  Time since last request: 0.000031 seconds.
+  path: Assets/Resources/MODELO FINAL (5).prefab
+  artifactKey: Guid(ed837209b967f75448b27b5446c881bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/MODELO FINAL (5).prefab using Guid(ed837209b967f75448b27b5446c881bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0875ff9b42ee4032ec454889845480a6') in 0.055314 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.170388 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4942c85fef8511a08bc186f3aaab15b7') in 0.054184 seconds 
+  Time since last request: 0.000038 seconds.
+  path: Assets/Resources/{9E58C435-1217-4DA6-8A04-393B959F0E78} (1).png
+  artifactKey: Guid(d21b205f4e801ed41a48ed1c154501b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/{9E58C435-1217-4DA6-8A04-393B959F0E78} (1).png using Guid(d21b205f4e801ed41a48ed1c154501b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4fbf808d9c746a30a496ef46af1eb95') in 0.023303 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.974552 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57450d69f7a6389466e754b75a9ef228') in 0.044414 seconds 
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/NewLayer 4.terrainlayer
+  artifactKey: Guid(26aeababffb94ea4b9e586c4f318c745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/NewLayer 4.terrainlayer using Guid(26aeababffb94ea4b9e586c4f318c745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9642d1e5cf691e81da2557b887f1c1a') in 0.020816 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1923.135961 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab
-  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf10685f09703a56b49975fb6bd1ac2b') in 0.040626 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/{305B2AE9-A2FF-4536-8D28-0084FF81F021}.png
+  artifactKey: Guid(b19d16654c660e140b9db838963968ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/{305B2AE9-A2FF-4536-8D28-0084FF81F021}.png using Guid(b19d16654c660e140b9db838963968ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529a489dc3fb9e8986a0889def55b610') in 0.021758 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Wall.prefab
-  artifactKey: Guid(a14ce7945256d3246bf1a633c5cdb643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Wall.prefab using Guid(a14ce7945256d3246bf1a633c5cdb643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8b12e3e3b1fb441b39b8843e342d6f') in 0.033388 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab
-  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef12efed6d2e4ea6e2180ca1724b1448') in 0.041842 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1832.549158 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab
-  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec48a0ad58b283be0d27bda5e491f77d') in 0.054059 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.648974 seconds.
-  path: Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab
-  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/space-station-modular-assets-student-work/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b27be601545fd8c3822f412dd3916b42') in 0.050457 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013204 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.575 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1576ms)
+		BeginReloadAssembly (215ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1249ms)
+			LoadAssemblies (158ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (365ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (554ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (135ms)
+				ProcessInitializeOnLoadAttributes (282ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.08 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5380 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (1.5 MB). Loaded Objects now: 6084.
+Memory consumption went from 234.4 MB to 232.9 MB.
+Total: 4.347200 ms (FindLiveObjects: 0.703800 ms CreateObjectMapping: 0.258600 ms MarkObjects: 3.139500 ms  DeleteObjects: 0.243600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

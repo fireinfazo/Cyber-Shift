@@ -1,0 +1,897 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 32581 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Other\Unity\2021.3.24f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+50882
+Successfully changed project path to: C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
+C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [27908] Host "[IP] 192.168.0.107 [Port] 0 [Flags] 2 [Guid] 1710799852 [EditorId] 1710799852 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [27908] Host "[IP] 192.168.0.107 [Port] 0 [Flags] 2 [Guid] 1710799852 [EditorId] 1710799852 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 157.54 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
+[Subsystems] Discovering subsystems at path D:/Other/Unity/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12115 MB
+    Driver:   32.0.15.6636
+Initialize mono
+Mono path[0] = 'D:/Other/Unity/2021.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Other/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Other/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Other/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Other/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004524 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 333 ms
+Refreshing native plugins compatible for Editor in 141.57 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.169 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1169ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (946ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (121ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (729ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (424ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (142ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (109ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.013064 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 146.28 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.680 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1681ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1431ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (369ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (107ms)
+			SetupLoadedEditorAssemblies (747ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (146ms)
+				BeforeProcessingInitializeOnLoad (163ms)
+				ProcessInitializeOnLoadAttributes (308ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.06 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5545 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 52 unused Assets / (1.6 MB). Loaded Objects now: 6021.
+Memory consumption went from 241.0 MB to 239.5 MB.
+Total: 4.003200 ms (FindLiveObjects: 0.753100 ms CreateObjectMapping: 0.194900 ms MarkObjects: 2.746300 ms  DeleteObjects: 0.308000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 283364.569776 seconds.
+  path: Assets/Resources/space-station-modular-assets-student-work/Corner_column.prefab
+  artifactKey: Guid(f3ac7247914e457429b0fa819ab0461f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/space-station-modular-assets-student-work/Corner_column.prefab using Guid(f3ac7247914e457429b0fa819ab0461f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c066561aa2c6a49b6537a32e014c121') in 0.377958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.662333 seconds.
+  path: Assets/Resources/Materials/depositphotos_100267312-stock-photo-seamless-old-rusty-metal-texture.mat
+  artifactKey: Guid(742697f965cfedb4686b9a8b2177fa99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Materials/depositphotos_100267312-stock-photo-seamless-old-rusty-metal-texture.mat using Guid(742697f965cfedb4686b9a8b2177fa99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ecb6a18e1cbbc4324f5504a0ffaeed') in 0.036908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.868573 seconds.
+  path: Assets/Resources/dumpsters-and-trash/source/trash_1.fbx
+  artifactKey: Guid(03472de741434ea4783fd86794b2078d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/dumpsters-and-trash/source/trash_1.fbx using Guid(03472de741434ea4783fd86794b2078d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ec2ac59acf564167f25530f185892a') in 0.355894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.724063 seconds.
+  path: Assets/Prefab/Room/space-station-modular-assets-student-work/Corner_column.prefab
+  artifactKey: Guid(f3ac7247914e457429b0fa819ab0461f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/space-station-modular-assets-student-work/Corner_column.prefab using Guid(f3ac7247914e457429b0fa819ab0461f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '800b2b1de59f2ed363f53d08747df9d7') in 0.053701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Prefab/Room/space-station-modular-assets-student-work/Сorridor_wall.prefab
+  artifactKey: Guid(b1c44398744cfbb44a8d62cc014b5775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/space-station-modular-assets-student-work/Сorridor_wall.prefab using Guid(b1c44398744cfbb44a8d62cc014b5775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81c9650de293dab68172b3b3d85b9d3') in 0.019043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Prefab/Room/space-station-modular-assets-student-work/Door.prefab
+  artifactKey: Guid(53ecf57668c570644826f8f822e2ff68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/space-station-modular-assets-student-work/Door.prefab using Guid(53ecf57668c570644826f8f822e2ff68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df7e0d3387eb8841f8f245157015fe0') in 0.082184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Prefab/Room/space-station-modular-assets-student-work/Room_3.prefab
+  artifactKey: Guid(60f8405fa7828094187148fad3ec7097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/space-station-modular-assets-student-work/Room_3.prefab using Guid(60f8405fa7828094187148fad3ec7097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61d201c9177b68e57b71fea0b1c74d5d') in 0.086191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 79.451560 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afcb6117a2ab84fe2399d3821fe20d1e') in 0.064492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.624765 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c30b00a754725140341b784a8e3d3daa') in 0.062020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.045998 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90488a6db6397e7cef6a0fd607bc66be') in 0.074788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.995478 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0d899b7c18a5e80ecea0a3cf51d88c') in 0.062294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.059872 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e654ff66ef2d3a4f1c6f7f91e367b5') in 0.062351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.223405 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cfedac362c756552321962ec6879b60') in 0.063517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.523549 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07e478785f4caff88d15684ff629a5fa') in 0.060623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.597335 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf563c3e604545f2c8868b442596445') in 0.071724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.929315 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7865e45bdcaa2bd36424963013258097') in 0.076063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 501.241879 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dca2d696a74f3b8b3ed502e74a4a546') in 0.062252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.366216 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b4fafac4d2249c7d9076a7f9e91e62') in 0.060242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.918104 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a6675c22a7c8faebf3b44c21a2b466') in 0.005111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.462724 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877d2c12e55ef2c7fd3f63db50d90de3') in 0.062301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.734012 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f1e61232942964e0606970ff09bbee') in 0.062829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.958568 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2035cb5c8fbd628e26be6c49fc4aa6f') in 0.062738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.565003 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58927072ccac2c65478619c0df0c3032') in 0.069170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.168490 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c120be9e4f14325231082ecf1391fe29') in 0.064656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.751863 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc536ed690ca323bf5c7658bf546959c') in 0.061447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.955481 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '296ce099ac0bf964ad0cf04fd5d73f96') in 0.063578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.190046 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dca23f66c0fd226a2e2cd38095c9c7c') in 0.068719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.790863 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d50bcc3f7a997476f5548bf4e5f856') in 0.066946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.593321 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e54a24d7a5b0c614bbc397aaf4fd00d') in 0.061682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.300093 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8791dc9c8457543f3fd68a3dcdde626a') in 0.064025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.216865 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc740909c5155d4381e94c6751c0e63') in 0.062451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.344989 seconds.
+  path: Assets/Prefab/Room/Corridor_long.prefab
+  artifactKey: Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_long.prefab using Guid(37bc7243ff02f9e46b3fd65f1cd05318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1616deb478bdce27e4b01f981d089e') in 0.066251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.310424 seconds.
+  path: Assets/Prefab/Room/Corridor 1.prefab
+  artifactKey: Guid(3dc504bb4bf4a3048b72d64240a405e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor 1.prefab using Guid(3dc504bb4bf4a3048b72d64240a405e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ff6fdd4bcc22e9f62b1f0ef8b0c9d9') in 0.067016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.417127 seconds.
+  path: Assets/Prefab/Room/Corridor_with_dor.prefab
+  artifactKey: Guid(3dc504bb4bf4a3048b72d64240a405e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_with_dor.prefab using Guid(3dc504bb4bf4a3048b72d64240a405e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1abcbfb445c61a28105977ab7bef3167') in 0.076341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1011.040097 seconds.
+  path: Assets/Prefab/Room/Corridor_with_dor.prefab
+  artifactKey: Guid(3dc504bb4bf4a3048b72d64240a405e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor_with_dor.prefab using Guid(3dc504bb4bf4a3048b72d64240a405e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748739457a170807826ce7f0ad45d6db') in 0.070928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 74.816592 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc0526b2342ac16f676e74e8cdf248d6') in 0.078590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.104560 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df22853405c27c41e14b606077dd6fb4') in 0.075406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.119977 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673ab7f303cf29d484d97fe0bef9bc51') in 0.076940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.711970 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '660ff4169550aae0db5fece87c1049bc') in 0.076441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.924206 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a965c3b0365afb9b7b66a414666c238') in 0.079256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.335005 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e14ec2a251ee4fa7b1a234dd69aa3a8') in 0.074953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.970014 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9320197802d9b3bc325da565a2bbaa6') in 0.077469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.936004 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ebe426f54873c13ac620e88cd78e89f') in 0.079080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.322853 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81cbc3857f724bf61282bbfd5789c789') in 0.078234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.510549 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac755ec417f95e59bb7aa297d4d03876') in 0.086179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.116147 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a7b6351dc6a547d0db82bb8dea4dbd') in 0.076813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.963019 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e763a2283ece6e593d666a2ccae37489') in 0.078869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.910052 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ca2e6e2e96e339128f4c95f3d54e35') in 0.076044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.929323 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb2d23e8edffb8ad1a244fce0b8ad499') in 0.079373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.873782 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69838df2c364e93fa84fafddff4ccd94') in 0.091784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 415.161768 seconds.
+  path: Assets/Scripts/Tools
+  artifactKey: Guid(b5c6594ca8b85f0478a2798acb05971e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools using Guid(b5c6594ca8b85f0478a2798acb05971e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c580663142c515e84fa9bb9e66d71eb') in 0.011680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.819238 seconds.
+  path: Assets/Scripts/Tools/LevelEditorTool.cs
+  artifactKey: Guid(4e449bc7e6adb784caeb98253eafd42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/LevelEditorTool.cs using Guid(4e449bc7e6adb784caeb98253eafd42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e4e6b23f9ab5da1f585e68c3cb39652') in 0.016319 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010449 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.482 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1482ms)
+		BeginReloadAssembly (194ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1186ms)
+			LoadAssemblies (136ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (352ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (536ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (276ms)
+				ProcessInitializeOnLoadMethodAttributes (103ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.55 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5381 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (1.5 MB). Loaded Objects now: 6117.
+Memory consumption went from 235.3 MB to 233.7 MB.
+Total: 3.976600 ms (FindLiveObjects: 0.633500 ms CreateObjectMapping: 0.198900 ms MarkObjects: 2.930200 ms  DeleteObjects: 0.213000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 87.624773 seconds.
+  path: Assets/Scripts/Tools/RoomConnector.cs
+  artifactKey: Guid(1f00467361e45a34d8ab20e9e11f67d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomConnector.cs using Guid(1f00467361e45a34d8ab20e9e11f67d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d0cf1fdd100a20c4d6e8c22dc780e1') in 0.016869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.254975 seconds.
+  path: Assets/Scripts/Tools/RoomConnector.cs
+  artifactKey: Guid(1f00467361e45a34d8ab20e9e11f67d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomConnector.cs using Guid(1f00467361e45a34d8ab20e9e11f67d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dac9cdb80143298a34d97a6e3e9ab0a') in 0.008756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.242243 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac17cb818b1ebed2b5d75d24cf156b64') in 0.009357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.653119 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee2a8f24baf0b99274d95f8bad9de86') in 0.002485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.003209 seconds.
+  path: Assets/Prefab/Room/Room_1.prefab
+  artifactKey: Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Room_1.prefab using Guid(2eb00343a2bc00f4eb17efd5991cb8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca47cfbd8992b2436542e95b8d7328f') in 0.306950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.952669 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3677d790e087a3fe180d95e71f23326b') in 0.002629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.790887 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f4d5382b54bd0e12fea617836a8fc9') in 0.002701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.035940 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2632da52451b769477a0ead96b49095') in 0.002764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.825052 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6777f6948fa6b38c08158d0561199e0d') in 0.002994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 104.926389 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db4696af79c5560d616bf9c781b688a') in 0.002711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.896964 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff666039a99d7bec91d26e4ba6f9ffb4') in 0.002592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.041646 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d084fe29fce89edd0dfd88e6597c93c') in 0.002644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.502889 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f86c47ffce2e1943cc6aa8439fb478d') in 0.002626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.917018 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd67b3c285e903b7295c4356f2aac984f') in 0.002539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.102315 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8d413c43a80756de5f4b9b974b57acd') in 0.002629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.563573 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30d4dacb2e978234cd85b71600ab5229') in 0.003045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 117.685586 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca48696c96214b21fdc1ce4442eb5c36') in 0.002505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.309403 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da811274d124b32c5ca62e2a63382bf') in 0.003175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.772115 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32f1f12e99fb886492d82b15773fc27') in 0.002843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.445443 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c279187712897f900a7e5988c4f92072') in 0.003977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.703714 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308039707ea4b270e403ba358f2f1845') in 0.002881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.343673 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1b976fa00e97135e6919c03e7e44b0f') in 0.002708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.702611 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff4179e414065e40558c0a9ecd98147') in 0.003475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.506530 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f83ab5f5f44942fd821baf1c92fe935') in 0.002593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.662422 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef675ed3626c34e8f8906ca2506ef62') in 0.003878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.022694 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '339056de2fcfb2cabc00a80f87122a0e') in 0.002630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.506339 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001166 seconds  code(4) message(Build asset version error: assets/scripts/tools/roompoint.cs in SourceAssetDB has modification time of '2025-01-21T18:18:44.2917644Z' while content on disk has modification time of '2025-01-21T18:18:44.6524443Z')
+  ERROR: Build asset version error: assets/scripts/tools/roompoint.cs in SourceAssetDB has modification time of '2025-01-21T18:18:44.2917644Z' while content on disk has modification time of '2025-01-21T18:18:44.6524443Z'
+========================================================================
+Received Import Request.
+  Time since last request: 46.294286 seconds.
+  path: Assets/Scripts/Tools/RoomPoint.cs
+  artifactKey: Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomPoint.cs using Guid(29b6e28c690b64543bb3cbfa63624180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60112b6c5edf8a44415b5a84dfd7631e') in 0.002641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 220.730111 seconds.
+  path: Assets/Scripts/Tools/RoomEmpty.cs
+  artifactKey: Guid(80bf107d4615ccf4abe4b02d120755f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomEmpty.cs using Guid(80bf107d4615ccf4abe4b02d120755f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0657a2965c257a611a18aed9dfec246f') in 0.009197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.796253 seconds.
+  path: Assets/Scripts/Tools/RoomEmpty.cs
+  artifactKey: Guid(80bf107d4615ccf4abe4b02d120755f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomEmpty.cs using Guid(80bf107d4615ccf4abe4b02d120755f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f61de0500a503a9ceb9b77fbe86d4bf') in 0.002441 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010865 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.469 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1470ms)
+		BeginReloadAssembly (189ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1169ms)
+			LoadAssemblies (139ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (341ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (515ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (261ms)
+				ProcessInitializeOnLoadMethodAttributes (99ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.53 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5383 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (1.5 MB). Loaded Objects now: 6163.
+Memory consumption went from 235.4 MB to 233.8 MB.
+Total: 3.665700 ms (FindLiveObjects: 0.658100 ms CreateObjectMapping: 0.172900 ms MarkObjects: 2.620900 ms  DeleteObjects: 0.212900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 327.258923 seconds.
+  path: Assets/Scripts/Tools/RoomConnector.cs
+  artifactKey: Guid(1f00467361e45a34d8ab20e9e11f67d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomConnector.cs using Guid(1f00467361e45a34d8ab20e9e11f67d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca2ca9742bade4615cdb747d371f786') in 0.009768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.115359 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c609dccfe9b4a0e2d6f5a7dc76dfbb7a') in 0.302252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.441279 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed1463b006a5654923f3b544bfce8433') in 0.058935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.804482 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1596dacaab329dd0479b66c9f71d227e') in 0.080937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.311890 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0adc10319cd246d035d7554cecef6f') in 0.063413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.133748 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47f609dac48aa30d4b919560b7c9148') in 0.062557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.739101 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3061f0abaf793441e1d38524dd16061') in 0.062439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.822220 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '025e49524aaebb6936b3539490f1bf1f') in 0.064502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.597336 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c992ed552cfa4c9324e0e144567de7d') in 0.063516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 729.198844 seconds.
+  path: Assets/Prefab/Room/Corridor.prefab
+  artifactKey: Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/Corridor.prefab using Guid(2c4925dd04abdb745978f321eeb41451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a79220c1a6cf7cd161f1597e9b2fe4') in 0.063066 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010447 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.455 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1456ms)
+		BeginReloadAssembly (190ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1162ms)
+			LoadAssemblies (141ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (343ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (510ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (260ms)
+				ProcessInitializeOnLoadMethodAttributes (101ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.76 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5383 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (1.5 MB). Loaded Objects now: 6207.
+Memory consumption went from 235.4 MB to 233.9 MB.
+Total: 3.846200 ms (FindLiveObjects: 0.664200 ms CreateObjectMapping: 0.187800 ms MarkObjects: 2.750300 ms  DeleteObjects: 0.242500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 101.893633 seconds.
+  path: Assets/Scripts/Tools/RoomConnector.cs
+  artifactKey: Guid(1f00467361e45a34d8ab20e9e11f67d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tools/RoomConnector.cs using Guid(1f00467361e45a34d8ab20e9e11f67d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9a2aa65ce07fb8e2115400b031cbcd2') in 0.009643 seconds 
