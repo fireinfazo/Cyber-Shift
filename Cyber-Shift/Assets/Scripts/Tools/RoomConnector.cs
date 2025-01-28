@@ -5,10 +5,10 @@ using UnityEditor.EditorTools;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-[EditorTool("RoomConector", typeof(RoomPoint))]
-public class RoadControllerEditor : EditorTool
+[EditorTool("Room Conector", typeof(RoomEmpty))]
+public class RoomConnector : EditorTool
 {
-    public Texture2D ToolIcon;
+    [SerializeField] private Texture2D ToolIcon;
 
     private Transform oldTarget;
     private RoomPoint[] allPoints;
