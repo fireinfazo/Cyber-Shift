@@ -16,7 +16,7 @@ public class RoomPoint : MonoBehaviour
         switch (type)
         {
             case ConnectingType.Room:
-                Gizmos.color = Color.blue;
+                Gizmos.color = Color.red;
                 break;
             case ConnectingType.Corridor:
                 Gizmos.color = Color.green;
@@ -27,7 +27,6 @@ public class RoomPoint : MonoBehaviour
             default:
                 break;
         }
-        Gizmos.color = Color.red;
-        Gizmos.DrawSphere(transform.position, 0.2f);
+        Gizmos.DrawSphere(transform.position, 0.1f);
     }
 }
