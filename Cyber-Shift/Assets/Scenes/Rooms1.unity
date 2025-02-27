@@ -3463,6 +3463,22 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6254359153244984193, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254359153244984193, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Name
+      value: Delay
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254359153244984193, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254359153244984193, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6254359153244984199, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -3677,7 +3693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8968857884180156193, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8968857884180156193, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3685,11 +3701,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8968857884180156193, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8968857884180156193, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8968857884180156193, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5896,6 +5912,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7229676675437818763, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: sparkSound
+      value: 
+      objectReference: {fileID: 8300000, guid: de84c9d2d7dacfc4db1ac1b477098413, type: 3}
     - target: {fileID: 7302649825086412666, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -21039,7 +21059,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -24228,6 +24248,7 @@ GameObject:
   - component: {fileID: 7962663450639983934}
   - component: {fileID: 7962663450639983935}
   - component: {fileID: 7962663450639983936}
+  - component: {fileID: 7962663450639983937}
   m_Layer: 0
   m_Name: SCi-Fi Shotgun
   m_TagString: Untagged
@@ -24268,6 +24289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 4794422721074653130, guid: 4302ee7aea605584aa7b250c510bf935, type: 3}
+  weaponSource: {fileID: 7962663450639983937}
   firePoint: {fileID: 1216184467}
   bulletCount: 10
   spreadAngle: 10
@@ -24295,6 +24317,102 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!82 &7962663450639983937
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7334886689104576388}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0f949e4a4a9d486478fdadd6dcce01e1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &8196080117495062085
 PrefabInstance:
   m_ObjectHideFlags: 0

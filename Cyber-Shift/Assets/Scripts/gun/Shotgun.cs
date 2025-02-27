@@ -3,6 +3,7 @@ using UnityEngine;
 public class Shotgun : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private AudioSource weaponSource;
     [SerializeField] private Transform firePoint;
     [SerializeField] private int bulletCount = 10;
     [SerializeField] private float spreadAngle = 10f;
@@ -15,6 +16,7 @@ public class Shotgun : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             FireShotgun();
+            weaponSource.Play();
         }
     }
 

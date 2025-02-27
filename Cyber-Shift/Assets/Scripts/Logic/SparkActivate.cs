@@ -5,6 +5,8 @@ using UnityEngine;
 public class SparkActivate : MonoBehaviour
 {
     [SerializeField] private List<GameObject> sparks;
+    [SerializeField] private AudioClip sparkSound;
+    private AudioSource sparkSource;
     void Start()
     {
         ActivateSparks();
@@ -17,6 +19,7 @@ public class SparkActivate : MonoBehaviour
         for (int i = 0; i < num; i++)
         {
             sparks[i].SetActive(true);
+            sparks[i].AddComponent<AudioSource>().PlayOneShot(sparkSound);
         }
     }
 }
