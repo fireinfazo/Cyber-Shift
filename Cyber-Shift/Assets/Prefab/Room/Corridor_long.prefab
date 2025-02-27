@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 3065986818314501503}
   - component: {fileID: 4180548156390103439}
   - component: {fileID: 4945090255641905576}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 570757214390628179}
   - component: {fileID: 4920124277064146051}
   - component: {fileID: 1440008371457625824}
+  - component: {fileID: 1866910668252949015}
   m_Layer: 0
   m_Name: GEO_Wall_LP_Wall_Full_LP
   m_TagString: Untagged
@@ -384,6 +385,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1866910668252949015
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079276086681897798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7649510735369587295, guid: f71b6f0950e4f404aaa6bfd80e0dcf7c, type: 3}
 --- !u!1 &1569628841449164579
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +455,7 @@ GameObject:
   - component: {fileID: 748029981425835765}
   - component: {fileID: 8087814321572921993}
   - component: {fileID: 4036940415680903976}
+  - component: {fileID: 3585573395883331767}
   m_Layer: 0
   m_Name: GEO_Wall_LP_Wall_Full_LP
   m_TagString: Untagged
@@ -512,6 +528,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3585573395883331767
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899627202203342076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7649510735369587295, guid: f71b6f0950e4f404aaa6bfd80e0dcf7c, type: 3}
 --- !u!1 &2126966344743713040
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +553,7 @@ GameObject:
   - component: {fileID: 6841061935514644297}
   - component: {fileID: 104146530940094960}
   - component: {fileID: 704446314960692710}
+  - component: {fileID: 89138087392296846}
   m_Layer: 0
   m_Name: GEO_Wall_LP_Wall_Full_LP
   m_TagString: Untagged
@@ -595,6 +626,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &89138087392296846
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126966344743713040}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7649510735369587295, guid: f71b6f0950e4f404aaa6bfd80e0dcf7c, type: 3}
 --- !u!1 &2239265473680594911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,6 +1906,7 @@ GameObject:
   - component: {fileID: 5799508557174086544}
   - component: {fileID: 2400869283682041295}
   - component: {fileID: 2991989731804106740}
+  - component: {fileID: 3254871418421852368}
   m_Layer: 0
   m_Name: GEO_Wall_LP_Wall_Full_LP
   m_TagString: Untagged
@@ -1933,6 +1979,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3254871418421852368
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5096712255467046244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7649510735369587295, guid: f71b6f0950e4f404aaa6bfd80e0dcf7c, type: 3}
 --- !u!1 &5528887835499637740
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,7 +2621,7 @@ GameObject:
   - component: {fileID: 1348754406995645137}
   - component: {fileID: 5737593409429246887}
   - component: {fileID: 7020656419298620174}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

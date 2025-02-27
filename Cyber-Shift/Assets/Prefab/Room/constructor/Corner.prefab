@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 4725644412739058520}
   - component: {fileID: 120585750988497906}
   - component: {fileID: 7880358610101950525}
+  - component: {fileID: 1827825211453826772}
   m_Layer: 0
   m_Name: GEO_Wall_CornerIn_LP_Wall_CornerIIn_LP
   m_TagString: Untagged
@@ -295,6 +296,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1827825211453826772
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345643822097596037}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8907029931263669106, guid: f71b6f0950e4f404aaa6bfd80e0dcf7c, type: 3}
 --- !u!1 &7693624407061534343
 GameObject:
   m_ObjectHideFlags: 0

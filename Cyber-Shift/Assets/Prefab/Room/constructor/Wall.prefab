@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 6238804508067063893}
   - component: {fileID: 159512782709180346}
   - component: {fileID: 3249824628845007998}
+  - component: {fileID: 4858671023603452022}
   m_Layer: 0
   m_Name: GEO_Wall_LP_Wall_Full_LP
   m_TagString: Untagged
@@ -370,6 +371,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4858671023603452022
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5403968518942753393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7649510735369587295, guid: f71b6f0950e4f404aaa6bfd80e0dcf7c, type: 3}
 --- !u!1 &6651425316424248636
 GameObject:
   m_ObjectHideFlags: 0

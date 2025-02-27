@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 716437293512966598}
   - component: {fileID: 3311974308000140848}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1713484763937180160}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3356367914926936114}
   - component: {fileID: 707535137994187973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8129913327684074300}
   - component: {fileID: 2183594313867208486}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,8 @@ GameObject:
   - component: {fileID: 373572516070160100}
   - component: {fileID: 673994662904898880}
   - component: {fileID: 5924173450674813481}
-  m_Layer: 0
+  - component: {fileID: 7506569236741631054}
+  m_Layer: 6
   m_Name: GEO_Wall_LP_FlooePlate (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,6 +252,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7506569236741631054
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532261540942255959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2062809958522943716, guid: f71b6f0950e4f404aaa6bfd80e0dcf7c, type: 3}
 --- !u!1 &7654969167197785042
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +277,7 @@ GameObject:
   - component: {fileID: 3443944792086170054}
   - component: {fileID: 7352860360948857794}
   - component: {fileID: 272376812323476505}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +341,8 @@ GameObject:
   - component: {fileID: 7999593238719856960}
   - component: {fileID: 1538742850367419967}
   - component: {fileID: 650334860483653117}
-  m_Layer: 0
+  - component: {fileID: 7425229353377170253}
+  m_Layer: 6
   m_Name: GEO_Wall_LP_FlooePlate (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,6 +414,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7425229353377170253
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8087085429217735527}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2062809958522943716, guid: f71b6f0950e4f404aaa6bfd80e0dcf7c, type: 3}
 --- !u!1 &9073210960593777087
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3798876865717119214}
   - component: {fileID: 7488831594723212131}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
