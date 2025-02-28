@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'ru' Physical Memory: 32507 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 32581 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.24f1\Editor\Unity.exe
+D:\Other\Unity\2021.3.24f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker3
 -projectPath
-C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-Shift
+C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-5950
-Successfully changed project path to: C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-Shift
-C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-Shift
+58959
+Successfully changed project path to: C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
+C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,120 +47,119 @@ C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-S
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [27312] Host "[IP] 192.168.0.114 [Port] 0 [Flags] 2 [Guid] 3867801346 [EditorId] 3867801346 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12028] Host "[IP] 192.168.0.107 [Port] 0 [Flags] 2 [Guid] 2277379567 [EditorId] 2277379567 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [27312] Host "[IP] 192.168.0.114 [Port] 0 [Flags] 2 [Guid] 3867801346 [EditorId] 3867801346 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12028] Host "[IP] 192.168.0.107 [Port] 0 [Flags] 2 [Guid] 2277379567 [EditorId] 2277379567 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 106.02 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 179.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/user/Desktop/Projects Unity/Cyber-Shift/Cyber-Shift/Cyber-Shift/Cyber-Shift/Assets
+[Subsystems] Discovering subsystems at path D:/Other/Unity/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
     Vendor:   NVIDIA
-    VRAM:     7957 MB
-    Driver:   32.0.15.6603
+    VRAM:     12115 MB
+    Driver:   32.0.15.6636
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
+Mono path[0] = 'D:/Other/Unity/2021.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Other/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Other/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56836
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002668 seconds.
+Register platform support module: D:/Other/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Other/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004762 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 227 ms
-Refreshing native plugins compatible for Editor in 105.41 ms, found 4 plugins.
+Android Extension - Scanning For ADB Devices 345 ms
+Refreshing native plugins compatible for Editor in 158.10 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.827 seconds
+- Completed reload, in  1.240 seconds
 Domain Reload Profiling:
-	ReloadAssembly (827ms)
-		BeginReloadAssembly (71ms)
+	ReloadAssembly (1241ms)
+		BeginReloadAssembly (129ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (682ms)
-			LoadAssemblies (70ms)
+		EndReloadAssembly (1001ms)
+			LoadAssemblies (130ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (92ms)
+			SetupTypeCache (130ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (525ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (769ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (297ms)
+				InitializePlatformSupportModulesInManaged (441ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (105ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (78ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
+				RefreshPlugins (158ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (114ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004740 seconds.
+Registered in 0.014783 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\Desktop\Projects Unity\Cyber-Shift\Cyber-Shift\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\Desktop\Projects Unity\Cyber-Shift\Cyber-Shift\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 116.11 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 157.10 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.243 seconds
+- Completed reload, in  1.792 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1243ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (1794ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (1057ms)
-			LoadAssemblies (82ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1534ms)
+			LoadAssemblies (135ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
+			SetupTypeCache (404ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (84ms)
-			SetupLoadedEditorAssemblies (537ms)
+			RebuildScriptCaches (129ms)
+			SetupLoadedEditorAssemblies (794ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
+				InitializePlatformSupportModulesInManaged (19ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (116ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (218ms)
-				ProcessInitializeOnLoadMethodAttributes (81ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				RefreshPlugins (157ms)
+				BeforeProcessingInitializeOnLoad (178ms)
+				ProcessInitializeOnLoadAttributes (323ms)
+				ProcessInitializeOnLoadMethodAttributes (111ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.05 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6134 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (2.7 MB). Loaded Objects now: 6591.
-Memory consumption went from 326.7 MB to 324.0 MB.
-Total: 4.225200 ms (FindLiveObjects: 0.350400 ms CreateObjectMapping: 0.219500 ms MarkObjects: 2.849200 ms  DeleteObjects: 0.805100 ms)
+Unloading 53 unused Assets / (2.3 MB). Loaded Objects now: 6610.
+Memory consumption went from 264.1 MB to 261.8 MB.
+Total: 4.853000 ms (FindLiveObjects: 0.888700 ms CreateObjectMapping: 0.391500 ms MarkObjects: 3.132500 ms  DeleteObjects: 0.438900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -168,46 +167,40 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 89109.708031 seconds.
-  path: Assets/Prefab/Room/Corridor_with_door.prefab
-  artifactKey: Guid(604c816f96bb05142952fb7594218f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Room/Corridor_with_door.prefab using Guid(604c816f96bb05142952fb7594218f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '019dea21045133f4ad4aea0f64202050') in 0.295428 seconds 
+  Time since last request: 314058.589168 seconds.
+  path: Assets/Prefab/Room/constructor/Door.prefab
+  artifactKey: Guid(9f81848b69463c645a0e95bb0ad0770d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/constructor/Door.prefab using Guid(9f81848b69463c645a0e95bb0ad0770d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da130c975a2a7dc6536c9a6020c6d0b') in 0.399099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 206.202261 seconds.
+  path: Assets/Prefab/Room/constructor/custom/Custom Room 2.prefab
+  artifactKey: Guid(7b664c956529323469881f91c3af2fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/constructor/custom/Custom Room 2.prefab using Guid(7b664c956529323469881f91c3af2fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a755b2ec838402540cf5b84fbc6cb9') in 0.144859 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000031 seconds.
-  path: Assets/Prefab/Room/Big_room_3.prefab
-  artifactKey: Guid(3d724f21121282343a1a3f66d0dc960d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Room/Big_room_3.prefab using Guid(3d724f21121282343a1a3f66d0dc960d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a5d12fc0f7d82c21b3207b6e26be9b') in 0.055990 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.681800 seconds.
-  path: Assets/Prefab/Room/constructor/Door.prefab
-  artifactKey: Guid(9f81848b69463c645a0e95bb0ad0770d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Room/constructor/Door.prefab using Guid(9f81848b69463c645a0e95bb0ad0770d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3afd9c663a878d80eef7232682219b3') in 0.052309 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Prefab/Room/constructor/Floor Small.prefab
-  artifactKey: Guid(ab6808aacc841e548a36351d798ffcc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Room/constructor/Floor Small.prefab using Guid(ab6808aacc841e548a36351d798ffcc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '142d7d57148d9af25f770983cd6ca96e') in 0.009583 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.267928 seconds.
   path: Assets/Prefab/Room/constructor/custom/custom-hugeroom_2.prefab
   artifactKey: Guid(caa70cddcdabcd64d9ed18c4a2ff7e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Room/constructor/custom/custom-hugeroom_2.prefab using Guid(caa70cddcdabcd64d9ed18c4a2ff7e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d90c19fe1e3506059a5a66d6dcaf299') in 0.064738 seconds 
+Start importing Assets/Prefab/Room/constructor/custom/custom-hugeroom_2.prefab using Guid(caa70cddcdabcd64d9ed18c4a2ff7e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd8708932dbad4468be4b03f082dfbb') in 0.106836 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
+  Time since last request: 0.000039 seconds.
   path: Assets/Prefab/Room/constructor/custom/custom-smallroom_1.prefab
   artifactKey: Guid(a75ec0cc78d81374ebde306e57ca1b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Room/constructor/custom/custom-smallroom_1.prefab using Guid(a75ec0cc78d81374ebde306e57ca1b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec3a7bdaacdcd297ec18cbd147152bf') in 0.055678 seconds 
+Start importing Assets/Prefab/Room/constructor/custom/custom-smallroom_1.prefab using Guid(a75ec0cc78d81374ebde306e57ca1b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ec415204eaa1c986dd0b79aef3c6d9') in 0.111800 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Prefab/Room/constructor/custom/custom-hugeroom_6.prefab
+  artifactKey: Guid(356cda78ea7a5e249b426138146119e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Room/constructor/custom/custom-hugeroom_6.prefab using Guid(356cda78ea7a5e249b426138146119e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c03f92bbb3081ba36aec2e628017b4b') in 0.140535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
   path: Assets/Prefab/Room/constructor/custom/custom-hugeroom_5.prefab
   artifactKey: Guid(566235139355c17468a5702796d52e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Room/constructor/custom/custom-hugeroom_5.prefab using Guid(566235139355c17468a5702796d52e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4279539efabf9207e52ab762f8d7f660') in 0.064598 seconds 
+Start importing Assets/Prefab/Room/constructor/custom/custom-hugeroom_5.prefab using Guid(566235139355c17468a5702796d52e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd54af28fa74feef7c4f65b28f62584a1') in 0.116834 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

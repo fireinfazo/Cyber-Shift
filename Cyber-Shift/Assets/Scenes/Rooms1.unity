@@ -3661,7 +3661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8891203402201985313, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8915257905885896635, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18117,15 +18117,13 @@ MonoBehaviour:
   playerCam: {fileID: 5225425282095379970}
   orientation: {fileID: 1165136686343452981}
   moveSpeed: 1000
-  maxSpeed: 1000
+  maxSpeed: 10
   grounded: 0
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
   counterMovement: 0.175
   maxSlopeAngle: 35
-  slideForce: 400
-  slideCounterMovement: 0.2
   jumpForce: 100
 --- !u!4 &1165136686343452981
 Transform:
@@ -20802,7 +20800,7 @@ GameObject:
   - component: {fileID: 5225425281432171976}
   m_Layer: 0
   m_Name: PlayerContainer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21043,7 +21041,7 @@ GameObject:
   - component: {fileID: 5225425282095379969}
   m_Layer: 0
   m_Name: MainCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24307,7 +24305,7 @@ MonoBehaviour:
   spreadAngle: 10
   verticalSpreadAngle: 5
   bulletSpeed: 40
-  bulletLifetime: 1
+  bulletLifetime: 0.3
 --- !u!95 &7962663450639983936
 Animator:
   serializedVersion: 5

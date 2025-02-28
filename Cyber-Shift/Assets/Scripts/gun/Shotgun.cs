@@ -9,7 +9,7 @@ public class Shotgun : MonoBehaviour
     [SerializeField] private float spreadAngle = 10f;
     [SerializeField] private float verticalSpreadAngle = 5f;
     [SerializeField] private float bulletSpeed = 20f;
-    [SerializeField] private float bulletLifetime = 2f;
+    [SerializeField] private float bulletLifetime = 0.5f;
 
     void Update()
     {
