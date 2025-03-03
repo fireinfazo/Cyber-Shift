@@ -1,0 +1,469 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 16283 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.24f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+F:/aravay vay/Cyber-Shift/Cyber-Shift
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51811
+Successfully changed project path to: F:/aravay vay/Cyber-Shift/Cyber-Shift
+F:/aravay vay/Cyber-Shift/Cyber-Shift
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19148] Host "[IP] 26.110.12.76 [Port] 0 [Flags] 2 [Guid] 1313654136 [EditorId] 1313654136 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4AU6A7T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [19148] Host "[IP] 26.110.12.76 [Port] 0 [Flags] 2 [Guid] 1313654136 [EditorId] 1313654136 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4AU6A7T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 252.53 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/aravay vay/Cyber-Shift/Cyber-Shift/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Vendor:   NVIDIA
+    VRAM:     4004 MB
+    Driver:   32.0.15.6614
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.018752 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 310.27 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.671 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1672ms)
+		BeginReloadAssembly (190ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1251ms)
+			LoadAssemblies (185ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (296ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (752ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (310ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (307ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.016656 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\aravay vay\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\aravay vay\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 327.22 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.877 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3879ms)
+		BeginReloadAssembly (345ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (3226ms)
+			LoadAssemblies (309ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1076ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (259ms)
+			SetupLoadedEditorAssemblies (1525ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (327ms)
+				BeforeProcessingInitializeOnLoad (314ms)
+				ProcessInitializeOnLoadAttributes (620ms)
+				ProcessInitializeOnLoadMethodAttributes (225ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 2.17 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6361 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (2.3 MB). Loaded Objects now: 6815.
+Memory consumption went from 264.0 MB to 261.7 MB.
+Total: 6.770500 ms (FindLiveObjects: 0.725500 ms CreateObjectMapping: 0.384300 ms MarkObjects: 4.850000 ms  DeleteObjects: 0.809100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 14828.728579 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/model.dae
+  artifactKey: Guid(1b0c856083e434f449eb12f21edd71e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/model.dae using Guid(1b0c856083e434f449eb12f21edd71e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c16d0cb6d870bab1a421227c6a7fc6b') in 0.718852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_TabletGlass_metallic.jpg
+  artifactKey: Guid(757e959af8e415f42aa133c4ef38931d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_TabletGlass_metallic.jpg using Guid(757e959af8e415f42aa133c4ef38931d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92d81feb73304f94ee71069492df2f8d') in 0.162015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_Tablet_metallic.jpg
+  artifactKey: Guid(4520c022a2c3c9a4c96c6566d3c32e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_Tablet_metallic.jpg using Guid(4520c022a2c3c9a4c96c6566d3c32e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e82a95f7b7640ce45dabd0fec963373') in 0.076519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_Tablet_emissive.jpg
+  artifactKey: Guid(4b0e8f8f8f8e30544b8cde982a8ea4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_Tablet_emissive.jpg using Guid(4b0e8f8f8f8e30544b8cde982a8ea4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b677c129eee68fcc96db58946c2571e') in 0.064599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Resources/horse-basemesh/Materials/Horse_diffuse_3.mat
+  artifactKey: Guid(0d831e06110226942996d8510ff63425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/horse-basemesh/Materials/Horse_diffuse_3.mat using Guid(0d831e06110226942996d8510ff63425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb99423fb7504513aa34f219eeb6fa37') in 0.143631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_Tablet_roughness.jpg
+  artifactKey: Guid(ef3cab3b4a2f53145a2977f264ec7546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_Tablet_roughness.jpg using Guid(ef3cab3b4a2f53145a2977f264ec7546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ba11ee4f6b2c51e22aa6f4948731aa') in 0.081913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_OpacityText_albedo.jpg
+  artifactKey: Guid(7a16fc411979b684899264f818de62eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_OpacityText_albedo.jpg using Guid(7a16fc411979b684899264f818de62eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aff06fd50f161b09416a95f0efae8ade') in 0.034076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_OpacityText_emissive.jpg
+  artifactKey: Guid(884f4c0809b4eef4ca639665acbc31be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_OpacityText_emissive.jpg using Guid(884f4c0809b4eef4ca639665acbc31be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56aacecee90baaf1ac3eb99e3aed1d79') in 0.064308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_TabletGlass_opacity.jpg
+  artifactKey: Guid(fc2eb9f4a029a074db82830341648d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_TabletGlass_opacity.jpg using Guid(fc2eb9f4a029a074db82830341648d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a617d361170f4b8f0fcaecb9917d2537') in 0.068419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_TabletGlass_roughness.jpg
+  artifactKey: Guid(447a43ba75feac847b01079876287e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_TabletGlass_roughness.jpg using Guid(447a43ba75feac847b01079876287e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567eff9dfa44cf150af11f36a492fa3a') in 0.048643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_TabletGlass_albedo.jpg
+  artifactKey: Guid(9549f3313f6368d409e93b8809b00f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_TabletGlass_albedo.jpg using Guid(9549f3313f6368d409e93b8809b00f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dffcef74fe390a3aa904f6e7e450419b') in 0.061286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_OpacityText_opacity.jpg
+  artifactKey: Guid(782046e3ee6e5454e8f53ad2e97b8e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_OpacityText_opacity.jpg using Guid(782046e3ee6e5454e8f53ad2e97b8e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5183a8ef62be070d1c8c01c24ac108cc') in 0.070184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_TabletGlass_AO.jpg
+  artifactKey: Guid(35f2b4f50c954474a9a6695e8f6ec420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/low-poly-sci-fi-tablet/source/model/model/textures/MAT_TabletGlass_AO.jpg using Guid(35f2b4f50c954474a9a6695e8f6ec420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10679e4b1f3ed97c7315bcfc7e801420') in 0.052346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.770209 seconds.
+  path: Assets/Resources/sci-fi-barrels-pack/source/image_3.png
+  artifactKey: Guid(4be7135798bbf6e49969179a8ce0c7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-barrels-pack/source/image_3.png using Guid(4be7135798bbf6e49969179a8ce0c7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c29f3021bc19668cb26671244d60853b') in 0.053089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.767756 seconds.
+  path: Assets/Resources/sci-fi-barrels-pack/source/Materials/image_3.mat
+  artifactKey: Guid(28e3f24ce8acbd14d89563e1ed84c406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-barrels-pack/source/Materials/image_3.mat using Guid(28e3f24ce8acbd14d89563e1ed84c406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '721edf81731867343b4e726f3091b606') in 0.045039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.325032 seconds.
+  path: Assets/Resources/sci-fi-barrels-pack/textures/barrel_2_bake_normal_2k.png
+  artifactKey: Guid(5d905b56426c3054c99f4eedbbfba273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-barrels-pack/textures/barrel_2_bake_normal_2k.png using Guid(5d905b56426c3054c99f4eedbbfba273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f12787cd07e0035fc55192bf5ccd48') in 0.079012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.711319 seconds.
+  path: Assets/Resources/sci-fi-medical-scanner2/textures/1123.jpg
+  artifactKey: Guid(f1cff16a9b0cee54aa8f01ee3cc0d43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-medical-scanner2/textures/1123.jpg using Guid(f1cff16a9b0cee54aa8f01ee3cc0d43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918e138d49cccf88103f0efc25b0993d') in 0.100454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 101.444838 seconds.
+  path: Assets/Resources/sci-fi-medical-scanner2/textures/New Material.mat
+  artifactKey: Guid(e2e431f75f8306d4197dfa6e18ded32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-medical-scanner2/textures/New Material.mat using Guid(e2e431f75f8306d4197dfa6e18ded32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac9a16a9def7d2c23513851f5c7c00a') in 0.028103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 466.324530 seconds.
+  path: Assets/Resources/sci-fi-chair/textures/001_SciFiChair_LowPolypoly_SciFiChair_Base.png
+  artifactKey: Guid(a004777e667e47348a3192d3b2377ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-chair/textures/001_SciFiChair_LowPolypoly_SciFiChair_Base.png using Guid(a004777e667e47348a3192d3b2377ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c95870bec366720a55c5a162042329') in 0.051689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Resources/sci-fi-chair/textures/001_SciFiChair_LowPolypoly_SciFiChair_Norm.png
+  artifactKey: Guid(98561160cc619334e9c45b3b2433cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-chair/textures/001_SciFiChair_LowPolypoly_SciFiChair_Norm.png using Guid(98561160cc619334e9c45b3b2433cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee8f7f9855473e374394bd2d50b61ad') in 0.046532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Resources/sci-fi-chair/textures/001_SciFiChair_LowPolypoly_SciFiChair_Roug.png
+  artifactKey: Guid(65138ca7df596674c9a5335f7e578c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-chair/textures/001_SciFiChair_LowPolypoly_SciFiChair_Roug.png using Guid(65138ca7df596674c9a5335f7e578c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb8a59948be6db1dd9bf2df097d99fd') in 0.030503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 942.720983 seconds.
+  path: Assets/Resources/simple-sci-fi-wall-panel/source/WallPanel/PanelBump.png
+  artifactKey: Guid(7ee0aeb3ec110154f8dec2ea24b1a563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/simple-sci-fi-wall-panel/source/WallPanel/PanelBump.png using Guid(7ee0aeb3ec110154f8dec2ea24b1a563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8fbd39f18f5adb2c1fa771b199bb83') in 0.122153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Resources/simple-sci-fi-wall-panel/source/WallPanel/WallpanelEmission.png
+  artifactKey: Guid(5ccc92f791a626c43a16c1b1c2636732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/simple-sci-fi-wall-panel/source/WallPanel/WallpanelEmission.png using Guid(5ccc92f791a626c43a16c1b1c2636732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45d186f08704562f27e48ed2a3d66f2d') in 0.058115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Resources/simple-sci-fi-wall-panel/source/WallPanel/WallPanel.fbx
+  artifactKey: Guid(09f373608e73c6048af5abcfc5373f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/simple-sci-fi-wall-panel/source/WallPanel/WallPanel.fbx using Guid(09f373608e73c6048af5abcfc5373f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d93d5f631f231bc2d3e35b676f08839') in 2.008505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3536.781013 seconds.
+  path: Assets/Resources/sci-fi-control-panel
+  artifactKey: Guid(f48a30cc899ae464c9821aad6fdc2650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel using Guid(f48a30cc899ae464c9821aad6fdc2650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28cf185d0d14aec39384aabb2d675a56') in 0.028751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.029149 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source
+  artifactKey: Guid(5efe560b6b80b6a43aeb79606d7d2b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source using Guid(5efe560b6b80b6a43aeb79606d7d2b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cdbe2b0fcfefeb61f562fdb51e640f3') in 0.002988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.065312 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model
+  artifactKey: Guid(237d17a07caf68f47aaf2d986922cfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model using Guid(237d17a07caf68f47aaf2d986922cfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ad56147f81be596140c5ffb54ee67ed') in 0.003581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.578920 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model
+  artifactKey: Guid(392c246251e230a4db62ffb6671c6eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model using Guid(392c246251e230a4db62ffb6671c6eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6118e38c87552ed80beb4af83a7cfaa') in 0.002934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.039897 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/model.dae
+  artifactKey: Guid(f1c41c66ec582d040a0c5c4173b7be62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/model.dae using Guid(f1c41c66ec582d040a0c5c4173b7be62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1b5cc5703471aece72b77175b6f0c53') in 0.374037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.611407 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/textures
+  artifactKey: Guid(5e15d35405fcd014ea42cd2b82759605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/textures using Guid(5e15d35405fcd014ea42cd2b82759605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '962b138970370e052a71dd0667b84ebd') in 0.015392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.038631 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/textures/M_ControlPanel_albedo.jpg
+  artifactKey: Guid(c34f9a5198a417b4881776b6f593ec9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/textures/M_ControlPanel_albedo.jpg using Guid(c34f9a5198a417b4881776b6f593ec9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ce7a98fdc790fb2ef6c2401fced66a') in 0.048881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/textures/M_ControlPanel_roughness.jpg
+  artifactKey: Guid(2adca1e5537337144bf5dde8707f5cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/textures/M_ControlPanel_roughness.jpg using Guid(2adca1e5537337144bf5dde8707f5cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0f411bd7cb780466795da4b3c82cdd') in 0.051041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/textures/M_ControlPanel_normal.png
+  artifactKey: Guid(e8583b62eaa14ed4c8c482d1d89d6ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/textures/M_ControlPanel_normal.png using Guid(e8583b62eaa14ed4c8c482d1d89d6ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec03ca1e7d491fc8df5a5bb17b1cc4ff') in 0.035505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/textures/M_ControlPanel_metallic.jpg
+  artifactKey: Guid(763632e401873bc4c961fc241110fe3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/textures/M_ControlPanel_metallic.jpg using Guid(763632e401873bc4c961fc241110fe3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596ba5c06e88b0f79763a08039fe2cf9') in 0.038402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/textures/M_ControlPanel_emissive.jpg
+  artifactKey: Guid(3ecba4c4ad507bd42aeda38add254e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/textures/M_ControlPanel_emissive.jpg using Guid(3ecba4c4ad507bd42aeda38add254e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95ffa3cf5a03e45979a66a7302609b0') in 0.043411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.266938 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/textures/control.mat
+  artifactKey: Guid(ef86e378f75c0674abb17f2e7a3e694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/textures/control.mat using Guid(ef86e378f75c0674abb17f2e7a3e694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0f0a816aab2559ab81e2171e42c0eea') in 0.030057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.743218 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/textures/control.mat
+  artifactKey: Guid(ef86e378f75c0674abb17f2e7a3e694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/textures/control.mat using Guid(ef86e378f75c0674abb17f2e7a3e694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '595032b33ec516336e11473b630c8b99') in 0.046761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 234.270924 seconds.
+  path: Assets/Resources/sci-fi-control-panel/textures/M_ControlPanel_albedo.jpeg
+  artifactKey: Guid(54c41188f6cf6f64e819ea92e6d6a347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/textures/M_ControlPanel_albedo.jpeg using Guid(54c41188f6cf6f64e819ea92e6d6a347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2315fb2c0cec30f5d0375227474884') in 0.047309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Resources/sci-fi-control-panel/textures/M_ControlPanel_emissive.jpeg
+  artifactKey: Guid(210e7d926a8076c42935002a1b905bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/textures/M_ControlPanel_emissive.jpeg using Guid(210e7d926a8076c42935002a1b905bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878a829bc8b70306f8c39a937550ff0e') in 0.024660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Resources/sci-fi-control-panel/textures/M_ControlPanel_metallic.jpeg
+  artifactKey: Guid(c4b9af6f305f8e241891fc50a0874026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/textures/M_ControlPanel_metallic.jpeg using Guid(c4b9af6f305f8e241891fc50a0874026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feba72fa214022205abbec93f40289ad') in 0.029406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.533180 seconds.
+  path: Assets/Resources/sci-fi-control-panel/textures
+  artifactKey: Guid(46ed56c90fc72b643b6b92f54796db38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/textures using Guid(46ed56c90fc72b643b6b92f54796db38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aae941f1399326435c3705eb6460536') in 0.002967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.741197 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/Materials
+  artifactKey: Guid(58615b6be7fea754480acb53fcf2d787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/Materials using Guid(58615b6be7fea754480acb53fcf2d787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79e082b5631fbd0edb6c3963edeb28f') in 0.024997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.021880 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/Materials/M_ControlPanel_albedo.mat
+  artifactKey: Guid(5bbab683e5b49cd419ffd36268993419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/Materials/M_ControlPanel_albedo.mat using Guid(5bbab683e5b49cd419ffd36268993419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5492f2ca0a9b70ec77167528daf732af') in 0.030082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.673138 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/textures/control.mat
+  artifactKey: Guid(ef86e378f75c0674abb17f2e7a3e694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/textures/control.mat using Guid(ef86e378f75c0674abb17f2e7a3e694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84fc2cd34f4bbfbf2dd7979bc0cf8c28') in 1.872549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.068804 seconds.
+  path: Assets/Resources/rustbucket-desert-gonk-droid/source/model/model/textures/01 - Default_albedo.jpg
+  artifactKey: Guid(3cd347a33ed1e934995ba984eea1068f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/rustbucket-desert-gonk-droid/source/model/model/textures/01 - Default_albedo.jpg using Guid(3cd347a33ed1e934995ba984eea1068f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57d8cdf37b49026e5eb288b95be8e59') in 0.059497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Resources/rustbucket-desert-gonk-droid/source/model/model/textures/01 - Default_normal.png
+  artifactKey: Guid(f16bd6e76607c184c8851f1434c3d417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/rustbucket-desert-gonk-droid/source/model/model/textures/01 - Default_normal.png using Guid(f16bd6e76607c184c8851f1434c3d417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a2af6179aacb1e3b31b7ff3d191b6c4') in 0.152234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Resources/rustbucket-desert-gonk-droid/source/model/model/textures/01 - Default_roughness.jpg
+  artifactKey: Guid(4c68af8f5cfb97c4eb58a151739a6a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/rustbucket-desert-gonk-droid/source/model/model/textures/01 - Default_roughness.jpg using Guid(4c68af8f5cfb97c4eb58a151739a6a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e582a2e7836af640cab0a124f9d092ec') in 0.031449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.924053 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/textures/New Material 1.mat
+  artifactKey: Guid(aa1474bdd5b80f44abb4054077a2807c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/textures/New Material 1.mat using Guid(aa1474bdd5b80f44abb4054077a2807c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4286063986d1cefb4338330e19f3726') in 0.027546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 82.453559 seconds.
+  path: Assets/Resources/sci-fi-control-panel/source/model/model/textures/New Material 2.mat
+  artifactKey: Guid(c6821f3c34f939542b768a731eb12840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-control-panel/source/model/model/textures/New Material 2.mat using Guid(c6821f3c34f939542b768a731eb12840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90e7d71826708a904ff3a393212898e') in 0.025420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1515.224156 seconds.
+  path: Assets/Resources/постеры
+  artifactKey: Guid(4477969306b56da48bbb7aa5e301a6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/постеры using Guid(4477969306b56da48bbb7aa5e301a6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '020b2054a17c1ef3af8a662dc1987ba5') in 0.014148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.970203 seconds.
+  path: Assets/Resources/постеры/изображение_viber_2025-03-03_14-23-22-893.png
+  artifactKey: Guid(735ba8670d51422469b4c6f96be24484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/постеры/изображение_viber_2025-03-03_14-23-22-893.png using Guid(735ba8670d51422469b4c6f96be24484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9313643d71627132b60357ceb33a82a0') in 0.042036 seconds 
