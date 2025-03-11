@@ -30,9 +30,21 @@ public class Movement : MonoBehaviour
     float x, y;
     bool jumping;
 
+    public float dashSpeed = 30000f; 
+    private bool isDashing = false;
+    private float dashTime = 0.3f; 
+    private float dashTimeRemaining;
+    private float dashCooldown = 3f; 
+    private float dashCooldownRemaining = 0f;
+
+    public float dashFOV = 90; 
+    private float normalFOV = 60f; 
+    private float FOVChangeSpeed = 10f; 
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        normalFOV = playerCam.GetComponent<Camera>().fieldOfView;
     }
 
     void Start()
@@ -50,6 +62,7 @@ public class Movement : MonoBehaviour
     {
         MyInput();
         Look();
+        UpdateCameraFOV();
     }
 
     private void MyInput()
@@ -57,6 +70,11 @@ public class Movement : MonoBehaviour
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
         jumping = Input.GetButton("Jump");
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing && dashCooldownRemaining <= 0)
+        {
+            StartDash();
+        }
     }
 
     private void Move()
@@ -79,8 +97,37 @@ public class Movement : MonoBehaviour
 
         float multiplier = grounded ? 1f : 0.5f;
 
-        rb.AddForce(orientation.transform.forward * y * moveSpeed * Time.deltaTime * multiplier);
-        rb.AddForce(orientation.transform.right * x * moveSpeed * Time.deltaTime * multiplier);
+        if (isDashing)
+        {
+            rb.AddForce(orientation.transform.forward * y * dashSpeed * Time.deltaTime * multiplier);
+            dashTimeRemaining -= Time.deltaTime;
+            if (dashTimeRemaining <= 0)
+            {
+                StopDash();
+            }
+        }
+        else
+        {
+            rb.AddForce(orientation.transform.forward * y * moveSpeed * Time.deltaTime * multiplier);
+            rb.AddForce(orientation.transform.right * x * moveSpeed * Time.deltaTime * multiplier);
+        }
+
+        if (dashCooldownRemaining > 0)
+        {
+            dashCooldownRemaining -= Time.deltaTime;
+        }
+    }
+
+    private void StartDash()
+    {
+        isDashing = true;
+        dashTimeRemaining = dashTime;
+        dashCooldownRemaining = dashCooldown;
+    }
+
+    private void StopDash()
+    {
+        isDashing = false;
     }
 
     private void Jump()
@@ -160,6 +207,7 @@ public class Movement : MonoBehaviour
                 grounded = true;
                 normalVector = normal;
                 CancelInvoke(nameof(StopGrounded));
+                StopDash();
             }
         }
 
@@ -169,5 +217,19 @@ public class Movement : MonoBehaviour
     private void StopGrounded()
     {
         grounded = false;
+    }
+
+    private void UpdateCameraFOV()
+    {
+        Camera camera = playerCam.GetComponent<Camera>();
+
+        if (isDashing)
+        {
+            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, dashFOV, Time.deltaTime * FOVChangeSpeed);
+        }
+        else
+        {
+            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, normalFOV, Time.deltaTime * FOVChangeSpeed);
+        }
     }
 }
