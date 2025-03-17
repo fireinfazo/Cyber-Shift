@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections;  // Для использования корутин
+using System.Collections;
 
 public class EnemyHealth : MonoBehaviour
 {
