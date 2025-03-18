@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class healthBar : MonoBehaviour
 {
     public Slider healthSlider;
+    public Image Background;
     public float maxHealth = 100f;
     public float health;
     [SerializeField] private float defense = 10;
