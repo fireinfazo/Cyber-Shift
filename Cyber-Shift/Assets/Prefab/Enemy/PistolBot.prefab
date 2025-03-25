@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 1324636761022032276}
   - component: {fileID: 422804373648242840}
   m_Layer: 0
-  m_Name: TestEnemy
+  m_Name: PistolBot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,9 +200,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 3.098846
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.461735, z: 0}
 --- !u!114 &1289936815153601407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caf6c155f7b6f3247b614df7227a2bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 40
   armorPercentage: 0
   hitSound: {fileID: 8300000, guid: bed24543cfbf60249b43e8b4639e0012, type: 3}
   deathSound: {fileID: 8300000, guid: 4bcadad5141b1e04ba16e808ab906c7f, type: 3}
