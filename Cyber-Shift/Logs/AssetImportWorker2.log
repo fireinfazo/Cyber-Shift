@@ -9,11 +9,11 @@ D:\Other\Unity\2021.3.24f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker2
 -projectPath
 C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker2.log
 -srvPort
 55800
 Successfully changed project path to: C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
@@ -47,11 +47,11 @@ C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [23332] Host "[IP] 192.168.0.109 [Port] 0 [Flags] 2 [Guid] 2145355600 [EditorId] 2145355600 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16328] Host "[IP] 192.168.0.109 [Port] 0 [Flags] 2 [Guid] 1077397673 [EditorId] 1077397673 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [23332] Host "[IP] 192.168.0.109 [Port] 0 [Flags] 2 [Guid] 2145355600 [EditorId] 2145355600 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16328] Host "[IP] 192.168.0.109 [Port] 0 [Flags] 2 [Guid] 1077397673 [EditorId] 1077397673 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 187.62 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 184.28 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
 [Subsystems] Discovering subsystems at path D:/Other/Unity/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -67,79 +67,79 @@ Initialize mono
 Mono path[0] = 'D:/Other/Unity/2021.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Other/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Other/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Other/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/Other/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004900 seconds.
+Registered in 0.002670 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Android Extension - Scanning For ADB Devices 343 ms
-Refreshing native plugins compatible for Editor in 176.38 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 132.97 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.301 seconds
+- Completed reload, in  1.157 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1302ms)
-		BeginReloadAssembly (128ms)
+	ReloadAssembly (1158ms)
+		BeginReloadAssembly (85ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1057ms)
-			LoadAssemblies (128ms)
+		EndReloadAssembly (996ms)
+			LoadAssemblies (86ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (136ms)
+			SetupTypeCache (137ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (809ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (750ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (449ms)
+				InitializePlatformSupportModulesInManaged (444ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (176ms)
+				RefreshPlugins (133ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (125ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
+				ProcessInitializeOnLoadAttributes (114ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013659 seconds.
+Registered in 0.013904 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 179.72 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 175.16 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.029 seconds
+- Completed reload, in  2.028 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2030ms)
-		BeginReloadAssembly (170ms)
+	ReloadAssembly (2029ms)
+		BeginReloadAssembly (175ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (1729ms)
-			LoadAssemblies (168ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1720ms)
+			LoadAssemblies (175ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (432ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (148ms)
-			SetupLoadedEditorAssemblies (917ms)
+			RebuildScriptCaches (149ms)
+			SetupLoadedEditorAssemblies (905ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
+				InitializePlatformSupportModulesInManaged (21ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (180ms)
-				BeforeProcessingInitializeOnLoad (212ms)
-				ProcessInitializeOnLoadAttributes (372ms)
-				ProcessInitializeOnLoadMethodAttributes (128ms)
+				RefreshPlugins (175ms)
+				BeforeProcessingInitializeOnLoad (208ms)
+				ProcessInitializeOnLoadAttributes (371ms)
+				ProcessInitializeOnLoadMethodAttributes (125ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -148,12 +148,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.43 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 1.46 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6406 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 56 unused Assets / (2.3 MB). Loaded Objects now: 6883.
-Memory consumption went from 277.9 MB to 275.6 MB.
-Total: 5.306500 ms (FindLiveObjects: 0.904600 ms CreateObjectMapping: 0.336000 ms MarkObjects: 3.495300 ms  DeleteObjects: 0.569000 ms)
+Memory consumption went from 278.0 MB to 275.7 MB.
+Total: 5.330900 ms (FindLiveObjects: 0.934600 ms CreateObjectMapping: 0.468400 ms MarkObjects: 3.445400 ms  DeleteObjects: 0.481200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,58 +167,40 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1061857.981820 seconds.
-  path: Assets/Resources/Suggo Creations/RETROWAVE SKIES Lite/Shaders/Includes/MainLight.hlsl
-  artifactKey: Guid(d8ff3a33b255abf4fb6d14d5cd8eccab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Suggo Creations/RETROWAVE SKIES Lite/Shaders/Includes/MainLight.hlsl using Guid(d8ff3a33b255abf4fb6d14d5cd8eccab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac026bca196b5ee389858298f9adcafc') in 0.064836 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Resources/GabrielAguiarProductions/FreeQuickEffectsVol1/Prefabs/vfx_Lightning_02.prefab
-  artifactKey: Guid(c50f9e2c685970e4c8ebcd5fc8c7b3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GabrielAguiarProductions/FreeQuickEffectsVol1/Prefabs/vfx_Lightning_02.prefab using Guid(c50f9e2c685970e4c8ebcd5fc8c7b3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36478c3ac3ac737bd9a1abb7043269d5') in 0.328318 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Resources/sci-fi-props-pack/textures/Prop_Light_D.TGA.png
-  artifactKey: Guid(6aeeec0f2d9816e4d9de776ddcb2de78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/sci-fi-props-pack/textures/Prop_Light_D.TGA.png using Guid(6aeeec0f2d9816e4d9de776ddcb2de78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ed8adcd10aecb239c242a9f8c7446f') in 0.065140 seconds 
+  Time since last request: 1061857.960969 seconds.
+  path: Assets/Resources/PopupAsylum/PA_SciFiCombatants/_Imported3D/Vehicles/PA_ArchlightBomber.fbx
+  artifactKey: Guid(db26e966ac015b443890b9346c614e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/PopupAsylum/PA_SciFiCombatants/_Imported3D/Vehicles/PA_ArchlightBomber.fbx using Guid(db26e966ac015b443890b9346c614e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54c5556d42a6af210fb21b427163861e') in 0.643109 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000044 seconds.
-  path: Assets/Scenes/Rooms1/Lightmap-5_comp_light.exr
-  artifactKey: Guid(e8e6870fb15f79f49bb3c78cbd274481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Rooms1/Lightmap-5_comp_light.exr using Guid(e8e6870fb15f79f49bb3c78cbd274481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd771eee2b4fd13d1b7162fc3cad7785') in 0.048677 seconds 
+  path: Assets/Scenes/Rooms1/Lightmap-1_comp_light.exr
+  artifactKey: Guid(7defbdc17e40dc64d87538a64f7371d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms1/Lightmap-1_comp_light.exr using Guid(7defbdc17e40dc64d87538a64f7371d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfffbb48ac63055d6328db8f0bc6bba6') in 0.065592 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Resources/PopupAsylum/PA_SciFiCombatants/_Imported3D/Vehicles/Materials/PA_ArchlightBomberMat.mat
-  artifactKey: Guid(b24f7a066cecbf14fb1725b9b2f12f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/PopupAsylum/PA_SciFiCombatants/_Imported3D/Vehicles/Materials/PA_ArchlightBomberMat.mat using Guid(b24f7a066cecbf14fb1725b9b2f12f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '792b5d2459ff19bb9fa1ce71b2c71da9') in 0.136091 seconds 
+  Time since last request: 0.000047 seconds.
+  path: Assets/Scenes/Rooms1/LightingData.asset
+  artifactKey: Guid(c56c688ebb5a7354690e308bf26e1ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms1/LightingData.asset using Guid(c56c688ebb5a7354690e308bf26e1ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8149999fe527e5a4ffda4b926e14e7ee') in 0.014400 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Resources/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset
-  artifactKey: Guid(5cf8ae092ca54931b443bec5148f3c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset using Guid(5cf8ae092ca54931b443bec5148f3c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b085264ee1d9f1c2331fb7383d7dee22') in 0.017775 seconds 
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/Rooms1/Lightmap-2_comp_light.exr
+  artifactKey: Guid(a968e9c841969c047a49b3edeb79a190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms1/Lightmap-2_comp_light.exr using Guid(a968e9c841969c047a49b3edeb79a190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b9ae2cd07dcdb437457f1722e1723e3') in 0.035294 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000031 seconds.
-  path: Assets/Resources/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset
-  artifactKey: Guid(4c86a3366cd840348ebe8dc438570ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset using Guid(4c86a3366cd840348ebe8dc438570ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05ee162ea50541f0c5bf962b446dd57') in 0.017420 seconds 
+  path: Assets/Resources/sci-fi-props-pack/Materials/Prop_Light_D.TGA.mat
+  artifactKey: Guid(e5c1764cc974e9241b47539c9a8bde63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/sci-fi-props-pack/Materials/Prop_Light_D.TGA.mat using Guid(e5c1764cc974e9241b47539c9a8bde63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e607bd9a464fe0639201857808aedd8e') in 0.049507 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Samples/AI Navigation/1.0.0-exp.4/Build And Connect NavMesh Surfaces/Terrains/LightmapWithFog.png
-  artifactKey: Guid(8377171c01a5547358598762f90c022f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/AI Navigation/1.0.0-exp.4/Build And Connect NavMesh Surfaces/Terrains/LightmapWithFog.png using Guid(8377171c01a5547358598762f90c022f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b823df49d071c0829fc08a500d5543') in 0.028083 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Resources/GabrielAguiarProductions/FreeQuickEffectsVol1/Prefabs/vfx_Lightning_01.prefab
-  artifactKey: Guid(e84c40719cee66744925cce01bef28fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/GabrielAguiarProductions/FreeQuickEffectsVol1/Prefabs/vfx_Lightning_01.prefab using Guid(e84c40719cee66744925cce01bef28fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cebe2838b5d5dd35da647f1ec7548af0') in 0.187155 seconds 
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/Rooms1/Lightmap-3_comp_light.exr
+  artifactKey: Guid(9e06a0a3888956b4b985b9139ef59709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms1/Lightmap-3_comp_light.exr using Guid(9e06a0a3888956b4b985b9139ef59709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44fe66aab022f15acf1fe6d8d01983e') in 0.031108 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

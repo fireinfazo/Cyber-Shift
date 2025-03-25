@@ -17,7 +17,8 @@ public class SpawnTrigger : MonoBehaviour
                 }
             }
 
-            Destroy(gameObject); //крч мы не спавнили кучу мобов с 1 тригера они одноразовые
+            //Destroy(gameObject); //крч мы не спавнили кучу мобов с 1 тригера они одноразовые
+            gameObject.SetActive(false);
         }
     }
 }
