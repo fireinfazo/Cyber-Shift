@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyAi : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform player;
 
-    public LayerMask whatIsGround, whatIsPlayer, whatIsObstacle; 
+    public LayerMask whatIsGround, whatIsPlayer, whatIsObstacle;
 
     public float health;
 
