@@ -50,7 +50,6 @@ public class DoorController : MonoBehaviour
 
         if (isLookingAtObject && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("try Open");
             TryOpenDoor();
         }
     }
@@ -65,7 +64,6 @@ public class DoorController : MonoBehaviour
         {
             if (hit.collider.gameObject == interactableObject1 || hit.collider.gameObject == interactableObject2)
             {
-                Debug.Log("Hit");
                 isLookingAtObject = true;
                 return;
             }
