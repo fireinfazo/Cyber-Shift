@@ -193,6 +193,9 @@ public class Movement : MonoBehaviour
     #region Camera Methods
     private void Look()
     {
+        // ¬ращение камеры только если курсор заблокирован
+        if (!isCursorLocked) return;
+
         float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
 

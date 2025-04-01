@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Added for scene management
 
 public class WindowsManager : MonoBehaviour
 {
@@ -71,5 +72,12 @@ public class WindowsManager : MonoBehaviour
         {
             window.SetActive(false);
         }
+    }
+
+    // New method for exiting to main menu (scene 0)
+    public void ExitToMainMenu()
+    {
+        Time.timeScale = 1f; // Ensure time is running normally
+        SceneManager.LoadScene(0); // Load scene with index 0 (main menu)
     }
 }
