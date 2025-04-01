@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyAi : MonoBehaviour
 {
     public NavMeshAgent agent;
     public Transform player;
