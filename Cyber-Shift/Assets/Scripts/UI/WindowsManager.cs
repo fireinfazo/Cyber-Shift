@@ -74,10 +74,9 @@ public class WindowsManager : MonoBehaviour
         }
     }
 
-    // New method for exiting to main menu (scene 0)
     public void ExitToMainMenu()
     {
-        Time.timeScale = 1f; // Ensure time is running normally
-        SceneManager.LoadScene(0); // Load scene with index 0 (main menu)
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
     }
 }
