@@ -45,7 +45,6 @@ public class EnemyAI : MonoBehaviour
         Vector3 directionToPlayer = (player.position - transform.position).normalized;
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        // Проверяем, есть ли препятствия на пути
         if (!Physics.Raycast(transform.position, directionToPlayer, distanceToPlayer, whatIsObstacle))
         {
             return true;

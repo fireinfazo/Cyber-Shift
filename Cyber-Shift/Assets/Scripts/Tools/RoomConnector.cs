@@ -1,3 +1,4 @@
+п»ї#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -19,15 +20,13 @@ public class RoomConnector : EditorTool
         if (!SessionState.GetBool("RoomConnector_ToolTipShown", false))
         {
             SceneView.lastActiveSceneView.ShowNotification(
-                new GUIContent("Room Connector: Q - влево, E - вправо, LAlt - выбрать инструмент"),
+                new GUIContent("Room Connector: Q - ГўГ«ДєГўГ®, E - ГўДЏД‘Е•ГўГ®, LAlt - ГўЕ±ГЎД‘Е•Е€Гј ДЌГ­Е„Е€Д‘ГіД›ДєГ­Е€"),
                 3f
             );
 
-            SessionState.SetBool("RoomConnector_ToolTipShown", true); //Покажет при перезапуске
+            SessionState.SetBool("RoomConnector_ToolTipShown", true);
         }
     }
-
-
 
     public override GUIContent toolbarIcon
     {
@@ -125,3 +124,4 @@ public class RoomConnector : EditorTool
         targetTransform.rotation *= Quaternion.Euler(0, angle, 0);
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.EditorTools;
 using UnityEngine;
@@ -29,3 +30,4 @@ public static class RoomConnectorAutoSelector
         }
     }
 }
+#endif

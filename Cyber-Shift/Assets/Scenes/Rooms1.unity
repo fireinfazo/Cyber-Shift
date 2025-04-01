@@ -3117,6 +3117,11 @@ Transform:
   m_Father: {fileID: 96069987}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &208092333 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1025073630695298410, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+  m_PrefabInstance: {fileID: 319904264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &210416084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4998,6 +5003,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 96069987}
     m_Modifications:
+    - target: {fileID: 2580074315787584393, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: button1
+      value: 
+      objectReference: {fileID: 532219438}
+    - target: {fileID: 2580074315787584393, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: button2
+      value: 
+      objectReference: {fileID: 208092333}
+    - target: {fileID: 2580074315787584393, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: trigger1
+      value: 
+      objectReference: {fileID: 532219438}
+    - target: {fileID: 2580074315787584393, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: trigger2
+      value: 
+      objectReference: {fileID: 208092333}
+    - target: {fileID: 2580074315787584393, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: buttonSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9aaf08fd230d2cc4ba1197a20703c6d0, type: 3}
+    - target: {fileID: 2580074315787584393, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: triggerSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9aaf08fd230d2cc4ba1197a20703c6d0, type: 3}
+    - target: {fileID: 2580074315787584393, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: doorOpenSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6536988329269294db9ec7af0f634651, type: 3}
+    - target: {fileID: 2580074315787584393, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+      propertyPath: buttonPressSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9aaf08fd230d2cc4ba1197a20703c6d0, type: 3}
     - target: {fileID: 6446678473178883122, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
       propertyPath: m_Name
       value: Room_2
@@ -7413,6 +7450,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501377035}
   m_Mesh: {fileID: -2614481151587947806, guid: 5242ddc604fc12840a7e8e705965d25c, type: 3}
+--- !u!4 &532219438 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 141198437442885270, guid: 00c965a0381f8eb418b55d5a557c0903, type: 3}
+  m_PrefabInstance: {fileID: 319904264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &552748501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25914,11 +25956,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6383772799356509239, guid: cb52be23cbcf15543b6e34274644c286, type: 3}
       propertyPath: m_Name
-      value: MainCamera
+      value: PlayerCamera
       objectReference: {fileID: 0}
     - target: {fileID: 6383772799356509239, guid: cb52be23cbcf15543b6e34274644c286, type: 3}
       propertyPath: m_TagString
-      value: MainCamera
+      value: PlayerCamera
       objectReference: {fileID: 0}
     - target: {fileID: 6644466238016047922, guid: cb52be23cbcf15543b6e34274644c286, type: 3}
       propertyPath: m_DynamicOccludee

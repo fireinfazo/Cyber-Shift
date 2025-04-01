@@ -473,17 +473,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 4535048972813512313}
-  audioSource: {fileID: 9157665738787603781}
-  openSound: {fileID: 8300000, guid: 6536988329269294db9ec7af0f634651, type: 3}
-  denySound: {fileID: 8300000, guid: 9aaf08fd230d2cc4ba1197a20703c6d0, type: 3}
-  requiresCondition: 0
-  condition: {fileID: 0}
-  interactionRange: 3
-  interactableLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  interactableObject1: {fileID: 2578496589323882861}
-  interactableObject2: {fileID: 6392022682553535049}
+  button1: {fileID: 2367654861370680534}
+  button2: {fileID: 3393446648935933738}
+  openDuration: 10
+  buttonPressSound: {fileID: 8300000, guid: 9aaf08fd230d2cc4ba1197a20703c6d0, type: 3}
+  doorOpenSound: {fileID: 8300000, guid: 6536988329269294db9ec7af0f634651, type: 3}
 --- !u!95 &4535048972813512313
 Animator:
   serializedVersion: 5

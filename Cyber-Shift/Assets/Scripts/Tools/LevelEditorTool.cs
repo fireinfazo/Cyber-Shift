@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -15,7 +16,6 @@ public class LevelEditorTool : EditorWindow
     private float placementdistance = 0f;
     private byte index = 0;
     RaycastHit hit;
-
 
     [MenuItem("Tools/Level Editor")]
     public static void ShowWindow()
@@ -107,3 +107,4 @@ public class LevelEditorTool : EditorWindow
         Instantiate(objectToPlace, hit.point, rotation);
     }
 }
+#endif
