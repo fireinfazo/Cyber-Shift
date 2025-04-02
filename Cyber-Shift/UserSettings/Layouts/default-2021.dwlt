@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 118
+  controlID: 69
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 119
+  controlID: 70
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AnimatorControllerTool
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -191,16 +191,16 @@ MonoBehaviour:
     y: 0
     width: 1250
     height: 686
-  m_MinSize: {x: 102, y: 121}
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 11}
   - {fileID: 14}
-  m_Selected: 4
+  m_Selected: 0
   m_LastSelected: 3
 --- !u!114 &9
 MonoBehaviour:
@@ -320,7 +320,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -383,23 +383,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9adbfcff
-      m_LastClickedID: 0
-      m_ExpandedIDs: c458fcff00ecfeff2ac3fffff6faffff
+      m_SelectedIDs: a647f3ff
+      m_LastClickedID: -833626
+      m_ExpandedIDs: 9ac2f3ff8c30fcffae30fcff247cfcffd880fcff78c7fcff90c8fcffb25efeff7861feffeefaffffa202020076e404007ee50400
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Defeated
-        m_OriginalName: Defeated
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -221830
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 7}
       m_SearchString: 
@@ -530,7 +530,7 @@ MonoBehaviour:
       floating: 1
       collapsed: 0
       displayed: 0
-      snapOffset: {x: -172, y: -159}
+      snapOffset: {x: -247, y: -159}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Scene View/Camera
@@ -562,7 +562,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 0
+      displayed: 1
       snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -723,9 +723,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -17.068253, y: -3.5497503, z: 18.718412}
+    m_Target: {x: -31.816622, y: 12.690505, z: 14.634346}
     speed: 2
-    m_Value: {x: -17.068253, y: -3.5497503, z: 18.718412}
+    m_Value: {x: -31.816557, y: 12.690466, z: 14.634337}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -772,13 +772,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.34014755, y: 0.07775375, z: -0.028222227, w: 0.93674517}
+    m_Target: {x: 0.17458686, y: 0.7257102, z: -0.19963627, w: 0.6348708}
     speed: 2
-    m_Value: {x: 0.34150362, y: 0.07911425, z: -0.028850643, w: 0.9361004}
+    m_Value: {x: 0.17362994, y: 0.7259902, z: -0.19854231, w: 0.6351156}
   m_Size:
-    m_Target: 14.6172085
+    m_Target: 5.403701
     speed: 2
-    m_Value: 14.6172085
+    m_Value: 5.1710057
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -796,7 +796,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 0
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.28961825, y: 0.17139363, z: -0.052790828, w: 0.9402155}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1129,22 +1129,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animation/Enemy
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Animation/Enemy
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 18170300
-    m_LastClickedID: 202520
-    m_ExpandedIDs: 00000000227b0100247b0100267b0100287b01002a7b01002c7b01002e7b0100307b0100327b0100347b0100367b0100387b01003a7b01003c7b01003e7b0100407b0100427b0100447b0100467b0100487b01004a7b01004c7b01004e7b0100507b0100527b0100547b0100567b0100587b01005a7b01005c7b01005e7b0100607b0100627b0100ba7b0100
+    scrollPos: {x: 0, y: 334}
+    m_SelectedIDs: ee7c0100
+    m_LastClickedID: 97518
+    m_ExpandedIDs: 00000000887c01008a7c01008c7c01008e7c0100907c0100927c0100947c0100967c0100987c01009a7c01009c7c01009e7c0100a07c0100a27c0100a47c0100a67c0100a87c0100aa7c0100ac7c0100ae7c0100b07c0100b27c0100b47c0100b67c0100b87c0100ba7c0100bc7c0100be7c0100c07c0100c27c0100c47c0100c67c0100c87c0100ca7c0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1172,7 +1172,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000227b0100247b0100267b0100287b01002a7b01002c7b01002e7b0100307b0100327b0100347b0100367b0100387b01003a7b01003c7b01003e7b0100407b0100427b0100447b0100467b0100487b01004a7b01004c7b01004e7b0100507b0100527b0100547b0100567b0100587b01005a7b01005c7b01005e7b0100607b0100627b0100
+    m_ExpandedIDs: 00000000887c01008a7c01008c7c01008e7c0100907c0100927c0100947c0100967c0100987c01009a7c01009c7c01009e7c0100a07c0100a27c0100a47c0100a67c0100a87c0100aa7c0100ac7c0100ae7c0100b07c0100b27c0100b47c0100b67c0100b87c0100ba7c0100bc7c0100be7c0100c07c0100c27c0100c47c0100c67c0100c87c0100ca7c0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
