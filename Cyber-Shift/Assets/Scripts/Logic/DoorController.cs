@@ -20,7 +20,7 @@ public class DoorController : MonoBehaviour
     private void Awake()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.spatialBlend = 1f; // 3D sound
+        audioSource.spatialBlend = 1f;
 
         if (playerCamera == null)
             playerCamera = GameObject.FindGameObjectWithTag("PlayerCamera")?.GetComponent<Camera>();
