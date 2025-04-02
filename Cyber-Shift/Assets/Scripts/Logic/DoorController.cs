@@ -2,96 +2,78 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
+    [Header("Main Settings")]
     [SerializeField] private Animator doorAnimator;
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip openSound;
-    [SerializeField] private AudioClip denySound;
-    [SerializeField] private bool requiresCondition = false;
-    [SerializeField] private InteractionCondition condition;
-    [SerializeField] private float interactionRange = 3f;
-    [SerializeField] private LayerMask interactableLayer;
-    [SerializeField] private GameObject interactableObject1;
-    [SerializeField] private GameObject interactableObject2;
+    [SerializeField] private Transform button1;
+    [SerializeField] private Transform button2;
+    [SerializeField] private float openDuration = 10f;
 
-    private bool isLookingAtObject = false;
-    private Transform playerCamera;
+    [Header("Audio")]
+    [SerializeField] private AudioClip buttonPressSound;
+    [SerializeField] private AudioClip doorOpenSound;
 
-    void Start()
+    private AudioSource audioSource;
+    private bool isReady = true;
+    private static Camera playerCamera;
+    private Transform currentHoveredButton;
+
+    private void Awake()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            Transform cameraTransform = player.transform.Find("MainCamera");
-            if (cameraTransform != null)
-            {
-                playerCamera = cameraTransform;
-            }
-            else
-            {
-                playerCamera = Camera.main?.transform;
-            }
-        }
-        else
-        {
-            playerCamera = Camera.main?.transform;
-        }
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.spatialBlend = 1f; // 3D sound
 
-        if (audioSource == null)
+        if (playerCamera == null)
+            playerCamera = GameObject.FindGameObjectWithTag("PlayerCamera")?.GetComponent<Camera>();
+    }
+
+    private void Update()
+    {
+        CheckButtonHover();
+
+        if (Input.GetKeyDown(KeyCode.E) && currentHoveredButton != null && isReady)
         {
-            audioSource = gameObject.AddComponent<AudioSource>();
+            PressButton();
         }
     }
 
-    void Update()
+    private void CheckButtonHover()
     {
-        if (playerCamera == null) return;
+        if (playerCamera == null || !isReady) return;
 
-        CheckForInteractable();
-
-        if (isLookingAtObject && Input.GetKeyDown(KeyCode.E))
-        {
-            TryOpenDoor();
-        }
+        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
+        currentHoveredButton = Physics.Raycast(ray, out RaycastHit hit, 3f)
+                            && (hit.transform == button1 || hit.transform == button2)
+                            ? hit.transform : null;
     }
 
-    private void CheckForInteractable()
+    private void PressButton()
     {
-        Ray ray = new Ray(playerCamera.position, playerCamera.forward);
-        RaycastHit hit;
-        Debug.DrawRay(ray.origin, ray.direction * interactionRange, Color.green);
-
-        if (Physics.Raycast(ray, out hit, interactionRange, interactableLayer))
-        {
-            if (hit.collider.gameObject == interactableObject1 || hit.collider.gameObject == interactableObject2)
-            {
-                isLookingAtObject = true;
-                return;
-            }
-        }
-
-        isLookingAtObject = false;
+        isReady = false;
+        PlaySound(buttonPressSound);
+        TriggerDoorOpen();
+        Invoke(nameof(ResetDoor), openDuration);
     }
 
-    private void TryOpenDoor()
+    private void TriggerDoorOpen()
     {
-        if (!requiresCondition || (condition != null && condition.IsMet()))
-        {
-            doorAnimator.SetTrigger("Open");
-            if (openSound != null)
-                audioSource.PlayOneShot(openSound);
-        }
-        else
-        {
-            if (denySound != null)
-                audioSource.PlayOneShot(denySound);
-        }
+        doorAnimator.SetTrigger("Open");
+        PlaySound(doorOpenSound);
     }
-}
 
-public class InteractionCondition : MonoBehaviour
-{
-    public virtual bool IsMet()
+    private void ResetDoor()
     {
-        return false;
+        isReady = true;
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (clip != null && audioSource != null)
+            audioSource.PlayOneShot(clip);
+    }
+
+    private void OnValidate()
+    {
+        if (doorAnimator == null)
+            doorAnimator = GetComponent<Animator>();
     }
 }

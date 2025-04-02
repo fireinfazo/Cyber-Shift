@@ -83,15 +83,15 @@ MonoBehaviour:
   orientation: {fileID: 15941504410784513}
   moveSpeed: 1000
   maxSpeed: 10
-  grounded: 0
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
   counterMovement: 0.175
   maxSlopeAngle: 35
   jumpForce: 100
   dashSpeed: 30000
   dashFOV: 80
+  grounded: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &7584371519897540060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,9 +297,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.33
-  m_Height: 1.7052742
+  m_Height: 1.943557
   m_Direction: 1
-  m_Center: {x: 0, y: 0.3526371, z: 0}
+  m_Center: {x: 0, y: 0.4717785, z: 0}
 --- !u!114 &8191701201323050027
 MonoBehaviour:
   m_ObjectHideFlags: 0

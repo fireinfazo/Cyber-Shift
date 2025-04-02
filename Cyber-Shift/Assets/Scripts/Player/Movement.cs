@@ -3,44 +3,64 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    #region Camera Settings
     public Transform playerCam;
     public Transform orientation;
-
-    private Rigidbody rb;
-
     private float xRotation;
     private float sensitivity = 50f;
     private float sensMultiplier = 1f;
+    #endregion
 
+    #region Movement Settings
     public float moveSpeed = 4500;
     public float maxSpeed = 20;
-    public bool grounded;
-    public LayerMask whatIsGround;
-
     public float counterMovement = 0.175f;
     private float threshold = 0.01f;
     public float maxSlopeAngle = 35f;
-
     private Vector3 normalVector = Vector3.up;
+    #endregion
 
+    #region Jump Settings
     private bool readyToJump = true;
     private float jumpCooldown = 0.25f;
     public float jumpForce = 550f;
+    private bool jumping;
+    #endregion
 
-    float x, y;
-    bool jumping;
-
+    #region Dash Settings
     public float dashSpeed = 30000f;
     private bool isDashing = false;
     private float dashTime = 0.3f;
     private float dashTimeRemaining;
     private float dashCooldown = 3f;
     private float dashCooldownRemaining = 0f;
+    #endregion
 
+    #region FOV Settings
     public float dashFOV = 90;
     private float normalFOV = 60f;
     private float FOVChangeSpeed = 10f;
+    #endregion
 
+    #region Ground Check
+    public bool grounded;
+    public LayerMask whatIsGround;
+    #endregion
+
+    #region Input Variables
+    private float x, y;
+    #endregion
+
+    #region Cursor Control
+    private bool isCursorLocked = true;
+    #endregion
+
+    #region Components
+    private Rigidbody rb;
+    #endregion
+
+    // ===== INITIALIZATION =====
+    #region Initialization
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -49,10 +69,14 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
+        UpdateCursorState();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+    #endregion
 
+    // ===== MAIN UPDATE LOOPS =====
+    #region Update Methods
     private void FixedUpdate()
     {
         Move();
@@ -63,8 +87,16 @@ public class Movement : MonoBehaviour
         MyInput();
         Look();
         UpdateCameraFOV();
-    }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ToggleCursorState();
+        }
+    }
+    #endregion
+
+    // ===== MOVEMENT LOGIC =====
+    #region Movement Methods
     private void MyInput()
     {
         x = Input.GetAxisRaw("Horizontal");
@@ -117,7 +149,10 @@ public class Movement : MonoBehaviour
             dashCooldownRemaining -= Time.deltaTime;
         }
     }
+    #endregion
 
+    // ===== DASH FUNCTIONS =====
+    #region Dash Methods
     private void StartDash()
     {
         isDashing = true;
@@ -129,7 +164,10 @@ public class Movement : MonoBehaviour
     {
         isDashing = false;
     }
+    #endregion
 
+    // ===== JUMP FUNCTIONS =====
+    #region Jump Methods
     private void Jump()
     {
         if (grounded && readyToJump)
@@ -149,9 +187,15 @@ public class Movement : MonoBehaviour
     {
         readyToJump = true;
     }
+    #endregion
 
+    // ===== CAMERA CONTROL =====
+    #region Camera Methods
     private void Look()
     {
+        // ¬ращение камеры только если курсор заблокирован
+        if (!isCursorLocked) return;
+
         float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
 
@@ -165,6 +209,23 @@ public class Movement : MonoBehaviour
         orientation.transform.localRotation = Quaternion.Euler(0, desiredX, 0);
     }
 
+    private void UpdateCameraFOV()
+    {
+        Camera camera = playerCam.GetComponent<Camera>();
+
+        if (isDashing)
+        {
+            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, dashFOV, Time.deltaTime * FOVChangeSpeed);
+        }
+        else
+        {
+            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, normalFOV, Time.deltaTime * FOVChangeSpeed);
+        }
+    }
+    #endregion
+
+    // ===== PHYSICS HELPERS =====
+    #region Physics Calculations
     private void CounterMovement(float x, float y, Vector2 mag)
     {
         if (!grounded || jumping) return;
@@ -193,7 +254,10 @@ public class Movement : MonoBehaviour
 
         return new Vector2(xMag, yMag);
     }
+    #endregion
 
+    // ===== GROUND COLLISION =====
+    #region Ground Check Methods
     private void OnCollisionStay(Collision other)
     {
         int layer = other.gameObject.layer;
@@ -218,18 +282,28 @@ public class Movement : MonoBehaviour
     {
         grounded = false;
     }
+    #endregion
 
-    private void UpdateCameraFOV()
+    // ===== CURSOR CONTROL =====
+    #region Cursor Methods
+    private void ToggleCursorState()
     {
-        Camera camera = playerCam.GetComponent<Camera>();
+        isCursorLocked = !isCursorLocked;
+        UpdateCursorState();
+    }
 
-        if (isDashing)
+    private void UpdateCursorState()
+    {
+        if (isCursorLocked)
         {
-            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, dashFOV, Time.deltaTime * FOVChangeSpeed);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
         else
         {
-            camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, normalFOV, Time.deltaTime * FOVChangeSpeed);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
+    #endregion
 }
