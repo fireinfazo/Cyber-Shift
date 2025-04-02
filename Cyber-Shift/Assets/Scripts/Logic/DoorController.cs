@@ -12,15 +12,15 @@ public class DoorController : MonoBehaviour
     [SerializeField] private AudioClip buttonPressSound;
     [SerializeField] private AudioClip doorOpenSound;
 
-    private AudioSource audioSource;
+    [SerializeField] private AudioSource audioSource;
     private bool isReady = true;
     private static Camera playerCamera;
     private Transform currentHoveredButton;
 
     private void Awake()
     {
-        audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.spatialBlend = 1f;
+        //audioSource = gameObject.AddComponent<AudioSource>();
+        //audioSource.spatialBlend = 1f;
 
         if (playerCamera == null)
             playerCamera = GameObject.FindGameObjectWithTag("PlayerCamera")?.GetComponent<Camera>();
