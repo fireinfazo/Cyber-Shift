@@ -6,20 +6,40 @@ public class SettingsUIController : MonoBehaviour
     [SerializeField] private Toggle musicToggle;
     [SerializeField] private Slider volumeSlider;
 
-    private void Start()
+    private void OnEnable()
     {
-        // Ожидаем инициализации SettingsManager
         if (SettingsManager.Instance == null)
         {
-            Debug.LogError("SettingsManager not initialized!");
+            Debug.LogError("SettingsManager not found!");
             return;
         }
 
-        musicToggle.isOn = SettingsManager.Instance.IsMusicEnabled;
-        volumeSlider.value = SettingsManager.Instance.MusicVolume;
+        UpdateUI();
 
         musicToggle.onValueChanged.AddListener(OnMusicToggleChanged);
         volumeSlider.onValueChanged.AddListener(OnVolumeSliderChanged);
+        SettingsManager.Instance.OnSettingsChanged += UpdateUI;
+    }
+
+    private void OnDisable()
+    {
+        if (musicToggle != null)
+            musicToggle.onValueChanged.RemoveListener(OnMusicToggleChanged);
+
+        if (volumeSlider != null)
+            volumeSlider.onValueChanged.RemoveListener(OnVolumeSliderChanged);
+
+        if (SettingsManager.Instance != null)
+            SettingsManager.Instance.OnSettingsChanged -= UpdateUI;
+    }
+
+    private void UpdateUI()
+    {
+        if (musicToggle != null && volumeSlider != null)
+        {
+            musicToggle.isOn = SettingsManager.Instance.IsMusicEnabled;
+            volumeSlider.value = SettingsManager.Instance.MusicVolume;
+        }
     }
 
     private void OnMusicToggleChanged(bool isOn)
@@ -30,11 +50,5 @@ public class SettingsUIController : MonoBehaviour
     private void OnVolumeSliderChanged(float value)
     {
         SettingsManager.Instance.SetMusicVolume(value);
-    }
-
-    private void OnDestroy()
-    {
-        musicToggle.onValueChanged.RemoveListener(OnMusicToggleChanged);
-        volumeSlider.onValueChanged.RemoveListener(OnVolumeSliderChanged);
     }
 }

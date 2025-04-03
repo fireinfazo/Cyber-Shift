@@ -10,6 +10,7 @@ public class SettingsManager : MonoBehaviour
             if (_instance == null)
             {
                 _instance = FindObjectOfType<SettingsManager>();
+
                 if (_instance == null)
                 {
                     GameObject obj = new GameObject("SettingsManager");
@@ -42,27 +43,45 @@ public class SettingsManager : MonoBehaviour
 
     public void SetMusicEnabled(bool enabled)
     {
-        IsMusicEnabled = enabled;
-        SaveSettings();
-        OnSettingsChanged?.Invoke();
+        if (IsMusicEnabled != enabled)
+        {
+            IsMusicEnabled = enabled;
+            SaveSettings();
+            OnSettingsChanged?.Invoke();
+        }
     }
 
     public void SetMusicVolume(float volume)
     {
-        MusicVolume = Mathf.Clamp01(volume);
-        SaveSettings();
-        OnSettingsChanged?.Invoke();
+        volume = Mathf.Clamp01(volume);
+        if (MusicVolume != volume)
+        {
+            MusicVolume = volume;
+            SaveSettings();
+            OnSettingsChanged?.Invoke();
+        }
     }
 
     private void LoadSettings()
     {
         IsMusicEnabled = PlayerPrefs.GetInt("MusicEnabled", 1) == 1;
         MusicVolume = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
+        OnSettingsChanged?.Invoke();
     }
 
     private void SaveSettings()
     {
         PlayerPrefs.SetInt("MusicEnabled", IsMusicEnabled ? 1 : 0);
         PlayerPrefs.SetFloat("MusicVolume", MusicVolume);
+        PlayerPrefs.Save();
+    }
+
+    private void OnDestroy()
+    {
+        if (_instance == this)
+        {
+            _instance = null;
+            OnSettingsChanged = null;
+        }
     }
 }
