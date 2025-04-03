@@ -25,6 +25,8 @@ public class Shotgun : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return;
+
         if (Input.GetButtonDown("Fire1") && canShoot && !isReloading && ammo > 0)
         {
             FireShotgun();

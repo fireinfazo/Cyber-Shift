@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement; // Added for scene management
 
 public class WindowsManager : MonoBehaviour
 {
     public static WindowsManager Layout;        // сінглтон для глобльного доступу в проекті
 
     [SerializeField] private GameObject[] windows;     // масив всіх панелей сцени
+
+    [SerializeField] private bool IsMenu;
 
     private void Awake()
     {
@@ -18,11 +20,22 @@ public class WindowsManager : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (IsMenu)
         {
             ToggleMenu();
+        }
+    }
+
+    void Update()
+    {
+        if (!IsMenu)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                ToggleMenu();
+            }
         }
     }
 
@@ -42,12 +55,14 @@ public class WindowsManager : MonoBehaviour
         if (anyWindowActive)
         {
             CloseAllWindows();
-            Time.timeScale = 1f;
+            if (!IsMenu)
+                Time.timeScale = 1f;
         }
         else
         {
             OpenLayout("MainMenu");
-            Time.timeScale = 0f;
+            if (!IsMenu)
+                Time.timeScale = 0f;
         }
     }
 
@@ -55,13 +70,13 @@ public class WindowsManager : MonoBehaviour
     {
         foreach (GameObject window in windows)
         {
-            if (window.name == name)             // якщо знайдена потрібна панель
+            if (window.name == name)
             {
-                window.SetActive(true);         // то активуй
+                window.SetActive(true);
             }
             else
             {
-                window.SetActive(false);        // а всі інші ми вимикаємо
+                window.SetActive(false);
             }
         }
     }
@@ -76,7 +91,8 @@ public class WindowsManager : MonoBehaviour
 
     public void ExitToMainMenu()
     {
-        Time.timeScale = 1f;
+        if (!IsMenu)
+            Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
 }

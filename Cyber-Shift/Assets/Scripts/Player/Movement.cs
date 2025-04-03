@@ -77,23 +77,25 @@ public class Movement : MonoBehaviour
 
     // ===== MAIN UPDATE LOOPS =====
     #region Update Methods
-    private void FixedUpdate()
-    {
-        Move();
-    }
-
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ToggleCursorState();
+        }
+
         if (Time.timeScale == 0f) return;
 
         MyInput();
         Look();
         UpdateCameraFOV();
+    }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ToggleCursorState();
-        }
+    private void FixedUpdate()
+    {
+        if (Time.timeScale == 0f) return;
+
+        Move();
     }
     #endregion
 

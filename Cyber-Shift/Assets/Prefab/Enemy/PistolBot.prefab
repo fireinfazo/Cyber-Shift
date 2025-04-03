@@ -219,8 +219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 40
   armorPercentage: 0
-  hitSound: {fileID: 8300000, guid: bed24543cfbf60249b43e8b4639e0012, type: 3}
-  deathSound: {fileID: 8300000, guid: 4bcadad5141b1e04ba16e808ab906c7f, type: 3}
+  hitSound: {fileID: 8300000, guid: 50322677ffba0a449902d26392afac10, type: 3}
 --- !u!82 &7720818149168333870
 AudioSource:
   m_ObjectHideFlags: 0
@@ -233,7 +232,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bed24543cfbf60249b43e8b4639e0012, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.796
+  m_Volume: 0.34
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -381,6 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f627aff9a13d54a4a9197d4300207443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponType: 0
   agent: {fileID: 1508217712058086641}
   player: {fileID: 0}
   firePoint: {fileID: 1827959250336301068}
@@ -393,17 +393,21 @@ MonoBehaviour:
   whatIsObstacle:
     serializedVersion: 2
     m_Bits: 0
-  health: 80
   walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 5
+  walkPointRange: 10
   timeBetweenAttacks: 1
   projectile: {fileID: 4794422721074653130, guid: 53332f0e4fd7d5f43b6eb059f59f8156, type: 3}
-  sightRange: 8
-  attackRange: 5
+  sightRange: 20
+  attackRange: 7
   detectionAngle: 90
   playerInSightRange: 0
   playerInAttackRange: 0
   playerVisible: 0
+  pistolFireRate: 1
+  automaticFireRate: 0.5
+  shotgunFireRate: 1.5
+  shotgunPelletCount: 5
+  shotgunSpreadAngle: 15
   modelObject: {fileID: 7952907214647684001}
 --- !u!1 &7900017028301000769
 GameObject:
