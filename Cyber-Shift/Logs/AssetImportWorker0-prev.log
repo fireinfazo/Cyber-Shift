@@ -15,7 +15,7 @@ C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60491
+56734
 Successfully changed project path to: C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
 C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/Users/User/Documents/GitHub/Cyber-Shift/Cyber-Shift
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [25120] Host "[IP] 192.168.0.109 [Port] 0 [Flags] 2 [Guid] 105004358 [EditorId] 105004358 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20384] Host "[IP] 192.168.0.109 [Port] 0 [Flags] 2 [Guid] 646327954 [EditorId] 646327954 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [25120] Host "[IP] 192.168.0.109 [Port] 0 [Flags] 2 [Guid] 105004358 [EditorId] 105004358 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20384] Host "[IP] 192.168.0.109 [Port] 0 [Flags] 2 [Guid] 646327954 [EditorId] 646327954 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Default GameObject BitMask: Trigger already registered
-Refreshing native plugins compatible for Editor in 179.30 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 181.27 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
 [Subsystems] Discovering subsystems at path D:/Other/Unity/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -68,80 +68,80 @@ Initialize mono
 Mono path[0] = 'D:/Other/Unity/2021.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Other/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Other/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56744
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Other/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/Other/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004566 seconds.
+Registered in 0.010374 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 344 ms
-Refreshing native plugins compatible for Editor in 166.55 ms, found 5 plugins.
+Android Extension - Scanning For ADB Devices 309 ms
+Refreshing native plugins compatible for Editor in 164.10 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.211 seconds
+- Completed reload, in  1.246 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1212ms)
-		BeginReloadAssembly (119ms)
+	ReloadAssembly (1246ms)
+		BeginReloadAssembly (175ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (988ms)
-			LoadAssemblies (119ms)
+		EndReloadAssembly (962ms)
+			LoadAssemblies (177ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (123ms)
+			SetupTypeCache (128ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (767ms)
+			SetupLoadedEditorAssemblies (734ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (437ms)
+				InitializePlatformSupportModulesInManaged (400ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (167ms)
+				RefreshPlugins (164ms)
 				BeforeProcessingInitializeOnLoad (2ms)
 				ProcessInitializeOnLoadAttributes (108ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013308 seconds.
+Registered in 0.012932 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 171.15 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 167.73 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.867 seconds
+- Completed reload, in  1.804 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1868ms)
-		BeginReloadAssembly (147ms)
+	ReloadAssembly (1806ms)
+		BeginReloadAssembly (149ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1595ms)
-			LoadAssemblies (151ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1540ms)
+			LoadAssemblies (134ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (402ms)
+			SetupTypeCache (392ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (153ms)
-			SetupLoadedEditorAssemblies (821ms)
+			RebuildScriptCaches (127ms)
+			SetupLoadedEditorAssemblies (825ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (19ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (171ms)
-				BeforeProcessingInitializeOnLoad (190ms)
-				ProcessInitializeOnLoadAttributes (327ms)
+				RefreshPlugins (168ms)
+				BeforeProcessingInitializeOnLoad (188ms)
+				ProcessInitializeOnLoadAttributes (337ms)
 				ProcessInitializeOnLoadMethodAttributes (109ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
@@ -149,13 +149,13 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Default GameObject BitMask: Trigger already registered
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.34 ms, found 5 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6430 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 57 unused Assets / (2.3 MB). Loaded Objects now: 6909.
-Memory consumption went from 279.9 MB to 277.6 MB.
-Total: 4.708800 ms (FindLiveObjects: 0.865400 ms CreateObjectMapping: 0.268500 ms MarkObjects: 3.100500 ms  DeleteObjects: 0.472700 ms)
+Memory consumption went from 280.1 MB to 277.7 MB.
+Total: 5.142200 ms (FindLiveObjects: 0.933100 ms CreateObjectMapping: 0.351300 ms MarkObjects: 3.378700 ms  DeleteObjects: 0.477700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -168,64 +168,52 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 110767.931175 seconds.
-  path: Assets/sound/DefButton.mp3
-  artifactKey: Guid(4119433ebe55b724ebd136c8affacf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sound/DefButton.mp3 using Guid(4119433ebe55b724ebd136c8affacf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38137b9c304b11574c5bb7f029e98c27') in 0.148846 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.690336 seconds.
-  path: Assets/sound/roman.mp3
-  artifactKey: Guid(dc95801b29d2f3442acc41b82fd9fe32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sound/roman.mp3 using Guid(dc95801b29d2f3442acc41b82fd9fe32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2c804f03a3ba9d26da8e5b484ec7e2') in 0.015161 seconds 
-========================================================================
 Received Prepare
 Default GameObject BitMask: Trigger already registered
 Registering precompiled user dll's ...
-Registered in 0.011068 seconds.
+Registered in 0.010710 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.39 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 1.43 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.598 seconds
+- Completed reload, in  1.611 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1599ms)
-		BeginReloadAssembly (198ms)
+	ReloadAssembly (1612ms)
+		BeginReloadAssembly (194ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1290ms)
-			LoadAssemblies (157ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1305ms)
+			LoadAssemblies (158ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (384ms)
+			SetupTypeCache (392ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (107ms)
+			RebuildScriptCaches (109ms)
 			SetupLoadedEditorAssemblies (567ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (22ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (153ms)
-				ProcessInitializeOnLoadAttributes (283ms)
+				BeforeProcessingInitializeOnLoad (155ms)
+				ProcessInitializeOnLoadAttributes (280ms)
 				ProcessInitializeOnLoadMethodAttributes (103ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.84 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 5.09 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6235 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (2.3 MB). Loaded Objects now: 6922.
-Memory consumption went from 267.6 MB to 265.3 MB.
-Total: 5.072600 ms (FindLiveObjects: 0.785400 ms CreateObjectMapping: 0.369100 ms MarkObjects: 3.544000 ms  DeleteObjects: 0.372800 ms)
+Unloading 44 unused Assets / (2.3 MB). Loaded Objects now: 6912.
+Memory consumption went from 263.6 MB to 261.3 MB.
+Total: 4.190500 ms (FindLiveObjects: 0.699800 ms CreateObjectMapping: 0.282000 ms MarkObjects: 2.885400 ms  DeleteObjects: 0.322200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -241,119 +229,49 @@ AssetImportParameters requested are different than current active one (requested
 Received Prepare
 Default GameObject BitMask: Trigger already registered
 Registering precompiled user dll's ...
-Registered in 0.012301 seconds.
+Registered in 0.012783 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.38 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 1.36 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.580 seconds
+- Completed reload, in  1.665 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1580ms)
-		BeginReloadAssembly (196ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (48ms)
-		EndReloadAssembly (1276ms)
-			LoadAssemblies (159ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (378ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (111ms)
-			SetupLoadedEditorAssemblies (557ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (152ms)
-				ProcessInitializeOnLoadAttributes (276ms)
-				ProcessInitializeOnLoadMethodAttributes (101ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.44 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6235 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (2.3 MB). Loaded Objects now: 6925.
-Memory consumption went from 267.6 MB to 265.3 MB.
-Total: 4.718500 ms (FindLiveObjects: 0.803800 ms CreateObjectMapping: 0.301500 ms MarkObjects: 3.265600 ms  DeleteObjects: 0.346100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 156.316683 seconds.
-  path: Assets/Scenes/GameObject.prefab
-  artifactKey: Guid(ef2506872e312784481586ec1549fbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameObject.prefab using Guid(ef2506872e312784481586ec1549fbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ee9fd26585ca2ee5ebd6a3d11e277e') in 0.094752 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.412913 seconds.
-  path: Assets/Scenes/MainMenu.unity
-  artifactKey: Guid(51b476a9b7d6dae478ed7fcabc0bd3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainMenu.unity using Guid(51b476a9b7d6dae478ed7fcabc0bd3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51312c4a509e3f08ed31d8465c8867c1') in 0.003278 seconds 
-========================================================================
-Received Prepare
-Default GameObject BitMask: Trigger already registered
-Registering precompiled user dll's ...
-Registered in 0.011144 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.53 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.708 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1709ms)
-		BeginReloadAssembly (193ms)
+	ReloadAssembly (1666ms)
+		BeginReloadAssembly (198ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (48ms)
-		EndReloadAssembly (1399ms)
-			LoadAssemblies (168ms)
+		EndReloadAssembly (1356ms)
+			LoadAssemblies (163ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (408ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (122ms)
-			SetupLoadedEditorAssemblies (611ms)
+			SetupTypeCache (393ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (139ms)
+			SetupLoadedEditorAssemblies (578ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (23ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (166ms)
-				ProcessInitializeOnLoadAttributes (306ms)
-				ProcessInitializeOnLoadMethodAttributes (110ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (155ms)
+				ProcessInitializeOnLoadAttributes (293ms)
+				ProcessInitializeOnLoadMethodAttributes (102ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.74 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 4.72 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6235 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 46 unused Assets / (2.3 MB). Loaded Objects now: 6928.
-Memory consumption went from 267.7 MB to 265.4 MB.
-Total: 4.970500 ms (FindLiveObjects: 0.787600 ms CreateObjectMapping: 0.276800 ms MarkObjects: 3.375300 ms  DeleteObjects: 0.529200 ms)
+Unloading 44 unused Assets / (2.3 MB). Loaded Objects now: 6915.
+Memory consumption went from 263.6 MB to 261.3 MB.
+Total: 4.476900 ms (FindLiveObjects: 0.717200 ms CreateObjectMapping: 0.262700 ms MarkObjects: 3.016400 ms  DeleteObjects: 0.479100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -366,122 +284,58 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 183851.303160 seconds.
+  path: Assets/Scenes/Rooms1.unity
+  artifactKey: Guid(9788fbce95c97554b91d66b0240e0349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Rooms1.unity using Guid(9788fbce95c97554b91d66b0240e0349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d7e4ce21e14554cd3ab47d76676cfc') in 0.014376 seconds 
+========================================================================
 Received Prepare
 Default GameObject BitMask: Trigger already registered
 Registering precompiled user dll's ...
-Registered in 0.012576 seconds.
+Registered in 0.011210 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.51 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 1.43 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.668 seconds
+- Completed reload, in  1.596 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1669ms)
-		BeginReloadAssembly (188ms)
+	ReloadAssembly (1597ms)
+		BeginReloadAssembly (185ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1374ms)
-			LoadAssemblies (159ms)
+		EndReloadAssembly (1308ms)
+			LoadAssemblies (149ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (406ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (125ms)
-			SetupLoadedEditorAssemblies (597ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (161ms)
-				ProcessInitializeOnLoadAttributes (298ms)
-				ProcessInitializeOnLoadMethodAttributes (108ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.28 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6235 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (2.3 MB). Loaded Objects now: 6931.
-Memory consumption went from 267.7 MB to 265.4 MB.
-Total: 5.475900 ms (FindLiveObjects: 1.017200 ms CreateObjectMapping: 0.410400 ms MarkObjects: 3.639000 ms  DeleteObjects: 0.407600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 316.536200 seconds.
-  path: Assets/Scripts/gun/Shotgun.cs
-  artifactKey: Guid(59c7548f6992b904d8ddd475bcf5b4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/gun/Shotgun.cs using Guid(59c7548f6992b904d8ddd475bcf5b4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '340f7a7fe259e5c2f1659aeffaf522fb') in 0.023099 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 33.534935 seconds.
-  path: Assets/Scripts/Player/Movement.cs
-  artifactKey: Guid(e0ce03d9627d8ad4096b45625ece7b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/Movement.cs using Guid(e0ce03d9627d8ad4096b45625ece7b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00cbad5d4247fb08e837f040f1794f9') in 0.008979 seconds 
-========================================================================
-Received Prepare
-Default GameObject BitMask: Trigger already registered
-Registering precompiled user dll's ...
-Registered in 0.012473 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.48 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.548 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1549ms)
-		BeginReloadAssembly (192ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1250ms)
-			LoadAssemblies (156ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (366ms)
+			SetupTypeCache (384ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (111ms)
-			SetupLoadedEditorAssemblies (545ms)
+			RebuildScriptCaches (131ms)
+			SetupLoadedEditorAssemblies (556ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
+				InitializePlatformSupportModulesInManaged (22ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
 				BeforeProcessingInitializeOnLoad (152ms)
-				ProcessInitializeOnLoadAttributes (269ms)
-				ProcessInitializeOnLoadMethodAttributes (97ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (276ms)
+				ProcessInitializeOnLoadMethodAttributes (99ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (19ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.08 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 4.90 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6235 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (2.3 MB). Loaded Objects now: 6934.
-Memory consumption went from 267.7 MB to 265.4 MB.
-Total: 4.450400 ms (FindLiveObjects: 0.750900 ms CreateObjectMapping: 0.239300 ms MarkObjects: 3.027400 ms  DeleteObjects: 0.431500 ms)
+Unloading 44 unused Assets / (2.3 MB). Loaded Objects now: 6918.
+Memory consumption went from 263.6 MB to 261.4 MB.
+Total: 4.677100 ms (FindLiveObjects: 0.742000 ms CreateObjectMapping: 0.252100 ms MarkObjects: 3.330900 ms  DeleteObjects: 0.350500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -494,60 +348,188 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Default GameObject BitMask: Trigger already registered
-Registering precompiled user dll's ...
-Registered in 0.011353 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\User\Documents\GitHub\Cyber-Shift\Cyber-Shift\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.90 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.808 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1809ms)
-		BeginReloadAssembly (225ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (1461ms)
-			LoadAssemblies (183ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (419ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (135ms)
-			SetupLoadedEditorAssemblies (651ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (26ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (174ms)
-				ProcessInitializeOnLoadAttributes (320ms)
-				ProcessInitializeOnLoadMethodAttributes (124ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.13 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6235 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (2.3 MB). Loaded Objects now: 6937.
-Memory consumption went from 267.7 MB to 265.4 MB.
-Total: 4.774800 ms (FindLiveObjects: 0.873200 ms CreateObjectMapping: 0.303300 ms MarkObjects: 3.251500 ms  DeleteObjects: 0.345300 ms)
+Received Import Request.
+  Time since last request: 142.384236 seconds.
+  path: Assets/Prefab/Enemy/AssaulotBot.prefab
+  artifactKey: Guid(d8c73215f2acc3749b9d5420378811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Enemy/AssaulotBot.prefab using Guid(d8c73215f2acc3749b9d5420378811e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'EnemyAnimator': Transition 'AnyState -> Aiming' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+0x00007ff7b814ec7d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7b8155839 (Unity) StackWalker::ShowCallstack
+0x00007ff7b90ee103 (Unity) GetStacktrace
+0x00007ff7b979f4ed (Unity) DebugStringToFile
+0x00007ff7b8c45f61 (Unity) AnimatorStateMachine::BuildTransitionConstant
+0x00007ff7b8c4554a (Unity) AnimatorStateMachine::BuildRuntimeAsset
+0x00007ff7b98b0f4c (Unity) AnimatorController::BuildAsset
+0x00007ff7b98b4c8f (Unity) AnimatorController::GetAnimationSetBindings
+0x00007ff7b849454a (Unity) AnimatorControllerPlayable::GenerateGraph
+0x00007ff7b8499fe5 (Unity) AnimatorControllerPlayable::SetAnimatorController
+0x00007ff7b843b05e (Unity) Animator::CreateInternalControllerPlayable
+0x00007ff7b8437c6b (Unity) Animator::AddToManager
+0x00007ff7b8438284 (Unity) Animator::AwakeFromLoad
+0x00007ff7b81288a7 (Unity) AwakeFromLoadQueue::InvokeAwakeFromLoad
+0x00007ff7b81234e3 (Unity) AwakeFromLoadQueue::AwakeFromLoadAllQueues
+0x00007ff7b7b28664 (Unity) AwakeAndActivateClonedObjects
+0x00007ff7b8c69f9d (Unity) InstantiateObjectRemoveAllNonAnimationComponents
+0x00007ff7b7793fab (Unity) EditorUtility_CUSTOM_Internal_InstantiateRemoveAllNonAnimationComponentsSingle_Injected
+0x00000298cef8e747 (Mono JIT Code) (wrapper managed-to-native) UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle_Injected (UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+0x00000298cef8e5d3 (Mono JIT Code) UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+0x00000298cef8e483 (Mono JIT Code) UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+0x00000298cef8d9fb (Mono JIT Code) UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+0x00000298cef8d03b (Mono JIT Code) UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+0x00000298cef84463 (Mono JIT Code) UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+0x00000298cef83383 (Mono JIT Code) UnityEditor.GameObjectInspector:GetPreviewData ()
+0x00000298cef829fb (Mono JIT Code) UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+0x00000298d2b4a678 (Mono JIT Code) UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+0x00000298d2b49c2b (Mono JIT Code) UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+0x00000298d2b49e90 (Mono JIT Code) (wrapper runtime-invoke) <Module>:runtime_invoke_object_object_object_object (object,intptr,intptr,intptr)
+0x00007ffcd384feb4 (mono-2.0-bdwgc) [mini-runtime.c:3445] mono_jit_runtime_invoke 
+0x00007ffcd378e764 (mono-2.0-bdwgc) [object.c:3066] do_runtime_invoke 
+0x00007ffcd378e8fc (mono-2.0-bdwgc) [object.c:3113] mono_runtime_invoke 
+0x00007ff7b80726f4 (Unity) scripting_method_invoke
+0x00007ff7b8051ef4 (Unity) ScriptingInvocation::Invoke
+0x00007ff7b93d853c (Unity) MonoCreateAssetPreview
+0x00007ff7b93d7121 (Unity) WriteAssetPreviewToFile
+0x00007ff7b93d78c6 (Unity) WritePreviews
+0x00007ff7b93cfb15 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7b94165e1 (Unity) ImportToObjects
+0x00007ff7b9415543 (Unity) ImportAsset
+0x00007ff7b94385e1 (Unity) AssetImportWorker::Import
+0x00007ff7b94a1898 (Unity) <lambda_99b277d5487eb03dd92980553670dd3c>::operator()
+0x00007ff7b94e2a52 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff7b94ce93e (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff7b94d05a4 (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff7b94e0e3e (Unity) IOService::Run
+0x00007ff7b94b354f (Unity) AssetImportWorkerClient::Run
+0x00007ff7b947bb63 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7b947bbeb (Unity) RunAssetImporterV2
+0x00007ff7b8c93028 (Unity) Application::InitializeProject
+0x00007ff7b90f8868 (Unity) WinMain
+0x00007ff7ba4d96be (Unity) __scrt_common_main_seh
+0x00007ffde0317374 (KERNEL32) BaseThreadInitThunk
+0x00007ffde047cc91 (ntdll) RtlUserThreadStart
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+ -> (artifact id: '573adbbebe93c38033be938640093426') in 0.808976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Prefab/Enemy/ShotgunBot.prefab
+  artifactKey: Guid(fdcbf828ed37e1349a0c8f8d4ef92229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Enemy/ShotgunBot.prefab using Guid(fdcbf828ed37e1349a0c8f8d4ef92229) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'EnemyAnimator': Transition 'AnyState -> Aiming' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+0x00007ff7b814ec7d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7b8155839 (Unity) StackWalker::ShowCallstack
+0x00007ff7b90ee103 (Unity) GetStacktrace
+0x00007ff7b979f4ed (Unity) DebugStringToFile
+0x00007ff7b8c45f61 (Unity) AnimatorStateMachine::BuildTransitionConstant
+0x00007ff7b8c4554a (Unity) AnimatorStateMachine::BuildRuntimeAsset
+0x00007ff7b98b0f4c (Unity) AnimatorController::BuildAsset
+0x00007ff7b98b4c8f (Unity) AnimatorController::GetAnimationSetBindings
+0x00007ff7b849454a (Unity) AnimatorControllerPlayable::GenerateGraph
+0x00007ff7b8499fe5 (Unity) AnimatorControllerPlayable::SetAnimatorController
+0x00007ff7b843b05e (Unity) Animator::CreateInternalControllerPlayable
+0x00007ff7b8437c6b (Unity) Animator::AddToManager
+0x00007ff7b8438284 (Unity) Animator::AwakeFromLoad
+0x00007ff7b81288a7 (Unity) AwakeFromLoadQueue::InvokeAwakeFromLoad
+0x00007ff7b81234e3 (Unity) AwakeFromLoadQueue::AwakeFromLoadAllQueues
+0x00007ff7b7b28664 (Unity) AwakeAndActivateClonedObjects
+0x00007ff7b8c69f9d (Unity) InstantiateObjectRemoveAllNonAnimationComponents
+0x00007ff7b7793fab (Unity) EditorUtility_CUSTOM_Internal_InstantiateRemoveAllNonAnimationComponentsSingle_Injected
+0x00000298cef8e747 (Mono JIT Code) (wrapper managed-to-native) UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle_Injected (UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+0x00000298cef8e5d3 (Mono JIT Code) UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+0x00000298cef8e483 (Mono JIT Code) UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+0x00000298cef8d9fb (Mono JIT Code) UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+0x00000298cef8d03b (Mono JIT Code) UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+0x00000298cef84463 (Mono JIT Code) UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+0x00000298cef83383 (Mono JIT Code) UnityEditor.GameObjectInspector:GetPreviewData ()
+0x00000298cef829fb (Mono JIT Code) UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+0x00000298d2b4a678 (Mono JIT Code) UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+0x00000298d2b49c2b (Mono JIT Code) UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+0x00000298d2b49e90 (Mono JIT Code) (wrapper runtime-invoke) <Module>:runtime_invoke_object_object_object_object (object,intptr,intptr,intptr)
+0x00007ffcd384feb4 (mono-2.0-bdwgc) [mini-runtime.c:3445] mono_jit_runtime_invoke 
+0x00007ffcd378e764 (mono-2.0-bdwgc) [object.c:3066] do_runtime_invoke 
+0x00007ffcd378e8fc (mono-2.0-bdwgc) [object.c:3113] mono_runtime_invoke 
+0x00007ff7b80726f4 (Unity) scripting_method_invoke
+0x00007ff7b8051ef4 (Unity) ScriptingInvocation::Invoke
+0x00007ff7b93d853c (Unity) MonoCreateAssetPreview
+0x00007ff7b93d7121 (Unity) WriteAssetPreviewToFile
+0x00007ff7b93d78c6 (Unity) WritePreviews
+0x00007ff7b93cfb15 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7b94165e1 (Unity) ImportToObjects
+0x00007ff7b9415543 (Unity) ImportAsset
+0x00007ff7b94385e1 (Unity) AssetImportWorker::Import
+0x00007ff7b94a1898 (Unity) <lambda_99b277d5487eb03dd92980553670dd3c>::operator()
+0x00007ff7b94e2a52 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff7b94ce93e (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff7b94d05a4 (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff7b94e0e3e (Unity) IOService::Run
+0x00007ff7b94b354f (Unity) AssetImportWorkerClient::Run
+0x00007ff7b947bb63 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7b947bbeb (Unity) RunAssetImporterV2
+0x00007ff7b8c93028 (Unity) Application::InitializeProject
+0x00007ff7b90f8868 (Unity) WinMain
+0x00007ff7ba4d96be (Unity) __scrt_common_main_seh
+0x00007ffde0317374 (KERNEL32) BaseThreadInitThunk
+0x00007ffde047cc91 (ntdll) RtlUserThreadStart
+
+ -> (artifact id: 'e5b2b308b4b327e5f1928d60c0cb7e4a') in 0.089151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 69.852159 seconds.
+  path: Assets/Prefab/Enemy/ShotgunBot.prefab
+  artifactKey: Guid(fdcbf828ed37e1349a0c8f8d4ef92229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Enemy/ShotgunBot.prefab using Guid(fdcbf828ed37e1349a0c8f8d4ef92229) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'EnemyAnimator': Transition 'AnyState -> Aiming' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+0x00007ff7b814ec7d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7b8155839 (Unity) StackWalker::ShowCallstack
+0x00007ff7b90ee103 (Unity) GetStacktrace
+0x00007ff7b979f4ed (Unity) DebugStringToFile
+0x00007ff7b8c45f61 (Unity) AnimatorStateMachine::BuildTransitionConstant
+0x00007ff7b8c4554a (Unity) AnimatorStateMachine::BuildRuntimeAsset
+0x00007ff7b98b0f4c (Unity) AnimatorController::BuildAsset
+0x00007ff7b98b4c8f (Unity) AnimatorController::GetAnimationSetBindings
+0x00007ff7b849454a (Unity) AnimatorControllerPlayable::GenerateGraph
+0x00007ff7b8499fe5 (Unity) AnimatorControllerPlayable::SetAnimatorController
+0x00007ff7b843b05e (Unity) Animator::CreateInternalControllerPlayable
+0x00007ff7b8437c6b (Unity) Animator::AddToManager
+0x00007ff7b8438284 (Unity) Animator::AwakeFromLoad
+0x00007ff7b81288a7 (Unity) AwakeFromLoadQueue::InvokeAwakeFromLoad
+0x00007ff7b81234e3 (Unity) AwakeFromLoadQueue::AwakeFromLoadAllQueues
+0x00007ff7b7b28664 (Unity) AwakeAndActivateClonedObjects
+0x00007ff7b8c69f9d (Unity) InstantiateObjectRemoveAllNonAnimationComponents
+0x00007ff7b7793fab (Unity) EditorUtility_CUSTOM_Internal_InstantiateRemoveAllNonAnimationComponentsSingle_Injected
+0x00000298cef8e747 (Mono JIT Code) (wrapper managed-to-native) UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle_Injected (UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+0x00000298cef8e5d3 (Mono JIT Code) UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+0x00000298cef8e483 (Mono JIT Code) UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+0x00000298cef8d9fb (Mono JIT Code) UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+0x00000298cef8d03b (Mono JIT Code) UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+0x00000298cef84463 (Mono JIT Code) UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+0x00000298cef83383 (Mono JIT Code) UnityEditor.GameObjectInspector:GetPreviewData ()
+0x00000298cef829fb (Mono JIT Code) UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+0x00000298d2b4a678 (Mono JIT Code) UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+0x00000298d2b49c2b (Mono JIT Code) UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+0x00000298d2b49e90 (Mono JIT Code) (wrapper runtime-invoke) <Module>:runtime_invoke_object_object_object_object (object,intptr,intptr,intptr)
+0x00007ffcd384feb4 (mono-2.0-bdwgc) [mini-runtime.c:3445] mono_jit_runtime_invoke 
+0x00007ffcd378e764 (mono-2.0-bdwgc) [object.c:3066] do_runtime_invoke 
+0x00007ffcd378e8fc (mono-2.0-bdwgc) [object.c:3113] mono_runtime_invoke 
+0x00007ff7b80726f4 (Unity) scripting_method_invoke
+0x00007ff7b8051ef4 (Unity) ScriptingInvocation::Invoke
+0x00007ff7b93d853c (Unity) MonoCreateAssetPreview
+0x00007ff7b93d7121 (Unity) WriteAssetPreviewToFile
+0x00007ff7b93d78c6 (Unity) WritePreviews
+0x00007ff7b93cfb15 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7b94165e1 (Unity) ImportToObjects
+0x00007ff7b9415543 (Unity) ImportAsset
+0x00007ff7b94385e1 (Unity) AssetImportWorker::Import
+0x00007ff7b94a1898 (Unity) <lambda_99b277d5487eb03dd92980553670dd3c>::operator()
+0x00007ff7b94e2a52 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff7b94ce93e (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff7b94d05a4 (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff7b94e0e3e (Unity) IOService::Run
+0x00007ff7b94b354f (Unity) AssetImportWorkerClient::Run
+0x00007ff7b947bb63 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7b947bbeb (Unity) RunAssetImporterV2
+0x00007ff7b8c93028 (Unity) Application::InitializeProject
+0x00007ff7b90f8868 (Unity) WinMain
+0x00007ff7ba4d96be (Unity) __scrt_common_main_seh
+0x00007ffde0317374 (KERNEL32) BaseThreadInitThunk
+0x00007ffde047cc91 (ntdll) RtlUserThreadStart
+
+ -> (artifact id: '65f774227e3732621f5742a7da160910') in 0.082859 seconds 
