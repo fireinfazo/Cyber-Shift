@@ -19,7 +19,7 @@ public class ProjectileShooterScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		Beryl =  gameObject.transform.FindChild("Beryl").gameObject;
+		Beryl =  gameObject.transform.Find("Beryl").gameObject;
 	}
 	
 	// Update is called once per frame

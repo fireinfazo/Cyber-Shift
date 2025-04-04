@@ -41,12 +41,27 @@ public class EnemyAi : MonoBehaviour
     private static readonly int WalkingParam = Animator.StringToHash("Walking");
     private static readonly int AttackingParam = Animator.StringToHash("Attacking");
 
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip pistolShotSound;
+    [SerializeField] private AudioClip automaticShotSound;
+    [SerializeField] private AudioClip shotgunShotSound;
+    [SerializeField] private float shotVolume = 0.7f;
+    private AudioSource audioSource;
+
 
 
     private void Awake()
     {
         player = GameObject.Find("player").transform;
         agent = GetComponent<NavMeshAgent>();
+        audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.spatialBlend = 1f;
+            audioSource.volume = shotVolume;
+        }
 
         if (modelObject != null)
         {
@@ -226,6 +241,7 @@ public class EnemyAi : MonoBehaviour
 
     private void FirePistol()
     {
+        PlayShotSound(pistolShotSound);
         Rigidbody rb = Instantiate(projectile, firePoint.position, firePoint.rotation).GetComponent<Rigidbody>();
         rb.AddForce(firePoint.forward * 32f, ForceMode.Impulse);
         rb.AddForce(firePoint.up * 8f, ForceMode.Impulse);
@@ -233,6 +249,7 @@ public class EnemyAi : MonoBehaviour
 
     private void FireAutomatic()
     {
+        PlayShotSound(automaticShotSound);
         Rigidbody rb = Instantiate(projectile, firePoint.position, firePoint.rotation).GetComponent<Rigidbody>();
         rb.AddForce(firePoint.forward * 32f, ForceMode.Impulse);
         rb.AddForce(firePoint.up * 8f, ForceMode.Impulse);
@@ -240,6 +257,7 @@ public class EnemyAi : MonoBehaviour
 
     private void FireShotgun()
     {
+        PlayShotSound(shotgunShotSound);
         for (int i = 0; i < shotgunPelletCount; i++)
         {
             Vector3 spreadDirection = firePoint.forward;
@@ -249,6 +267,14 @@ public class EnemyAi : MonoBehaviour
             Rigidbody rb = Instantiate(projectile, firePoint.position, Quaternion.LookRotation(spreadDirection)).GetComponent<Rigidbody>();
             rb.AddForce(spreadDirection * 32f, ForceMode.Impulse);
             rb.AddForce(firePoint.up * 8f, ForceMode.Impulse);
+        }
+    }
+
+    private void PlayShotSound(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip);
         }
     }
 
@@ -278,4 +304,6 @@ public class EnemyAi : MonoBehaviour
             Gizmos.DrawLine(firePoint.position, firePoint.position + firePoint.forward * 0.5f);
         }
     }
+
+    //хтось вдарте мене якщо я ще раз захочу писати ші мобам
 }

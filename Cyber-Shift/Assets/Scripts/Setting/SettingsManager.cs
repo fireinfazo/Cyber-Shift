@@ -1,23 +1,18 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SettingsManager : MonoBehaviour
 {
     private static SettingsManager _instance;
+    private static GameObject _settingsManagerObject;
+
     public static SettingsManager Instance
     {
         get
         {
             if (_instance == null)
             {
-                _instance = FindObjectOfType<SettingsManager>();
-
-                if (_instance == null)
-                {
-                    GameObject obj = new GameObject("SettingsManager");
-                    _instance = obj.AddComponent<SettingsManager>();
-                    DontDestroyOnLoad(obj);
-                    _instance.LoadSettings();
-                }
+                CreateInstance();
             }
             return _instance;
         }
@@ -25,20 +20,53 @@ public class SettingsManager : MonoBehaviour
 
     public bool IsMusicEnabled { get; private set; } = true;
     public float MusicVolume { get; private set; } = 0.5f;
-
     public event System.Action OnSettingsChanged;
+
+    private static void CreateInstance()
+    {
+        if (_settingsManagerObject != null)
+        {
+            DestroyImmediate(_settingsManagerObject);
+            _settingsManagerObject = null;
+            _instance = null;
+        }
+
+        _settingsManagerObject = new GameObject("SettingsManager");
+        _instance = _settingsManagerObject.AddComponent<SettingsManager>();
+        DontDestroyOnLoad(_settingsManagerObject);
+    }
 
     private void Awake()
     {
         if (_instance != null && _instance != this)
         {
-            Destroy(gameObject);
+            DestroyImmediate(gameObject);
             return;
         }
 
         _instance = this;
+        _settingsManagerObject = gameObject;
         DontDestroyOnLoad(gameObject);
         LoadSettings();
+
+        SceneManager.sceneLoaded += OnSceneReloaded;
+    }
+
+    private void OnSceneReloaded(Scene scene, LoadSceneMode mode)
+    {
+        CleanupDuplicates();
+    }
+
+    private void CleanupDuplicates()
+    {
+        var managers = FindObjectsOfType<SettingsManager>();
+        foreach (var manager in managers)
+        {
+            if (manager != _instance && manager.gameObject != null)
+            {
+                DestroyImmediate(manager.gameObject);
+            }
+        }
     }
 
     public void SetMusicEnabled(bool enabled)
@@ -80,8 +108,20 @@ public class SettingsManager : MonoBehaviour
     {
         if (_instance == this)
         {
+            SceneManager.sceneLoaded -= OnSceneReloaded;
             _instance = null;
+            _settingsManagerObject = null;
             OnSettingsChanged = null;
+        }
+    }
+
+    public static void PrepareForSceneReload()
+    {
+        if (_settingsManagerObject != null)
+        {
+            Destroy(_settingsManagerObject);
+            _settingsManagerObject = null;
+            _instance = null;
         }
     }
 }

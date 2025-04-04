@@ -2034,7 +2034,7 @@ GameObject:
   - component: {fileID: 9104226223608205269}
   - component: {fileID: 9104226223608205270}
   m_Layer: 0
-  m_Name: message_cart
+  m_Name: MessageCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2428,6 +2428,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 11db09950b32c44a5a5cfe3a1c5ed4ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 11db09950b32c44a5a5cfe3a1c5ed4ff, type: 3}
+      propertyPath: InitialModule.size3D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 11db09950b32c44a5a5cfe3a1c5ed4ff, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11db09950b32c44a5a5cfe3a1c5ed4ff, type: 3}

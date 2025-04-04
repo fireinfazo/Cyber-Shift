@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; // Added for scene management
+using UnityEngine.SceneManagement;
 
 public class WindowsManager : MonoBehaviour
 {
-    public static WindowsManager Layout;        // сінглтон для глобльного доступу в проекті
+    public static WindowsManager Layout;
 
-    [SerializeField] private GameObject[] windows;     // масив всіх панелей сцени
+    [SerializeField] private GameObject[] windows;
 
     [SerializeField] private bool IsMenu;
 

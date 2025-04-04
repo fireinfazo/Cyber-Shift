@@ -29,7 +29,7 @@ public class HPScript : MonoBehaviour {
 		GameObject NewHPP = Instantiate(HPParticle,Position,gameObject.transform.rotation) as GameObject;
 		NewHPP.GetComponent<AlwaysFace>().Target = GameObject.Find("Main Camera").gameObject;
 
-		TextMesh TM  = NewHPP.transform.FindChild("HPLabel").GetComponent<TextMesh>();
+		TextMesh TM  = NewHPP.transform.Find("HPLabel").GetComponent<TextMesh>();
 
 		if (Delta > 0)
 		{
@@ -53,7 +53,7 @@ public class HPScript : MonoBehaviour {
 		GameObject NewHPP = Instantiate(HPParticle,Position,gameObject.transform.rotation) as GameObject;
 		NewHPP.GetComponent<AlwaysFace>().Target = GameObject.Find("Main Camera").gameObject;
 		
-		TextMesh TM  = NewHPP.transform.FindChild("HPLabel").GetComponent<TextMesh>();
+		TextMesh TM  = NewHPP.transform.Find("HPLabel").GetComponent<TextMesh>();
 
 		if (Delta > 0f)
 		{
@@ -77,7 +77,7 @@ public class HPScript : MonoBehaviour {
 		GameObject NewHPP = Instantiate(HPParticle,Position,gameObject.transform.rotation) as GameObject;
 		NewHPP.GetComponent<AlwaysFace>().Target = GameObject.Find("Main Camera").gameObject;
 		
-		TextMesh TM  = NewHPP.transform.FindChild("HPLabel").GetComponent<TextMesh>();
+		TextMesh TM  = NewHPP.transform.Find("HPLabel").GetComponent<TextMesh>();
 
 		if (Delta > 0)
 		{
@@ -101,7 +101,7 @@ public class HPScript : MonoBehaviour {
 		GameObject NewHPP = Instantiate(HPParticle,Position,gameObject.transform.rotation) as GameObject;
 		NewHPP.GetComponent<AlwaysFace>().Target = GameObject.Find("Main Camera").gameObject;
 		
-		TextMesh TM  = NewHPP.transform.FindChild("HPLabel").GetComponent<TextMesh>();
+		TextMesh TM  = NewHPP.transform.Find("HPLabel").GetComponent<TextMesh>();
 
 		if (Delta > 0f)
 		{
@@ -126,7 +126,7 @@ public class HPScript : MonoBehaviour {
 		GameObject NewHPP = Instantiate(HPParticle,Position,gameObject.transform.rotation) as GameObject;
 		NewHPP.GetComponent<AlwaysFace>().Target = GameObject.Find("Main Camera").gameObject;
 		
-		TextMesh TM  = NewHPP.transform.FindChild("HPLabel").GetComponent<TextMesh>();
+		TextMesh TM  = NewHPP.transform.Find("HPLabel").GetComponent<TextMesh>();
 		TM.text = text;
 		
 		if (Delta > 0f)
@@ -150,7 +150,7 @@ public class HPScript : MonoBehaviour {
 		GameObject NewHPP = Instantiate(HPParticle,Position,gameObject.transform.rotation) as GameObject;
 		NewHPP.GetComponent<AlwaysFace>().Target = GameObject.Find("Main Camera").gameObject;
 		
-		TextMesh TM  = NewHPP.transform.FindChild("HPLabel").GetComponent<TextMesh>();
+		TextMesh TM  = NewHPP.transform.Find("HPLabel").GetComponent<TextMesh>();
 		TM.text = text;
 		
 		if (Delta > 0f)
@@ -174,7 +174,7 @@ public class HPScript : MonoBehaviour {
 		GameObject NewHPP = Instantiate(HPParticle,Position,gameObject.transform.rotation) as GameObject;
 		NewHPP.GetComponent<AlwaysFace>().Target = GameObject.Find("Main Camera").gameObject;
 		
-		TextMesh TM  = NewHPP.transform.FindChild("HPLabel").GetComponent<TextMesh>();
+		TextMesh TM  = NewHPP.transform.Find("HPLabel").GetComponent<TextMesh>();
 		TM.text = text;
 		TM.color =  ThisColor;
 
@@ -189,7 +189,7 @@ public class HPScript : MonoBehaviour {
 		GameObject NewHPP = Instantiate(HPParticle,Position,gameObject.transform.rotation) as GameObject;
 		NewHPP.GetComponent<AlwaysFace>().Target = GameObject.Find("Main Camera").gameObject;
 		
-		TextMesh TM  = NewHPP.transform.FindChild("HPLabel").GetComponent<TextMesh>();
+		TextMesh TM  = NewHPP.transform.Find("HPLabel").GetComponent<TextMesh>();
 		TM.text = text;
 		TM.color =  ThisColor;
 		

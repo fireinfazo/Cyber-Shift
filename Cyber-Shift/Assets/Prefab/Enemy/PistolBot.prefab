@@ -276,7 +276,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -409,6 +409,10 @@ MonoBehaviour:
   shotgunPelletCount: 5
   shotgunSpreadAngle: 15
   modelObject: {fileID: 7952907214647684001}
+  pistolShotSound: {fileID: 8300000, guid: 575182d3a29a2ee47b54b241fd8fda01, type: 3}
+  automaticShotSound: {fileID: 8300000, guid: 7111720bf8f8270468ee885aee5e5fdd, type: 3}
+  shotgunShotSound: {fileID: 8300000, guid: 0f949e4a4a9d486478fdadd6dcce01e1, type: 3}
+  shotVolume: 0.7
 --- !u!1 &7900017028301000769
 GameObject:
   m_ObjectHideFlags: 0

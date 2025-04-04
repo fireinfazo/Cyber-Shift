@@ -31,12 +31,12 @@ public class MessagePlayer : MonoBehaviour
     {
         if (_audioSource != null)
         {
-            if (message != null) 
+            if (message != null)
             {
                 _audioSource.PlayOneShot(message);
             }
         }
     }
 
-    
+
 }

@@ -13,7 +13,7 @@ public class HPParticleScript : MonoBehaviour {
 	// Set a Variable
 	void Start () 
 	{
-		HPLabel = gameObject.transform.FindChild("HPLabel").gameObject;
+		HPLabel = gameObject.transform.Find("HPLabel").gameObject;
 	}
 
 	void FixedUpdate () 

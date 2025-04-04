@@ -41,9 +41,7 @@ public class DoorController : MonoBehaviour
         if (playerCamera == null || !isReady) return;
 
         Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
-        currentHoveredButton = Physics.Raycast(ray, out RaycastHit hit, 3f)
-                            && (hit.transform == button1 || hit.transform == button2)
-                            ? hit.transform : null;
+        currentHoveredButton = Physics.Raycast(ray, out RaycastHit hit, 3f) && (hit.transform == button1 || hit.transform == button2) ? hit.transform : null;
     }
 
     private void PressButton()

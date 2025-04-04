@@ -15,7 +15,6 @@ public class BackgroundMusic : MonoBehaviour
         _audioSource.loop = false;
         _audioSource.playOnAwake = false;
 
-        // Отложенная инициализация на случай, если SettingsManager ещё не создан
         StartCoroutine(InitializeWhenReady());
     }
 
