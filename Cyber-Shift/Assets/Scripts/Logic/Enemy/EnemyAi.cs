@@ -28,6 +28,8 @@ public class EnemyAi : MonoBehaviour
     private float stuckCheckInterval = 1f;
     private float stuckThreshold = 0.1f;
 
+    private EnemyHealth enemyHealth;
+
     [Header("Weapon Settings")]
     [SerializeField] private float pistolFireRate = 1f;
     [SerializeField] private float automaticFireRate = 0.5f;
@@ -40,6 +42,7 @@ public class EnemyAi : MonoBehaviour
     private Animator animator;
     private static readonly int WalkingParam = Animator.StringToHash("Walking");
     private static readonly int AttackingParam = Animator.StringToHash("Attacking");
+    [SerializeField] private string deathAnimationTrigger = "Die";
 
     [Header("Sound Effects")]
     [SerializeField] private AudioClip pistolShotSound;
@@ -55,6 +58,7 @@ public class EnemyAi : MonoBehaviour
         player = GameObject.Find("player").transform;
         agent = GetComponent<NavMeshAgent>();
         audioSource = GetComponent<AudioSource>();
+        enemyHealth = GetComponent<EnemyHealth>();
 
         if (audioSource == null)
         {
@@ -93,6 +97,16 @@ public class EnemyAi : MonoBehaviour
 
     private void Update()
     {
+        if (enemyHealth != null && enemyHealth.IsDead())
+        {
+            if (animator != null)
+            {
+                animator.SetBool(WalkingParam, false);
+                animator.SetBool(AttackingParam, false);
+            }
+            return;
+        }
+
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
