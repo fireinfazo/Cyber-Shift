@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MessagePlayer : MonoBehaviour
@@ -9,9 +6,37 @@ public class MessagePlayer : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] private AudioClip message;
     private float interactionDistance = 5f;
+    private bool _initialized;
+
+    private void Awake()
+    {
+        StartCoroutine(InitializeWhenReady());
+    }
+
+    private System.Collections.IEnumerator InitializeWhenReady()
+    {
+        while (SettingsManager.Instance == null)
+        {
+            yield return null;
+        }
+
+        SettingsManager.Instance.OnSettingsChanged += UpdateDialogueVolume;
+        _initialized = true;
+        UpdateDialogueVolume();
+    }
+
+    private void OnDestroy()
+    {
+        if (SettingsManager.Instance != null)
+        {
+            SettingsManager.Instance.OnSettingsChanged -= UpdateDialogueVolume;
+        }
+    }
 
     void Update()
     {
+        if (!_initialized) return;
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             Ray ray = new Ray(player.transform.position, player.transform.forward);
@@ -29,14 +54,18 @@ public class MessagePlayer : MonoBehaviour
 
     private void PlayMessage()
     {
-        if (_audioSource != null)
+        if (_audioSource != null && message != null)
         {
-            if (message != null)
-            {
-                _audioSource.PlayOneShot(message);
-            }
+            _audioSource.volume = SettingsManager.Instance.DialogueVolume;
+            _audioSource.PlayOneShot(message);
         }
     }
 
-
+    private void UpdateDialogueVolume()
+    {
+        if (_audioSource != null && _audioSource.isPlaying)
+        {
+            _audioSource.volume = SettingsManager.Instance.DialogueVolume;
+        }
+    }
 }

@@ -5,6 +5,7 @@ public class SettingsUIController : MonoBehaviour
 {
     [SerializeField] private Toggle musicToggle;
     [SerializeField] private Slider volumeSlider;
+    [SerializeField] private Slider dialogueVolumeSlider;
 
     private void OnEnable()
     {
@@ -18,6 +19,7 @@ public class SettingsUIController : MonoBehaviour
 
         musicToggle.onValueChanged.AddListener(OnMusicToggleChanged);
         volumeSlider.onValueChanged.AddListener(OnVolumeSliderChanged);
+        dialogueVolumeSlider.onValueChanged.AddListener(OnDialogueVolumeSliderChanged);
         SettingsManager.Instance.OnSettingsChanged += UpdateUI;
     }
 
@@ -29,16 +31,20 @@ public class SettingsUIController : MonoBehaviour
         if (volumeSlider != null)
             volumeSlider.onValueChanged.RemoveListener(OnVolumeSliderChanged);
 
+        if (dialogueVolumeSlider != null)
+            dialogueVolumeSlider.onValueChanged.RemoveListener(OnDialogueVolumeSliderChanged);
+
         if (SettingsManager.Instance != null)
             SettingsManager.Instance.OnSettingsChanged -= UpdateUI;
     }
 
     private void UpdateUI()
     {
-        if (musicToggle != null && volumeSlider != null)
+        if (musicToggle != null && volumeSlider != null && dialogueVolumeSlider != null)
         {
             musicToggle.isOn = SettingsManager.Instance.IsMusicEnabled;
             volumeSlider.value = SettingsManager.Instance.MusicVolume;
+            dialogueVolumeSlider.value = SettingsManager.Instance.DialogueVolume;
         }
     }
 
@@ -50,5 +56,10 @@ public class SettingsUIController : MonoBehaviour
     private void OnVolumeSliderChanged(float value)
     {
         SettingsManager.Instance.SetMusicVolume(value);
+    }
+
+    private void OnDialogueVolumeSliderChanged(float value)
+    {
+        SettingsManager.Instance.SetDialogueVolume(value);
     }
 }

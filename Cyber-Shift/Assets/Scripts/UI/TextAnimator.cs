@@ -32,7 +32,11 @@ public class TextAnimator : MonoBehaviour
         {
             string baseText = targetText.Substring(0, i + 1);
             textComponent.text = baseText;
-            yield return new WaitForSeconds(letterDelay);
+
+            if (letterDelay > 0)
+                yield return new WaitForSecondsRealtime(letterDelay);
+            else
+                yield return null;
 
             for (int j = 0; j < symbolCycles; j++)
             {
@@ -40,7 +44,11 @@ public class TextAnimator : MonoBehaviour
                     Random.Range(minSymbols, maxSymbols + 1));
 
                 textComponent.text = baseText + " " + randomSymbols;
-                yield return new WaitForSeconds(symbolDelay);
+
+                if (symbolDelay > 0)
+                    yield return new WaitForSecondsRealtime(symbolDelay);
+                else
+                    yield return null;
             }
         }
         textComponent.text = targetText;

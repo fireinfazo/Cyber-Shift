@@ -20,6 +20,7 @@ public class SettingsManager : MonoBehaviour
 
     public bool IsMusicEnabled { get; private set; } = true;
     public float MusicVolume { get; private set; } = 0.5f;
+    public float DialogueVolume { get; private set; } = 0.7f;
     public event System.Action OnSettingsChanged;
 
     private static void CreateInstance()
@@ -90,10 +91,22 @@ public class SettingsManager : MonoBehaviour
         }
     }
 
+    public void SetDialogueVolume(float volume)
+    {
+        volume = Mathf.Clamp01(volume);
+        if (DialogueVolume != volume)
+        {
+            DialogueVolume = volume;
+            SaveSettings();
+            OnSettingsChanged?.Invoke();
+        }
+    }
+
     private void LoadSettings()
     {
         IsMusicEnabled = PlayerPrefs.GetInt("MusicEnabled", 1) == 1;
         MusicVolume = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
+        DialogueVolume = PlayerPrefs.GetFloat("DialogueVolume", 0.7f);
         OnSettingsChanged?.Invoke();
     }
 
@@ -101,6 +114,7 @@ public class SettingsManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("MusicEnabled", IsMusicEnabled ? 1 : 0);
         PlayerPrefs.SetFloat("MusicVolume", MusicVolume);
+        PlayerPrefs.SetFloat("DialogueVolume", DialogueVolume);
         PlayerPrefs.Save();
     }
 
