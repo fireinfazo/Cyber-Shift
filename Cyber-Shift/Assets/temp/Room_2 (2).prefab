@@ -958,6 +958,8 @@ MonoBehaviour:
   buttonPressSound: {fileID: 0}
   doorOpenSound: {fileID: 0}
   audioSource: {fileID: 0}
+  button1Light: {fileID: 0}
+  button2Light: {fileID: 0}
 --- !u!1 &935047998435297812
 GameObject:
   m_ObjectHideFlags: 0
@@ -8228,6 +8230,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8695299041865526708}
     m_Modifications:
+    - target: {fileID: 207299026931331529, guid: db72f28baea1a284faaeaeac194c871a, type: 3}
+      propertyPath: button1Light
+      value: 
+      objectReference: {fileID: 3734807798377108680}
+    - target: {fileID: 207299026931331529, guid: db72f28baea1a284faaeaeac194c871a, type: 3}
+      propertyPath: button2Light
+      value: 
+      objectReference: {fileID: 2580435661713792463}
     - target: {fileID: 1940435901503666989, guid: db72f28baea1a284faaeaeac194c871a, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -8369,6 +8379,16 @@ PrefabInstance:
 --- !u!4 &1870263369884503454 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4325312463407357259, guid: db72f28baea1a284faaeaeac194c871a, type: 3}
+  m_PrefabInstance: {fileID: 2734276944552202453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &2580435661713792463 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 449681516476255514, guid: db72f28baea1a284faaeaeac194c871a, type: 3}
+  m_PrefabInstance: {fileID: 2734276944552202453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &3734807798377108680 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 1596149499987969053, guid: db72f28baea1a284faaeaeac194c871a, type: 3}
   m_PrefabInstance: {fileID: 2734276944552202453}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4846836126521268170

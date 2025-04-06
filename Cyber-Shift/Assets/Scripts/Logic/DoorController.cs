@@ -11,19 +11,37 @@ public class DoorController : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioClip buttonPressSound;
     [SerializeField] private AudioClip doorOpenSound;
-
     [SerializeField] private AudioSource audioSource;
+
+    [Header("Visual Feedback")]
+    [SerializeField] private Light button1Light;
+    [SerializeField] private Light button2Light;
+
     private bool isReady = true;
     private static Camera playerCamera;
     private Transform currentHoveredButton;
 
     private void Awake()
     {
-        //audioSource = gameObject.AddComponent<AudioSource>();
-        //audioSource.spatialBlend = 1f;
-
         if (playerCamera == null)
             playerCamera = GameObject.FindGameObjectWithTag("PlayerCamera")?.GetComponent<Camera>();
+
+        if (button1Light == null || button2Light == null)
+        {
+            Light[] lights = GetComponentsInChildren<Light>(true);
+            if (lights.Length >= 2)
+            {
+                button1Light = lights[0];
+                button2Light = lights[1];
+            }
+            else
+            {
+                Debug.LogWarning("Не найдены оба света. Добавьте два Point Light в инспекторе.");
+            }
+        }
+
+        if (button1Light != null) button1Light.color = Color.red;
+        if (button2Light != null) button2Light.color = Color.red;
     }
 
     private void Update()
@@ -50,6 +68,11 @@ public class DoorController : MonoBehaviour
         PlaySound(buttonPressSound);
         TriggerDoorOpen();
         Invoke(nameof(ResetDoor), openDuration);
+
+        if (currentHoveredButton == button1 && button1Light != null)
+            button1Light.color = Color.green;
+        else if (currentHoveredButton == button2 && button2Light != null)
+            button2Light.color = Color.green;
     }
 
     private void TriggerDoorOpen()
@@ -61,6 +84,9 @@ public class DoorController : MonoBehaviour
     private void ResetDoor()
     {
         isReady = true;
+
+        if (button1Light != null) button1Light.color = Color.red;
+        if (button2Light != null) button2Light.color = Color.red;
     }
 
     private void PlaySound(AudioClip clip)
