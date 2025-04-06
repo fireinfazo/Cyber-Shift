@@ -370,8 +370,15 @@ MonoBehaviour:
   button1: {fileID: 0}
   button2: {fileID: 0}
   openDuration: 10
+  startLocked: 0
+  button1Light: {fileID: 0}
+  button2Light: {fileID: 0}
+  lockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  unlockedColor: {r: 1, g: 0, b: 0, a: 1}
+  pressedColor: {r: 0, g: 1, b: 0, a: 1}
   buttonPressSound: {fileID: 0}
   doorOpenSound: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &587110493065865345
 GameObject:
   m_ObjectHideFlags: 0
@@ -5353,6 +5360,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8968857884180156193}
     m_Modifications:
+    - target: {fileID: 207299026931331529, guid: db72f28baea1a284faaeaeac194c871a, type: 3}
+      propertyPath: startLocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1940435901503666989, guid: db72f28baea1a284faaeaeac194c871a, type: 3}
       propertyPath: m_Layer
       value: 10
