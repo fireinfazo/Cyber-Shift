@@ -71,6 +71,8 @@ public class PlayerHealth : MonoBehaviour, IHealthSystem
         if (animator != null)
             animator.SetTrigger("Die");
 
+        ShowGameOver();
+
         var movement = GetComponent<Movement>();
         if (movement != null)
             movement.enabled = false;
@@ -97,7 +99,7 @@ public class PlayerHealth : MonoBehaviour, IHealthSystem
         }
 
         Time.timeScale = minTimeScale;
-        ShowGameOver();
+        //ShowGameOver();
     }
 
     private void ShowGameOver()
