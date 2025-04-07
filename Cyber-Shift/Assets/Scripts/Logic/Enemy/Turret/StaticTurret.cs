@@ -11,11 +11,11 @@ public class StaticTurret : MonoBehaviour
     [Header("Combat Settings")]
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float fireRate = 0.5f;
-    [SerializeField] private float shootingDelay = 1f; // Задержка перед первым выстрелом
+    [SerializeField] private float shootingDelay = 1f;
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float bulletSpeed = 10f;
-    [SerializeField] private float bulletLifetime = 3f; // Время жизни пули (сек)
+    [SerializeField] private float bulletLifetime = 3f;
 
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
@@ -26,7 +26,7 @@ public class StaticTurret : MonoBehaviour
     private bool isPlayerDetected = false;
     private bool isActive = true;
     private float nextFireTime = 0f;
-    private float detectionTime = 0f; // Время обнаружения игрока
+    private float detectionTime = 0f;
 
     private void Start()
     {
@@ -61,15 +61,13 @@ public class StaticTurret : MonoBehaviour
             if (!isPlayerDetected)
             {
                 isPlayerDetected = true;
-                detectionTime = Time.time; // Засекаем время обнаружения
+                detectionTime = Time.time;
                 PlaySound(detectionSound);
             }
 
-            // Плавный поворот к игроку
             Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
-            // Стрельба с задержкой
             if (Time.time - detectionTime >= shootingDelay && Time.time >= nextFireTime)
             {
                 Shoot();
@@ -94,7 +92,6 @@ public class StaticTurret : MonoBehaviour
             bulletRb.velocity = firePoint.forward * bulletSpeed;
         }
 
-        // Уничтожаем пулю через заданное время
         Destroy(bullet, bulletLifetime);
 
         PlaySound(shootingSound);

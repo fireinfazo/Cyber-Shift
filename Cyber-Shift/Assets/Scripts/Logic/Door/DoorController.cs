@@ -70,7 +70,7 @@ public class DoorController : MonoBehaviour
     private void PressButton()
     {
         isReady = false;
-        PlaySound(buttonPressSound);
+        //PlaySound(buttonPressSound);
 
         if (isLocked)
         {
@@ -79,9 +79,11 @@ public class DoorController : MonoBehaviour
         }
         else
         {
+            PlaySound(buttonPressSound);
             TriggerDoorOpen();
             Invoke(nameof(ResetDoor), openDuration);
             UpdateButtonLights();
+ 
         }
     }
 

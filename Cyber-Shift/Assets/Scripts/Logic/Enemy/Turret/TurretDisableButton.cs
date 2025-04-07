@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class TurretDisableButton : MonoBehaviour
@@ -10,7 +11,7 @@ public class TurretDisableButton : MonoBehaviour
     [Header("Feedback")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip buttonPressSound;
-    [SerializeField] private Light[] lights; // Подключаем Point Light сюда
+    [SerializeField] private Light[] lights;
     [SerializeField] private Color activeColor = Color.green;
     [SerializeField] private Color defaultColor = Color.red;
 
@@ -18,18 +19,16 @@ public class TurretDisableButton : MonoBehaviour
 
     private void Awake()
     {
-        // Находим камеру по тегу
         if (playerCamera == null)
             playerCamera = GameObject.FindGameObjectWithTag("PlayerCamera")?.GetComponent<Camera>();
 
-        // Инициализация света (если массив не заполнен вручную - попробуем найти автоматически)
         if (lights == null || lights.Length == 0)
         {
-            lights = GetComponentsInChildren<Light>(true); // Ищем Light в дочерних объектах
+            lights = GetComponentsInChildren<Light>(true);
             Debug.LogWarning("Lights array was empty, searching in children... Found: " + lights.Length);
         }
 
-        SetLightsColor(defaultColor); // Устанавливаем начальный цвет
+        SetLightsColor(defaultColor);
     }
 
     private void Update()
@@ -49,7 +48,7 @@ public class TurretDisableButton : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, interactionDistance))
         {
-            if (hit.collider.gameObject == gameObject)
+            if (hit.collider.gameObject == gameObject) // Проверяем, что луч попал именно в эту кнопку
             {
                 PressButton();
             }
@@ -60,23 +59,19 @@ public class TurretDisableButton : MonoBehaviour
     {
         isPressed = true;
 
-        // Звук
         if (audioSource != null && buttonPressSound != null)
         {
             audioSource.PlayOneShot(buttonPressSound);
         }
 
-        // Меняем цвет света
         SetLightsColor(activeColor);
 
-        // Отключаем турели
         foreach (StaticTurret turret in turrets)
         {
             if (turret != null) turret.DisableTurret();
         }
     }
 
-    // Метод для изменения цвета света (работает с Point Light, Spot Light, Directional Light)
     private void SetLightsColor(Color color)
     {
         if (lights == null || lights.Length == 0)
