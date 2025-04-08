@@ -11,6 +11,9 @@ public class PlayerHealth : MonoBehaviour, IHealthSystem
     [SerializeField] private float timeSlowdownDuration = 3f;
     [SerializeField] private float minTimeScale = 0.01f;
 
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioSource audioSource;
+
     private int currentHealth;
     private bool isDying = false;
     private Coroutine slowdownCoroutine;
@@ -67,6 +70,11 @@ public class PlayerHealth : MonoBehaviour, IHealthSystem
     {
         if (isDying) return;
         isDying = true;
+
+        if (audioSource != null && deathSound != null)
+        {
+            audioSource.PlayOneShot(deathSound);
+        }
 
         if (animator != null)
             animator.SetTrigger("Die");
