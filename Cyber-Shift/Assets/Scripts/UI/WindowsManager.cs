@@ -8,8 +8,9 @@ public class WindowsManager : MonoBehaviour
     public static WindowsManager Layout;
 
     [SerializeField] private GameObject[] windows;
-
     [SerializeField] private bool IsMenu;
+
+    private bool isEndPanelActive = false;
 
     private void Awake()
     {
@@ -30,13 +31,18 @@ public class WindowsManager : MonoBehaviour
 
     void Update()
     {
-        if (!IsMenu)
+        if (!IsMenu && !isEndPanelActive)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 ToggleMenu();
             }
         }
+    }
+
+    public void SetEndPanelActive(bool state)
+    {
+        isEndPanelActive = state;
     }
 
     private void ToggleMenu()
@@ -68,6 +74,8 @@ public class WindowsManager : MonoBehaviour
 
     public void OpenLayout(string name)
     {
+        if (isEndPanelActive) return;
+
         foreach (GameObject window in windows)
         {
             if (window.name == name)
